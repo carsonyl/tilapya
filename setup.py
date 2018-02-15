@@ -14,14 +14,15 @@ with open('HISTORY.rst') as history_file:
 requirements = [
     'requests>=2.18.4,<3.0.0',
     'marshmallow>=3.0.0b7,<4.0.0',
+    'pytz',
 ]
 
 setup_requirements = [
+    'pytest-runner',
 ]
 
 test_requirements = [
-    'pytest>=3.4.0',
-    'tox>=3.9.1',
+   'pytest>=3.4.0',
 ]
 
 setup(
