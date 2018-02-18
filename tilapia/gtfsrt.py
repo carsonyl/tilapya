@@ -1,6 +1,9 @@
-from ._util import TransLinkAPIBase
 from collections import namedtuple
+
 from marshmallow import Schema, fields, post_load
+
+from ._util import TransLinkAPIBase
+from .errors import TransLinkAPIError
 
 
 Headers = namedtuple('Headers', ['content_disposition', 'content_length', 'content_type', 'date', 'server'])
@@ -25,13 +28,13 @@ class GTFSRT(TransLinkAPIBase):
 
     def __init__(self, api_key, session=None):
         super(GTFSRT, self).__init__(
-            'https://gtfs.translink.ca/', 
+            'https://gtfs.translink.ca/',
             api_key=api_key, session=session)
 
     def _get_headers_and_deserialize(self, endpoint):
         with self._request(endpoint) as resp:
             if not resp.ok:
-                resp.raise_for_status()
+                raise TransLinkAPIError(resp)
             return HeadersSchema().load(resp.headers)
 
     def headers_realtime(self):

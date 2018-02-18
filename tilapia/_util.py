@@ -1,10 +1,10 @@
 """
 Tilapia's internal utilities. Not part of the public API.
 """
-import os
 from requests import Session
-from requests import codes
+
 from .__version__ import __title__, __version__
+from .errors import TransLinkAPIError
 
 
 USER_AGENT = '{}/{}'.format(__title__, __version__)
@@ -25,40 +25,37 @@ class TransLinkAPIBase(object):
         params['apikey'] = self._api_key
 
         # Don't pass along parameters with null values.
-        for key in params.keys():
-            if params[key] is None:
-                del params[key]
+        params = {k: v for k, v in params.items() if v is not None}
 
         headers = headers or {}
         headers['User-Agent'] = self._ua
 
         return self._session.request(
-            method, self._base_url + url_endpoint, 
+            method, self._base_url + url_endpoint,
             params=params, headers=headers, **kwargs)
 
     def _streamed_download(self, url_endpoint, destination, params=None):
         size = 0
         with self._request(url_endpoint, params=params, stream=True) as resp:
             if not resp.ok:
-                resp.raise_for_status()
-            
+                raise TransLinkAPIError(resp)
+
             with open(destination, 'wb') as f:
                 for chunk in resp.iter_content(chunk_size=1024):
                     if chunk:
                         f.write(chunk)
                         size += len(chunk)
-        
+
         return size
 
     def _get_json(self, url_endpoint, params=None):
         return self._request(
-            url_endpoint, method='GET', params=params, 
+            url_endpoint, method='GET', params=params,
             headers={'Accept': 'application/json'})
 
     def _get_deserialized(self, url_endpoint, schema, params=None):
         resp = self._get_json(url_endpoint, params=params)
         if not resp.ok:
-            resp.raise_for_status()
+            raise TransLinkAPIError(resp)
 
         return schema.loads(resp.text)
-
