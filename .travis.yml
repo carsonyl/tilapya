@@ -7,4 +7,7 @@ python:
 
 install: pip install -U tox-travis
 
-script: tox
+script:
+  - tox
+  - pipenv install --dev
+  - pipenv run py.test tests --vcr-record-mode=all
