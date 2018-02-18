@@ -1,6 +1,10 @@
-import pytest
-from tilapia.gtfsrt import GTFSRT
 from datetime import datetime
+
+import pytest
+from requests import codes
+
+from tilapia.errors import TransLinkAPIError
+from tilapia.gtfsrt import GTFSRT
 
 
 @pytest.fixture
@@ -30,3 +34,11 @@ def test_headers_position(authed_gtfs):
 def test_download_position(authed_gtfs, tmpdir):
     dest = tmpdir.join('gtfsposition.pb')
     assert authed_gtfs.download_position(dest)
+
+
+def test_gtfsrt_invalid_key():
+    with pytest.raises(TransLinkAPIError) as info:
+        GTFSRT(api_key='foobar').headers_realtime()
+    assert info.value.response.status_code == codes.forbidden
+    assert not info.value.code
+    assert not info.value.message
