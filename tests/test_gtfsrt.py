@@ -5,10 +5,11 @@ from requests import codes
 
 from tilapia.errors import TransLinkAPIError
 from tilapia.gtfsrt import GTFSRT
+from .conftest import remove_response_headers_func
 
 
 # Apply VCR to all tests in this file.
-pytestmark = pytest.mark.vcr
+pytestmark = pytest.mark.vcr(before_record_response=remove_response_headers_func('Set-Cookie'))
 
 
 @pytest.fixture

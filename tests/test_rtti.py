@@ -193,7 +193,10 @@ def test_route_error_codes(authed_rtti, route, expect_code):
     assert info.value.code == expect_code.code
 
 
-@pytest.mark.parametrize('stop', ['53095', '55385'])
+@pytest.mark.parametrize('stop', [
+    '53095',  # API sometimes lies and returns an error for this stop.
+    '55385',
+])
 def test_routes(authed_rtti, stop):
     routes = authed_rtti.routes(stop_number=stop)
     assert len(routes) > 0

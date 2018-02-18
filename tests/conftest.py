@@ -10,10 +10,13 @@ def valid_api_key():
     return key
 
 
-def sanitize_response(response):
-    headers = response['headers']
-    headers.pop('Set-Cookie', None)
-    return response
+def remove_response_headers_func(*headers_to_remove):
+    def sanitize_response(response):
+        headers = response['headers']
+        for header in headers_to_remove:
+            headers.pop(header, None)
+        return response
+    return sanitize_response
 
 
 @pytest.fixture
@@ -22,5 +25,10 @@ def vcr_config():
         'filter_headers': ['user-agent', 'set-cookie', 'connection'],
         'filter_query_parameters': ['apikey'],
         'decode_compressed_response': True,
-        'before_record_response': sanitize_response,
+        'before_record_response': remove_response_headers_func('Set-Cookie', 'Date'),
     }
+
+
+@pytest.fixture
+def vcr_cassette_path(request, vcr_cassette_name):
+    return os.path.join('tests', 'cassettes', request.module.__name__, vcr_cassette_name)
