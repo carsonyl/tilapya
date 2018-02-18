@@ -9,6 +9,9 @@ from tilapia.rtti import (RTTI, TRANSLINK_TZ, parse_last_update,
                           parse_leave_time)
 
 
+# Apply VCR to all tests in this file.
+pytestmark = pytest.mark.vcr
+
 TS_FORMAT = '%Y-%m-%d %H:%M:%S'
 
 
@@ -226,7 +229,7 @@ def test_status_error_code(authed_rtti):
 
 
 @pytest.mark.parametrize('key', ['foobar', 'x' * 20])
-def test_bad_key(key):
+def test_rtti_ad_key(key):
     # Same message regardless of key length.
     with pytest.raises(TransLinkAPIError) as info:
         RTTI(api_key=key).route('144')

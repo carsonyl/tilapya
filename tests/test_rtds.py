@@ -8,6 +8,10 @@ from tilapia.rtds import RTDS
 from requests import codes
 
 
+# Apply VCR to all tests in this file.
+pytestmark = pytest.mark.vcr
+
+
 @pytest.fixture
 def authed_rtds(valid_api_key):
     return RTDS(api_key=valid_api_key)
@@ -45,7 +49,7 @@ def test_colour_legend(authed_rtds):
     assert isinstance(result, list)
 
 
-def test_tile_bad_key(tmpdir):
+def test_rtds_tile_bad_key(tmpdir):
     # Expecting a JSON error response when PNG request is rejected for bad key.
     dest = tmpdir.join('test.png')
     with pytest.raises(TransLinkAPIError) as info:
@@ -55,7 +59,7 @@ def test_tile_bad_key(tmpdir):
 
 
 @pytest.mark.parametrize('key', ['foobar', 'x' * 20])
-def test_bad_key(key):
+def test_rtds_bad_key(key):
     # There's a different error message for keys that aren't 20 characters.
     with pytest.raises(TransLinkAPIError) as info:
         RTDS(api_key=key).all_live_data()

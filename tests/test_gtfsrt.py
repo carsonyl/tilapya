@@ -7,6 +7,10 @@ from tilapia.errors import TransLinkAPIError
 from tilapia.gtfsrt import GTFSRT
 
 
+# Apply VCR to all tests in this file.
+pytestmark = pytest.mark.vcr
+
+
 @pytest.fixture
 def authed_gtfs(valid_api_key):
     return GTFSRT(api_key=valid_api_key)

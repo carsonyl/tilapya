@@ -23,6 +23,7 @@ setup_requirements = [
 
 test_requirements = [
    'pytest>=3.4.0',
+   'pytest-vcr',
 ]
 
 setup(
