@@ -1,0 +1,78 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/stops/60980/estimates
+  response:
+    body: {string: '[{"RouteNo":"004","RouteName":"POWELL\/DOWNTOWN\/UBC","Direction":"WEST","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"},"Schedules":[{"Pattern":"WB1","Destination":"UBC","ExpectedLeaveTime":"1:23pm","ExpectedCountdown":-4,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:01:02
+        pm"},{"Pattern":"WB1","Destination":"UBC","ExpectedLeaveTime":"1:38pm","ExpectedCountdown":11,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:16:10
+        pm"},{"Pattern":"WB1","Destination":"UBC","ExpectedLeaveTime":"1:53pm","ExpectedCountdown":26,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:31:04
+        pm"},{"Pattern":"WB1","Destination":"UBC","ExpectedLeaveTime":"2:08pm","ExpectedCountdown":41,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:46:01
+        pm"},{"Pattern":"WB1","Destination":"UBC","ExpectedLeaveTime":"2:23pm","ExpectedCountdown":56,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:01:02
+        pm"},{"Pattern":"WB1","Destination":"UBC","ExpectedLeaveTime":"2:38pm","ExpectedCountdown":71,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:16:04
+        pm"}]},{"RouteNo":"007","RouteName":"NANAIMO STN\/DUNBAR             ","Direction":"WEST","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"},"Schedules":[{"Pattern":"WB1","Destination":"DUNBAR","ExpectedLeaveTime":"1:31pm","ExpectedCountdown":4,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"11:59:04
+        am"},{"Pattern":"WB1","Destination":"DUNBAR","ExpectedLeaveTime":"1:52pm","ExpectedCountdown":25,"ScheduleStatus":"-","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:14:05
+        pm"},{"Pattern":"WB1","Destination":"DUNBAR","ExpectedLeaveTime":"2:02pm","ExpectedCountdown":35,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:30:09
+        pm"},{"Pattern":"WB1","Destination":"DUNBAR","ExpectedLeaveTime":"2:17pm","ExpectedCountdown":50,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:45:11
+        pm"},{"Pattern":"WB1","Destination":"DUNBAR","ExpectedLeaveTime":"2:32pm","ExpectedCountdown":65,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:00:02
+        pm"},{"Pattern":"WB1","Destination":"DUNBAR","ExpectedLeaveTime":"2:47pm","ExpectedCountdown":80,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:15:09
+        pm"}]},{"RouteNo":"010","RouteName":"GRANVILLE\/DOWNTOWN          ","Direction":"SOUTH","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"},"Schedules":[{"Pattern":"SB1DT","Destination":"GRANVILLE","ExpectedLeaveTime":"1:37pm","ExpectedCountdown":10,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:35:01
+        pm"},{"Pattern":"SB1DT","Destination":"GRANVILLE","ExpectedLeaveTime":"1:52pm","ExpectedCountdown":25,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:50:08
+        pm"},{"Pattern":"SB1DT","Destination":"GRANVILLE","ExpectedLeaveTime":"2:09pm","ExpectedCountdown":42,"ScheduleStatus":"-","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:05:04
+        pm"},{"Pattern":"SB1DT","Destination":"GRANVILLE","ExpectedLeaveTime":"2:22pm","ExpectedCountdown":55,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:20:07
+        pm"},{"Pattern":"SB1DT","Destination":"GRANVILLE","ExpectedLeaveTime":"2:38pm","ExpectedCountdown":71,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"09:00:04
+        pm"},{"Pattern":"SB1DT","Destination":"GRANVILLE","ExpectedLeaveTime":"2:53pm","ExpectedCountdown":86,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"09:00:04
+        pm"}]},{"RouteNo":"014","RouteName":"HASTINGS\/UBC","Direction":"WEST","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"},"Schedules":[{"Pattern":"WB1","Destination":"U
+        B C","ExpectedLeaveTime":"1:30pm","ExpectedCountdown":3,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:00:04
+        pm"},{"Pattern":"WB1","Destination":"U B C","ExpectedLeaveTime":"1:42pm","ExpectedCountdown":15,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:12:03
+        pm"},{"Pattern":"WB1","Destination":"U B C","ExpectedLeaveTime":"1:54pm","ExpectedCountdown":27,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:24:07
+        pm"},{"Pattern":"WB1","Destination":"U B C","ExpectedLeaveTime":"2:06pm","ExpectedCountdown":39,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:36:03
+        pm"},{"Pattern":"WB1","Destination":"U B C","ExpectedLeaveTime":"2:18pm","ExpectedCountdown":51,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:48:02
+        pm"},{"Pattern":"WB1","Destination":"U B C","ExpectedLeaveTime":"2:30pm","ExpectedCountdown":63,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:00:09
+        pm"}]},{"RouteNo":"016","RouteName":"29TH AVENUE STN\/ARBUTUS        ","Direction":"WEST","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"},"Schedules":[{"Pattern":"WB1","Destination":"ARBUTUS","ExpectedLeaveTime":"1:35pm","ExpectedCountdown":8,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"11:54:02
+        am"},{"Pattern":"WB1","Destination":"ARBUTUS","ExpectedLeaveTime":"1:47pm","ExpectedCountdown":20,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:06:04
+        pm"},{"Pattern":"WB1","Destination":"ARBUTUS","ExpectedLeaveTime":"1:59pm","ExpectedCountdown":32,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:18:04
+        pm"},{"Pattern":"WB1","Destination":"ARBUTUS","ExpectedLeaveTime":"2:11pm","ExpectedCountdown":44,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:30:03
+        pm"},{"Pattern":"WB1","Destination":"ARBUTUS","ExpectedLeaveTime":"2:23pm","ExpectedCountdown":56,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:42:04
+        pm"},{"Pattern":"WB1","Destination":"ARBUTUS","ExpectedLeaveTime":"2:35pm","ExpectedCountdown":68,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:54:03
+        pm"}]},{"RouteNo":"050","RouteName":"WATERFRONT STN\/FALSE CREEK SOUTH","Direction":"SOUTH","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/050.kmz"},"Schedules":[{"Pattern":"SB1","Destination":"S.
+        FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"1:24pm","ExpectedCountdown":-3,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:16:00
+        pm"},{"Pattern":"SB1","Destination":"S. FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"1:38pm","ExpectedCountdown":11,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:30:01
+        pm"},{"Pattern":"SB1","Destination":"S. FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"1:53pm","ExpectedCountdown":26,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:45:04
+        pm"},{"Pattern":"SB1","Destination":"S. FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"2:08pm","ExpectedCountdown":41,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:00:10
+        pm"},{"Pattern":"SB1","Destination":"S. FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"2:23pm","ExpectedCountdown":56,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"01:15:03
+        pm"},{"Pattern":"SB1","Destination":"S. FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"2:38pm","ExpectedCountdown":71,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"09:00:04
+        pm"}]}]'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['9076']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 200, message: OK}
+version: 1

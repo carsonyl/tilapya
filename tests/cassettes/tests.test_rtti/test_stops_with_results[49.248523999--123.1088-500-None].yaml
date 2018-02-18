@@ -1,0 +1,37 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/stops?lat=49.248524&long=-123.108800&radius=500
+  response:
+    body: {string: '[{"StopNo":51516,"Name":"EB W KING EDWARD AVE FS MANITOBA ST","BayNo":"N","City":"VANCOUVER","OnStreet":"W
+        KING EDWARD AVE","AtStreet":"MANITOBA ST","Latitude":49.248820,"Longitude":-123.107050,"WheelchairAccess":1,"Distance":131,"Routes":"025"},{"StopNo":51573,"Name":"WB
+        W KING EDWARD AVE FS COLUMBIA ST","BayNo":"N","City":"VANCOUVER","OnStreet":"W
+        KING EDWARD AVE","AtStreet":"COLUMBIA ST","Latitude":49.249020,"Longitude":-123.110530,"WheelchairAccess":1,"Distance":137,"Routes":"025"},{"StopNo":51514,"Name":"EB
+        W KING EDWARD AVE FS YUKON ST","BayNo":"N","City":"VANCOUVER","OnStreet":"W
+        KING EDWARD AVE","AtStreet":"YUKON ST","Latitude":49.248820,"Longitude":-123.111720,"WheelchairAccess":1,"Distance":214,"Routes":""},{"StopNo":51572,"Name":"WB
+        W KING EDWARD AVE FS ONTARIO ST","BayNo":"N","City":"VANCOUVER","OnStreet":"W
+        KING EDWARD AVE","AtStreet":"ONTARIO ST","Latitude":49.248920,"Longitude":-123.105400,"WheelchairAccess":1,"Distance":251,"Routes":"025"},{"StopNo":51513,"Name":"EB
+        KING EDWARD AVE FS CAMBIE ST","BayNo":"N","City":"VANCOUVER","OnStreet":"W
+        KING EDWARD AVE","AtStreet":"CAMBIE ST","Latitude":49.248870,"Longitude":-123.114720,"WheelchairAccess":1,"Distance":431,"Routes":"025"},{"StopNo":51517,"Name":"EB
+        E KING EDWARD AVE FS QUEBEC ST","BayNo":"N","City":"VANCOUVER","OnStreet":"E
+        KING EDWARD AVE","AtStreet":"QUEBEC ST","Latitude":49.248740,"Longitude":-123.102750,"WheelchairAccess":0,"Distance":440,"Routes":"025"},{"StopNo":61372,"Name":"KING
+        EDWARD STATION","BayNo":"N","City":"VANCOUVER","OnStreet":"SKYTRAIN","AtStreet":"KING
+        EDWARD STN","Latitude":49.249170,"Longitude":-123.115240,"WheelchairAccess":0,"Distance":473,"Routes":""},{"StopNo":50475,"Name":"NB
+        CAMBIE ST FS W KING EDWARD AVE","BayNo":"N","City":"VANCOUVER","OnStreet":"CAMBIE
+        ST","AtStreet":"W KING EDWARD AVE","Latitude":49.249420,"Longitude":-123.115260,"WheelchairAccess":1,"Distance":479,"Routes":"015,
+        033, N15"},{"StopNo":61253,"Name":"NB CAMBIE ST FS W 27 AVE","BayNo":"N","City":"VANCOUVER","OnStreet":"CAMBIE
+        ST","AtStreet":"W 27 AVE","Latitude":49.247290,"Longitude":-123.115190,"WheelchairAccess":1,"Distance":484,"Routes":"015,
+        033, N15"}]'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['2155']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 200, message: OK}
+version: 1

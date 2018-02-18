@@ -1,0 +1,20 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/routes/02
+  response:
+    body: {string: '{"RouteNo":"002","Name":"MACDONALD\/DOWNTOWN ","OperatingCompany":"CMBC","Patterns":[{"PatternNo":"EB1","Destination":"DOWNTOWN","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/trip\/002-EB1.kmz"},"Direction":"EAST"},{"PatternNo":"EB2","Destination":"DOWNTOWN","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/trip\/002-EB2.kmz"},"Direction":"EAST"},{"PatternNo":"EB3","Destination":"DOWNTOWN","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/trip\/002-EB3.kmz"},"Direction":"EAST"},{"PatternNo":"WB1","Destination":"MACDONALD","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/trip\/002-WB1.kmz"},"Direction":"WEST"},{"PatternNo":"WB2","Destination":"MACDONALD
+        - 16 AVE","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/trip\/002-WB2.kmz"},"Direction":"WEST"}]}'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['792']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 200, message: OK}
+version: 1

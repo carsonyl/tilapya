@@ -1,0 +1,20 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/stops/53095/estimates?timeframe=0
+  response:
+    body: {string: '{"Code":"3006","Message":"Invalid TimeFrame value specified. Please
+        use a valid time frame value from 1 to 1440"}'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['113']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 500, message: Internal Server Error}
+version: 1

@@ -1,0 +1,24 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/stops/60980/estimates?count=3&routeNo=050&timeframe=120
+  response:
+    body: {string: '[{"RouteNo":"050","RouteName":"WATERFRONT STN\/FALSE CREEK SOUTH","Direction":"SOUTH","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/050.kmz"},"Schedules":[{"Pattern":"SB1","Destination":"S.
+        FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"1:24pm","ExpectedCountdown":-3,"ScheduleStatus":"
+        ","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:16:00
+        pm"},{"Pattern":"SB1","Destination":"S. FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"1:38pm","ExpectedCountdown":11,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:30:01
+        pm"},{"Pattern":"SB1","Destination":"S. FALSE CREEK VIA GRANVILLE ISL.","ExpectedLeaveTime":"1:53pm","ExpectedCountdown":26,"ScheduleStatus":"*","CancelledTrip":false,"CancelledStop":false,"AddedTrip":false,"AddedStop":false,"LastUpdate":"12:45:04
+        pm"}]}]'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['910']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 200, message: OK}
+version: 1

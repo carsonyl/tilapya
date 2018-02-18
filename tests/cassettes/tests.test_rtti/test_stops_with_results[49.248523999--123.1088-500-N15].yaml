@@ -1,0 +1,23 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/stops?lat=49.248524&long=-123.108800&radius=500&routeno=N15
+  response:
+    body: {string: '[{"StopNo":50475,"Name":"NB CAMBIE ST FS W KING EDWARD AVE","BayNo":"N","City":"VANCOUVER","OnStreet":"CAMBIE
+        ST","AtStreet":"W KING EDWARD AVE","Latitude":49.249420,"Longitude":-123.115260,"WheelchairAccess":1,"Distance":479,"Routes":"015,
+        033, N15"},{"StopNo":61253,"Name":"NB CAMBIE ST FS W 27 AVE","BayNo":"N","City":"VANCOUVER","OnStreet":"CAMBIE
+        ST","AtStreet":"W 27 AVE","Latitude":49.247290,"Longitude":-123.115190,"WheelchairAccess":1,"Distance":484,"Routes":"015,
+        033, N15"}]'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['485']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 200, message: OK}
+version: 1

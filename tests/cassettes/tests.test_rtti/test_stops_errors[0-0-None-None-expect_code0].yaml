@@ -1,0 +1,20 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/stops?lat=0.000000&long=0.000000
+  response:
+    body: {string: '{"Code":"1012","Message":"Sorry, no stops found with specified
+        latitude, longitude, radius, and routes."}'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['105']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 404, message: Not Found}
+version: 1

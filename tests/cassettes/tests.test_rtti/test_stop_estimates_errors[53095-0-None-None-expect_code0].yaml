@@ -1,0 +1,20 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/stops/53095/estimates?count=0
+  response:
+    body: {string: '{"Code":"3007","Message":"Invalid count number was specified,
+        please use valid count value from 1 to 10"}'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['105']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 500, message: Internal Server Error}
+version: 1

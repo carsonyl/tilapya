@@ -1,0 +1,25 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/buses?stopNo=53987
+  response:
+    body: {string: '[{"VehicleNo":"9640","TripId":9284644,"RouteNo":"228","Direction":"SOUTH","Destination":"LONSDALE
+        QUAY","Pattern":"SB1B","Latitude":49.311367,"Longitude":-123.079233,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/228.kmz"}},{"VehicleNo":"9646","TripId":9283546,"RouteNo":"210","Direction":"NORTH","Destination":"UPPER
+        LYNN VALLEY","Pattern":"NB1","Latitude":49.327700,"Longitude":-123.038217,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/210.kmz"}},{"VehicleNo":"9649","TripId":9283551,"RouteNo":"210","Direction":"NORTH","Destination":"UPPER
+        LYNN VALLEY","Pattern":"NB1","Latitude":49.283650,"Longitude":-123.113250,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/210.kmz"}}]'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['787']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 200, message: OK}
+version: 1

@@ -1,0 +1,22 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/buses?routeNo=001
+  response:
+    body: {string: '{"Code":"2015","Message":"Invalid route number specified. Please
+        use a valid active route id that is 3 digits, i.e. 003, 590. For community
+        shuttle or night bus routes, please use \"C\" or \"N\" followed by up to 2
+        digits, i.e. N9, C22"}'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['237']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 404, message: Not Found}
+version: 1

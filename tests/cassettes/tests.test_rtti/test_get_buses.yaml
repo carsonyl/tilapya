@@ -1,0 +1,1028 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/buses
+  response:
+    body: {string: '[{"VehicleNo":"11303","TripId":9287783,"RouteNo":"252","Direction":"EAST","Destination":"PARK
+        ROYAL - ONLY","Pattern":"EB1NEW","Latitude":49.334517,"Longitude":-123.145967,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/252.kmz"}},{"VehicleNo":"11304","TripId":9287805,"RouteNo":"252","Direction":"WEST","Destination":"INGLEWOOD","Pattern":"WB1NEW","Latitude":49.338267,"Longitude":-123.171950,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/252.kmz"}},{"VehicleNo":"11307","TripId":9307291,"RouteNo":"C3","Direction":"WEST","Destination":"QUAYSIDE","Pattern":"WB1","Latitude":49.202717,"Longitude":-122.908750,"RecordedTime":"01:25:19
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C3.kmz"}},{"VehicleNo":"11308","TripId":9288313,"RouteNo":"256","Direction":"NORTH","Destination":"21ST
+        TO WHITBY ESTATES","Pattern":"NB1","Latitude":49.327150,"Longitude":-123.138767,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/256.kmz"}},{"VehicleNo":"11309","TripId":9284140,"RouteNo":"214","Direction":"EAST","Destination":"BLUERIDGE","Pattern":"EB2","Latitude":49.323183,"Longitude":-123.004900,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/214.kmz"}},{"VehicleNo":"11316","TripId":9306125,"RouteNo":"C12","Direction":"NORTH","Destination":"LIONS
+        BAY-BRUNSWICK","Pattern":"NB1EX","Latitude":49.386517,"Longitude":-123.258333,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C12.kmz"}},{"VehicleNo":"11320","TripId":9284351,"RouteNo":"227","Direction":"NORTH","Destination":"LYNN
+        VALLEY CTR VIA LYNN CANYON PARK","Pattern":"NB1","Latitude":49.330333,"Longitude":-123.026900,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/227.kmz"}},{"VehicleNo":"11322","TripId":9274658,"RouteNo":"116","Direction":"WEST","Destination":"METROTOWN
+        STN","Pattern":"WB1","Latitude":49.199800,"Longitude":-122.979417,"RecordedTime":"01:25:06
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/116.kmz"}},{"VehicleNo":"11323","TripId":9307216,"RouteNo":"C3","Direction":"EAST","Destination":"VICTORIA
+        HILL","Pattern":"EB1","Latitude":49.209483,"Longitude":-122.902150,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C3.kmz"}},{"VehicleNo":"12002","TripId":9269230,"RouteNo":"049","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.231733,"Longitude":-123.185350,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"12015","TripId":9269231,"RouteNo":"049","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.227067,"Longitude":-123.147483,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"12022","TripId":9269233,"RouteNo":"049","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.224750,"Longitude":-123.045533,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"14002","TripId":9279537,"RouteNo":"160","Direction":"WEST","Destination":"KOOTENAY
+        LOOP","Pattern":"WB1KT","Latitude":49.281400,"Longitude":-123.026567,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"14003","TripId":9300004,"RouteNo":"701","Direction":"WEST","Destination":"COQ
+        CTRL STN","Pattern":"WB2","Latitude":49.229167,"Longitude":-122.689467,"RecordedTime":"01:25:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/701.kmz"}},{"VehicleNo":"14004","TripId":9281618,"RouteNo":"183","Direction":"EAST","Destination":"COQ
+        CTRL STN","Pattern":"EB1","Latitude":49.277700,"Longitude":-122.845767,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/183.kmz"}},{"VehicleNo":"14005","TripId":9300003,"RouteNo":"701","Direction":"WEST","Destination":"COQ
+        CTRL STN","Pattern":"WB1","Latitude":49.270717,"Longitude":-122.783733,"RecordedTime":"01:24:56
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/701.kmz"}},{"VehicleNo":"14008","TripId":9283226,"RouteNo":"191","Direction":"NORTH","Destination":"PRINCETON","Pattern":"NB1","Latitude":49.295800,"Longitude":-122.742383,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/191.kmz"}},{"VehicleNo":"14011","TripId":9279490,"RouteNo":"160","Direction":"EAST","Destination":"PT
+        COQ STN","Pattern":"EB1PC","Latitude":49.277700,"Longitude":-122.846200,"RecordedTime":"01:25:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"14016","TripId":9282879,"RouteNo":"188","Direction":"WEST","Destination":"COQ
+        CTRL STN","Pattern":"WB2","Latitude":49.285200,"Longitude":-122.756033,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/188.kmz"}},{"VehicleNo":"14019","TripId":9299936,"RouteNo":"701","Direction":"EAST","Destination":"MAPLE
+        RIDGE EAST","Pattern":"EB1D1","Latitude":49.275167,"Longitude":-122.799000,"RecordedTime":"01:17:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/701.kmz"}},{"VehicleNo":"14021","TripId":9279491,"RouteNo":"160","Direction":"EAST","Destination":"PT
+        COQ STN","Pattern":"EB1PC","Latitude":49.280300,"Longitude":-122.968917,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"14022","TripId":9279786,"RouteNo":"169","Direction":"WEST","Destination":"BRAID
+        STN","Pattern":"WB1RV","Latitude":49.275167,"Longitude":-122.799000,"RecordedTime":"01:24:35
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/169.kmz"}},{"VehicleNo":"14024","TripId":9279539,"RouteNo":"160","Direction":"WEST","Destination":"KOOTENAY
+        LOOP","Pattern":"WB1KT","Latitude":49.284150,"Longitude":-122.824867,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"14030","TripId":9299933,"RouteNo":"701","Direction":"EAST","Destination":"HANEY
+        PLACE","Pattern":"EB3D1","Latitude":49.220533,"Longitude":-122.621833,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/701.kmz"}},{"VehicleNo":"14033","TripId":9473201,"RouteNo":"144","Direction":"SOUTH","Destination":"METROTOWN
+        STN","Pattern":"SB1","Latitude":49.278383,"Longitude":-122.912817,"RecordedTime":"01:25:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/144.kmz"}},{"VehicleNo":"14035","TripId":9278125,"RouteNo":"152","Direction":"EAST","Destination":"COQ
+        CTRL STN","Pattern":"EB1MAR","Latitude":49.245367,"Longitude":-122.876367,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/152.kmz"}},{"VehicleNo":"14038","TripId":9272880,"RouteNo":"100","Direction":"WEST","Destination":"MARPOLE","Pattern":"WB1","Latitude":49.198200,"Longitude":-122.954250,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/100.kmz"}},{"VehicleNo":"14040","TripId":9272896,"RouteNo":"100","Direction":"WEST","Destination":"MARPOLE","Pattern":"WB1","Latitude":49.208950,"Longitude":-123.120033,"RecordedTime":"01:26:26
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/100.kmz"}},{"VehicleNo":"14042","TripId":9472998,"RouteNo":"110","Direction":"WEST","Destination":"METROTOWN
+        STN","Pattern":"WB1","Latitude":49.233483,"Longitude":-122.994200,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/110.kmz"}},{"VehicleNo":"14045","TripId":9275324,"RouteNo":"128","Direction":"EAST","Destination":"BRAID
+        STN","Pattern":"EB1","Latitude":49.204300,"Longitude":-122.945617,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/128.kmz"}},{"VehicleNo":"15021","TripId":9450124,"RouteNo":"099","Direction":"WEST","Destination":"UBC
+        B-LINE","Pattern":"WB1","Latitude":49.263550,"Longitude":-123.135183,"RecordedTime":"01:25:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"1503","TripId":9282605,"RouteNo":"187","Direction":"NORTH","Destination":"PARKWAY","Pattern":"NB1","Latitude":49.299250,"Longitude":-122.800633,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/187.kmz"}},{"VehicleNo":"1507","TripId":9278979,"RouteNo":"157","Direction":"WEST","Destination":"LOUGHEED
+        STN","Pattern":"WB1","Latitude":49.256150,"Longitude":-122.856783,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/157.kmz"}},{"VehicleNo":"1509","TripId":9309039,"RouteNo":"C7","Direction":"EAST","Destination":"EDMONDS
+        STN","Pattern":"EB1","Latitude":49.221483,"Longitude":-123.012567,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C7.kmz"}},{"VehicleNo":"1510","TripId":9265554,"RouteNo":"023","Direction":"WEST","Destination":"BEACH","Pattern":"WB1","Latitude":49.278750,"Longitude":-123.108217,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/023.kmz"}},{"VehicleNo":"1514","TripId":9305917,"RouteNo":"C1","Direction":"EAST","Destination":"HASTINGS
+        AT GILMORE","Pattern":"EB1","Latitude":49.281417,"Longitude":-123.025700,"RecordedTime":"01:25:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C1.kmz"}},{"VehicleNo":"1515","TripId":9274643,"RouteNo":"116","Direction":"EAST","Destination":"EDMONDS
+        STN","Pattern":"EB1","Latitude":49.206667,"Longitude":-122.952750,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/116.kmz"}},{"VehicleNo":"1517","TripId":9265495,"RouteNo":"023","Direction":"EAST","Destination":"MAIN
+        ST STN","Pattern":"EB1","Latitude":49.281917,"Longitude":-123.140033,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/023.kmz"}},{"VehicleNo":"1520","TripId":9307466,"RouteNo":"C4","Direction":"EAST","Destination":"UPTOWN","Pattern":"EB1","Latitude":49.221783,"Longitude":-122.913117,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C4.kmz"}},{"VehicleNo":"1521","TripId":9274644,"RouteNo":"116","Direction":"EAST","Destination":"EDMONDS
+        STN","Pattern":"EB1","Latitude":49.225800,"Longitude":-123.003400,"RecordedTime":"01:19:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/116.kmz"}},{"VehicleNo":"1523","TripId":9306841,"RouteNo":"C20","Direction":"EAST","Destination":"UBC
+        LOOP VIA MARINE DR","Pattern":"EB2","Latitude":49.257550,"Longitude":-123.249800,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C20.kmz"}},{"VehicleNo":"1525","TripId":9310536,"RouteNo":"C93","Direction":"WEST","Destination":"STEVESTON","Pattern":"WB1","Latitude":49.136467,"Longitude":-123.103117,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C93.kmz"}},{"VehicleNo":"1526","TripId":9307495,"RouteNo":"C4","Direction":"WEST","Destination":"NEW
+        WEST STN","Pattern":"WB1","Latitude":49.202833,"Longitude":-122.908567,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C4.kmz"}},{"VehicleNo":"1527","TripId":9310523,"RouteNo":"C93","Direction":"EAST","Destination":"RIVERPORT","Pattern":"EB1","Latitude":49.140967,"Longitude":-123.150933,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C93.kmz"}},{"VehicleNo":"1528","TripId":9309768,"RouteNo":"C84","Direction":"SOUTH","Destination":"ENGLISH
+        BLUFF","Pattern":"SB1","Latitude":49.035317,"Longitude":-123.067233,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C84.kmz"}},{"VehicleNo":"1530","TripId":9265555,"RouteNo":"023","Direction":"WEST","Destination":"BEACH","Pattern":"WB1","Latitude":49.274517,"Longitude":-123.116900,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/023.kmz"}},{"VehicleNo":"1534","TripId":9310153,"RouteNo":"C89","Direction":"NORTH","Destination":"S
+        DELTA EXCH","Pattern":"NB1","Latitude":49.024617,"Longitude":-123.060483,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C89.kmz"}},{"VehicleNo":"1535","TripId":9307217,"RouteNo":"C3","Direction":"EAST","Destination":"VICTORIA
+        HILL","Pattern":"EB1","Latitude":49.201717,"Longitude":-122.913317,"RecordedTime":"01:25:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C3.kmz"}},{"VehicleNo":"1536","TripId":9265552,"RouteNo":"023","Direction":"WEST","Destination":"BEACH","Pattern":"WB1","Latitude":49.273467,"Longitude":-123.098583,"RecordedTime":"01:24:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/023.kmz"}},{"VehicleNo":"1537","TripId":9265553,"RouteNo":"023","Direction":"WEST","Destination":"BEACH","Pattern":"WB1","Latitude":49.272650,"Longitude":-123.098683,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/023.kmz"}},{"VehicleNo":"1538","TripId":9308149,"RouteNo":"C5","Direction":"WEST","Destination":"ROYAL
+        OAK STN","Pattern":"WB1","Latitude":49.212500,"Longitude":-122.993733,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C5.kmz"}},{"VehicleNo":"1541","TripId":9309054,"RouteNo":"C7","Direction":"WEST","Destination":"METROTOWN
+        STN","Pattern":"WB1","Latitude":49.213850,"Longitude":-122.988467,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C7.kmz"}},{"VehicleNo":"16005","TripId":9274467,"RouteNo":"112","Direction":"WEST","Destination":"EDMONDS
+        STN","Pattern":"WB1","Latitude":49.201050,"Longitude":-122.914517,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/112.kmz"}},{"VehicleNo":"16007","TripId":9473040,"RouteNo":"119","Direction":"EAST","Destination":"EDMONDS
+        STN","Pattern":"EB1","Latitude":49.226583,"Longitude":-123.003883,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/119.kmz"}},{"VehicleNo":"16008","TripId":9274974,"RouteNo":"123","Direction":"EAST","Destination":"NEW
+        WEST STN","Pattern":"EB1","Latitude":49.242083,"Longitude":-122.969083,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/123.kmz"}},{"VehicleNo":"16023","TripId":9296739,"RouteNo":"410","Direction":"WEST","Destination":"RAILWAY","Pattern":"W1","Latitude":49.131933,"Longitude":-123.187150,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"16024","TripId":9273319,"RouteNo":"104","Direction":"NORTH","Destination":"22ND
+        ST STN","Pattern":"NB2","Latitude":49.173700,"Longitude":-122.934233,"RecordedTime":"01:26:35
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/104.kmz"}},{"VehicleNo":"16025","TripId":9296740,"RouteNo":"410","Direction":"WEST","Destination":"RAILWAY","Pattern":"W1","Latitude":49.128867,"Longitude":-123.191817,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"16028","TripId":9296670,"RouteNo":"410","Direction":"WEST","Destination":"RAILWAY","Pattern":"W1","Latitude":49.182350,"Longitude":-123.069150,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"16030","TripId":9296717,"RouteNo":"410","Direction":"WEST","Destination":"RAILWAY","Pattern":"W1","Latitude":49.165700,"Longitude":-123.136617,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"16031","TripId":9472872,"RouteNo":"106","Direction":"WEST","Destination":"EDMONDS
+        STN","Pattern":"WB106","Latitude":49.221717,"Longitude":-122.945450,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/106.kmz"}},{"VehicleNo":"16032","TripId":9473261,"RouteNo":"430","Direction":"WEST","Destination":"BRIGHOUSE
+        STN","Pattern":"WB1","Latitude":49.225900,"Longitude":-123.003583,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/430.kmz"}},{"VehicleNo":"16033","TripId":9275035,"RouteNo":"123","Direction":"EAST","Destination":"NEW
+        WEST STN","Pattern":"EB1","Latitude":49.204817,"Longitude":-122.915950,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/123.kmz"}},{"VehicleNo":"16036","TripId":9473180,"RouteNo":"144","Direction":"NORTH","Destination":"SFU","Pattern":"NB1","Latitude":49.249917,"Longitude":-122.967150,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/144.kmz"}},{"VehicleNo":"16038","TripId":9296620,"RouteNo":"410","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.198333,"Longitude":-122.952183,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"16040","TripId":9273148,"RouteNo":"101","Direction":"WEST","Destination":"22ND
+        ST STN","Pattern":"WB1","Latitude":49.209283,"Longitude":-122.927500,"RecordedTime":"01:25:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/101.kmz"}},{"VehicleNo":"16041","TripId":9473039,"RouteNo":"119","Direction":"EAST","Destination":"EDMONDS
+        STN","Pattern":"EB1","Latitude":49.219717,"Longitude":-122.971350,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/119.kmz"}},{"VehicleNo":"16042","TripId":9296650,"RouteNo":"410","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.184650,"Longitude":-123.072317,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"16043","TripId":9273147,"RouteNo":"101","Direction":"WEST","Destination":"22ND
+        ST STN","Pattern":"WB1","Latitude":49.221717,"Longitude":-122.927300,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/101.kmz"}},{"VehicleNo":"16044","TripId":9296716,"RouteNo":"410","Direction":"WEST","Destination":"RAILWAY","Pattern":"W1","Latitude":49.184683,"Longitude":-123.128833,"RecordedTime":"01:26:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"16045","TripId":9473273,"RouteNo":"430","Direction":"WEST","Destination":"BRIGHOUSE
+        STN","Pattern":"WB1","Latitude":49.195700,"Longitude":-123.126133,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/430.kmz"}},{"VehicleNo":"16047","TripId":9473126,"RouteNo":"119","Direction":"WEST","Destination":"METROTOWN
+        STN","Pattern":"WB119","Latitude":49.219367,"Longitude":-122.969417,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/119.kmz"}},{"VehicleNo":"16051","TripId":9472969,"RouteNo":"110","Direction":"EAST","Destination":"LOUGHEED
+        STN","Pattern":"EB1","Latitude":49.250850,"Longitude":-122.934800,"RecordedTime":"01:26:26
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/110.kmz"}},{"VehicleNo":"16101","TripId":9269199,"RouteNo":"049","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.221933,"Longitude":-123.017550,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"16102","TripId":9295860,"RouteNo":"405","Direction":"SOUTH","Destination":"FIVE
+        ROAD","Pattern":"SB1E","Latitude":49.184067,"Longitude":-123.113967,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/405.kmz"}},{"VehicleNo":"16107","TripId":9294780,"RouteNo":"401","Direction":"EAST","Destination":"GARDEN
+        CITY TO RIVERPORT","Pattern":"EB1HRP","Latitude":49.140833,"Longitude":-123.125000,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/401.kmz"}},{"VehicleNo":"16108","TripId":9296079,"RouteNo":"407","Direction":"SOUTH","Destination":"GILBERT","Pattern":"SB3E","Latitude":49.170167,"Longitude":-123.140800,"RecordedTime":"01:26:26
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/407.kmz"}},{"VehicleNo":"16115","TripId":9269200,"RouteNo":"049","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.224767,"Longitude":-123.049667,"RecordedTime":"01:26:45
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"16116","TripId":9295812,"RouteNo":"405","Direction":"NORTH","Destination":"CAMBIE","Pattern":"NB1E","Latitude":49.168583,"Longitude":-123.136467,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/405.kmz"}},{"VehicleNo":"16117","TripId":9269203,"RouteNo":"049","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.252883,"Longitude":-123.244800,"RecordedTime":"01:25:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"16118","TripId":9296045,"RouteNo":"407","Direction":"NORTH","Destination":"BRIDGEPORT","Pattern":"NB1","Latitude":49.166483,"Longitude":-123.133200,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/407.kmz"}},{"VehicleNo":"16119","TripId":9295378,"RouteNo":"403","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.135017,"Longitude":-123.064750,"RecordedTime":"01:23:26
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/403.kmz"}},{"VehicleNo":"16120","TripId":9295442,"RouteNo":"403","Direction":"SOUTH","Destination":"THREE
+        ROAD","Pattern":"SB1","Latitude":49.195117,"Longitude":-123.126567,"RecordedTime":"01:25:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/403.kmz"}},{"VehicleNo":"16128","TripId":9295086,"RouteNo":"402","Direction":"SOUTH","Destination":"TWO
+        ROAD","Pattern":"SB5","Latitude":49.125100,"Longitude":-123.181183,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/402.kmz"}},{"VehicleNo":"16131","TripId":9295672,"RouteNo":"404","Direction":"WEST","Destination":"BRIGHOUSE
+        STN","Pattern":"WB1RP","Latitude":49.138433,"Longitude":-123.114150,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/404.kmz"}},{"VehicleNo":"16132","TripId":9295074,"RouteNo":"402","Direction":"SOUTH","Destination":"TWO
+        ROAD","Pattern":"SB5","Latitude":49.166500,"Longitude":-123.135500,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/402.kmz"}},{"VehicleNo":"16133","TripId":9294800,"RouteNo":"401","Direction":"WEST","Destination":"ONE
+        ROAD","Pattern":"WB1RL","Latitude":49.162383,"Longitude":-123.181200,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/401.kmz"}},{"VehicleNo":"16140","TripId":9294831,"RouteNo":"401","Direction":"WEST","Destination":"ONE
+        ROAD","Pattern":"WB1RL","Latitude":49.141100,"Longitude":-123.091733,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/401.kmz"}},{"VehicleNo":"16207","TripId":9450096,"RouteNo":"099","Direction":"WEST","Destination":"UBC
+        B-LINE","Pattern":"WB1","Latitude":49.263150,"Longitude":-123.111200,"RecordedTime":"01:25:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"16222","TripId":9450006,"RouteNo":"099","Direction":"EAST","Destination":"COMM''L-BDWAY
+        STN","Pattern":"EB1","Latitude":49.263600,"Longitude":-123.225133,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"16501","TripId":9281162,"RouteNo":"180","Direction":"SOUTH","Destination":"LOUGHEED
+        STN","Pattern":"SB1","Latitude":49.261167,"Longitude":-122.890517,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/180.kmz"}},{"VehicleNo":"16502","TripId":9276493,"RouteNo":"134","Direction":"WEST","Destination":"BRENTWOOD
+        STN","Pattern":"WB1","Latitude":49.255833,"Longitude":-122.937917,"RecordedTime":"01:15:34
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/134.kmz"}},{"VehicleNo":"16504","TripId":9281147,"RouteNo":"180","Direction":"SOUTH","Destination":"LOUGHEED
+        STN","Pattern":"SB1","Latitude":49.277700,"Longitude":-122.846200,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/180.kmz"}},{"VehicleNo":"16505","TripId":9280433,"RouteNo":"172","Direction":"WEST","Destination":"COQ
+        CTRL STN","Pattern":"WB1","Latitude":49.271167,"Longitude":-122.765183,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/172.kmz"}},{"VehicleNo":"16517","TripId":9282367,"RouteNo":"186","Direction":"SOUTH","Destination":"COQ
+        CTRL STN","Pattern":"SB1","Latitude":49.295450,"Longitude":-122.779800,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/186.kmz"}},{"VehicleNo":"16518","TripId":9282334,"RouteNo":"186","Direction":"NORTH","Destination":"HAMPTON
+        PARK","Pattern":"NB1","Latitude":49.275917,"Longitude":-122.798483,"RecordedTime":"01:21:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/186.kmz"}},{"VehicleNo":"16519","TripId":9283042,"RouteNo":"189","Direction":"NORTH","Destination":"LAFARGE
+        PARK","Pattern":"NB2","Latitude":49.274983,"Longitude":-122.798750,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/189.kmz"}},{"VehicleNo":"16521","TripId":9280616,"RouteNo":"173","Direction":"EAST","Destination":"CEDAR","Pattern":"EB1","Latitude":49.267617,"Longitude":-122.790650,"RecordedTime":"01:25:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/173.kmz"}},{"VehicleNo":"16523","TripId":9282087,"RouteNo":"185","Direction":"NORTH","Destination":"LANSDOWNE","Pattern":"NB1","Latitude":49.297450,"Longitude":-122.814500,"RecordedTime":"01:25:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/185.kmz"}},{"VehicleNo":"16525","TripId":9278926,"RouteNo":"157","Direction":"EAST","Destination":"BURQUITLAM
+        STN","Pattern":"EB1","Latitude":49.258150,"Longitude":-122.876250,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/157.kmz"}},{"VehicleNo":"16526","TripId":9280044,"RouteNo":"170","Direction":"SOUTH","Destination":"PT
+        COQ SOUTH","Pattern":"SB1","Latitude":49.252217,"Longitude":-122.774767,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/170.kmz"}},{"VehicleNo":"16528","TripId":9310308,"RouteNo":"C9","Direction":"SOUTH","Destination":"NEW
+        WEST STN","Pattern":"SB1","Latitude":49.248067,"Longitude":-122.894983,"RecordedTime":"01:13:40
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C9.kmz"}},{"VehicleNo":"16534","TripId":9280422,"RouteNo":"172","Direction":"EAST","Destination":"RIVERSIDE","Pattern":"EB1","Latitude":49.275583,"Longitude":-122.798750,"RecordedTime":"01:21:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/172.kmz"}},{"VehicleNo":"16537","TripId":9278364,"RouteNo":"153","Direction":"EAST","Destination":"COQ
+        CTRL STN","Pattern":"EB1","Latitude":49.272600,"Longitude":-122.805000,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/153.kmz"}},{"VehicleNo":"16538","TripId":9276479,"RouteNo":"134","Direction":"WEST","Destination":"BRENTWOOD
+        STN","Pattern":"WB1","Latitude":49.266683,"Longitude":-123.003250,"RecordedTime":"01:25:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/134.kmz"}},{"VehicleNo":"16539","TripId":9281382,"RouteNo":"182","Direction":"NORTH","Destination":"BELCARRA","Pattern":"NB1","Latitude":49.296050,"Longitude":-122.843050,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/182.kmz"}},{"VehicleNo":"16540","TripId":9276705,"RouteNo":"136","Direction":"WEST","Destination":"BRENTWOOD
+        STN","Pattern":"WB1","Latitude":49.248067,"Longitude":-122.894700,"RecordedTime":"01:24:56
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/136.kmz"}},{"VehicleNo":"16547","TripId":9276474,"RouteNo":"134","Direction":"EAST","Destination":"LAKE
+        CITY STN","Pattern":"EB1","Latitude":49.278550,"Longitude":-122.964650,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/134.kmz"}},{"VehicleNo":"16548","TripId":9278379,"RouteNo":"153","Direction":"WEST","Destination":"BRAID
+        STN","Pattern":"WB1","Latitude":49.275800,"Longitude":-122.798567,"RecordedTime":"01:22:00
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/153.kmz"}},{"VehicleNo":"16552","TripId":9276695,"RouteNo":"136","Direction":"WEST","Destination":"BRENTWOOD
+        STN","Pattern":"WB1","Latitude":49.269483,"Longitude":-122.945733,"RecordedTime":"01:26:33
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/136.kmz"}},{"VehicleNo":"16553","TripId":9471411,"RouteNo":"741","Direction":"SOUTH","Destination":"HANEY
+        PL","Pattern":"SB1","Latitude":49.219633,"Longitude":-122.597150,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/741.kmz"}},{"VehicleNo":"16554","TripId":9471467,"RouteNo":"C46","Direction":"WEST","Destination":"HANEY
+        PLACE","Pattern":"WB1","Latitude":49.200783,"Longitude":-122.556667,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C46.kmz"}},{"VehicleNo":"16555","TripId":9471392,"RouteNo":"741","Direction":"NORTH","Destination":"ANDERSON
+        CREEK","Pattern":"NB1","Latitude":49.219633,"Longitude":-122.597133,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/741.kmz"}},{"VehicleNo":"16556","TripId":9281121,"RouteNo":"180","Direction":"NORTH","Destination":"MOODY
+        CTR STN","Pattern":"NB1","Latitude":49.274633,"Longitude":-122.872150,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/180.kmz"}},{"VehicleNo":"16558","TripId":9281269,"RouteNo":"181","Direction":"NORTH","Destination":"IOCO","Pattern":"NB1","Latitude":49.277700,"Longitude":-122.845867,"RecordedTime":"01:23:56
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/181.kmz"}},{"VehicleNo":"16562","TripId":9280631,"RouteNo":"173","Direction":"WEST","Destination":"COQ
+        CTRL STN","Pattern":"WB1","Latitude":49.265417,"Longitude":-122.772183,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/173.kmz"}},{"VehicleNo":"16602","TripId":9557782,"RouteNo":"250","Direction":"WEST","Destination":"HORSESHOE
+        BAY","Pattern":"WB1","Latitude":49.284867,"Longitude":-123.121783,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/250.kmz"}},{"VehicleNo":"16603","TripId":9557958,"RouteNo":"257","Direction":"EAST","Destination":"EXPRESS
+        - VANCOUVER","Pattern":"EB1","Latitude":49.284017,"Longitude":-123.120483,"RecordedTime":"01:26:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/257.kmz"}},{"VehicleNo":"17502","TripId":9306328,"RouteNo":"C15","Direction":"WEST","Destination":"PHIBBS
+        EXCH","Pattern":"WB1","Latitude":49.319233,"Longitude":-122.968950,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C15.kmz"}},{"VehicleNo":"17505","TripId":9306301,"RouteNo":"C15","Direction":"EAST","Destination":"INDIAN
+        RIVER","Pattern":"EB1","Latitude":49.305967,"Longitude":-123.028517,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C15.kmz"}},{"VehicleNo":"17507","TripId":9281163,"RouteNo":"180","Direction":"SOUTH","Destination":"LOUGHEED
+        STN","Pattern":"SB1","Latitude":49.255400,"Longitude":-122.892967,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/180.kmz"}},{"VehicleNo":"17508","TripId":9281859,"RouteNo":"184","Direction":"NORTH","Destination":"NOONS
+        CREEK","Pattern":"NB1","Latitude":49.277133,"Longitude":-122.826550,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/184.kmz"}},{"VehicleNo":"17512","TripId":9309689,"RouteNo":"C76","Direction":"EAST","Destination":"SCOTTSDALE
+        EXCH","Pattern":"EB1","Latitude":49.090150,"Longitude":-123.062733,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C76.kmz"}},{"VehicleNo":"17513","TripId":9309405,"RouteNo":"C73","Direction":"EAST","Destination":"GUILDFORD","Pattern":"EB1","Latitude":49.189533,"Longitude":-122.849783,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C73.kmz"}},{"VehicleNo":"17515","TripId":9309566,"RouteNo":"C75","Direction":"EAST","Destination":"NEWTON
+        EXCH","Pattern":"EB1","Latitude":49.137850,"Longitude":-122.887783,"RecordedTime":"01:18:30
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C75.kmz"}},{"VehicleNo":"17516","TripId":9309264,"RouteNo":"C71","Direction":"EAST","Destination":"SURREY
+        CTRL STN","Pattern":"EB1","Latitude":49.198867,"Longitude":-122.845050,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C71.kmz"}},{"VehicleNo":"17517","TripId":9293378,"RouteNo":"360","Direction":"EAST","Destination":"PEACE
+        ARCH HOSPITAL","Pattern":"EB1","Latitude":49.033083,"Longitude":-122.866150,"RecordedTime":"01:25:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/360.kmz"}},{"VehicleNo":"17518","TripId":9293848,"RouteNo":"363","Direction":"SOUTH","Destination":"PEACE
+        ARCH HOSPITAL","Pattern":"SB1DET","Latitude":49.023800,"Longitude":-122.788767,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/363.kmz"}},{"VehicleNo":"17520","TripId":9292099,"RouteNo":"337","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB2","Latitude":49.198833,"Longitude":-122.768400,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/337.kmz"}},{"VehicleNo":"17522","TripId":9309574,"RouteNo":"C75","Direction":"EAST","Destination":"NEWTON
+        EXCH","Pattern":"EB1","Latitude":49.109100,"Longitude":-122.856700,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C75.kmz"}},{"VehicleNo":"17524","TripId":9293830,"RouteNo":"363","Direction":"NORTH","Destination":"SOUTHPOINT","Pattern":"NB1","Latitude":49.060100,"Longitude":-122.780517,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/363.kmz"}},{"VehicleNo":"17525","TripId":9309423,"RouteNo":"C73","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB1","Latitude":49.210333,"Longitude":-122.813783,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C73.kmz"}},{"VehicleNo":"17527","TripId":9292048,"RouteNo":"337","Direction":"EAST","Destination":"FRASER
+        HTS","Pattern":"EB2","Latitude":49.191500,"Longitude":-122.834317,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/337.kmz"}},{"VehicleNo":"17534","TripId":9298172,"RouteNo":"531","Direction":"NORTH","Destination":"WILLOWBROOK","Pattern":"NB1","Latitude":49.118933,"Longitude":-122.656050,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/531.kmz"}},{"VehicleNo":"17537","TripId":9292077,"RouteNo":"337","Direction":"WEST","Destination":"GUILDFORD","Pattern":"WB1","Latitude":49.191517,"Longitude":-122.796600,"RecordedTime":"01:25:52
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/337.kmz"}},{"VehicleNo":"17538","TripId":9293668,"RouteNo":"362","Direction":"SOUTH","Destination":"SEASIDE","Pattern":"SB1","Latitude":49.032783,"Longitude":-122.801133,"RecordedTime":"01:24:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/362.kmz"}},{"VehicleNo":"17539","TripId":9309978,"RouteNo":"C87","Direction":"EAST","Destination":"EAST
+        LADNER","Pattern":"EB1","Latitude":49.087050,"Longitude":-123.046917,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C87.kmz"}},{"VehicleNo":"17540","TripId":9293386,"RouteNo":"360","Direction":"WEST","Destination":"OCEAN
+        PARK","Pattern":"WB1","Latitude":49.038383,"Longitude":-122.878383,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/360.kmz"}},{"VehicleNo":"17541","TripId":9309581,"RouteNo":"C75","Direction":"WEST","Destination":"SCOTTSDALE
+        EXCH","Pattern":"WB1","Latitude":49.108067,"Longitude":-122.890400,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/C75.kmz"}},{"VehicleNo":"17544","TripId":9298205,"RouteNo":"531","Direction":"SOUTH","Destination":"WHITE
+        ROCK CTR","Pattern":"SB1","Latitude":49.045600,"Longitude":-122.780067,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/531.kmz"}},{"VehicleNo":"17546","TripId":9298204,"RouteNo":"531","Direction":"SOUTH","Destination":"WHITE
+        ROCK CTR","Pattern":"SB1","Latitude":49.117800,"Longitude":-122.655333,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/531.kmz"}},{"VehicleNo":"17547","TripId":9298171,"RouteNo":"531","Direction":"NORTH","Destination":"WILLOWBROOK","Pattern":"NB1","Latitude":49.035300,"Longitude":-122.801117,"RecordedTime":"01:26:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/531.kmz"}},{"VehicleNo":"2102","TripId":9256551,"RouteNo":"004","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.283833,"Longitude":-123.070800,"RecordedTime":"01:26:45
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2103","TripId":9262446,"RouteNo":"016","Direction":"WEST","Destination":"ARBUTUS","Pattern":"WB1","Latitude":49.281283,"Longitude":-123.095783,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2105","TripId":9258426,"RouteNo":"007","Direction":"EAST","Destination":"NANAIMO
+        STN","Pattern":"EB1","Latitude":49.234617,"Longitude":-123.185883,"RecordedTime":"01:25:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2106","TripId":9256582,"RouteNo":"004","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.281633,"Longitude":-123.105167,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2107","TripId":9262288,"RouteNo":"016","Direction":"EAST","Destination":"29TH
+        AVE STN","Pattern":"EB1","Latitude":49.217750,"Longitude":-123.149450,"RecordedTime":"01:26:12
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2108","TripId":9261356,"RouteNo":"014","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.282600,"Longitude":-123.117933,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2110","TripId":9261359,"RouteNo":"014","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.281283,"Longitude":-123.026183,"RecordedTime":"01:22:54
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2112","TripId":9262463,"RouteNo":"016","Direction":"WEST","Destination":"ARBUTUS","Pattern":"WB1","Latitude":49.244250,"Longitude":-123.044817,"RecordedTime":"01:18:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2114","TripId":9260126,"RouteNo":"009","Direction":"WEST","Destination":"ALMA","Pattern":"WB1A","Latitude":49.265450,"Longitude":-123.024967,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2117","TripId":9261408,"RouteNo":"014","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.281133,"Longitude":-123.029150,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2124","TripId":9259888,"RouteNo":"009","Direction":"EAST","Destination":"COMM''L-BDWAY
+        STN","Pattern":"EB31","Latitude":49.263183,"Longitude":-123.112983,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2127","TripId":9259945,"RouteNo":"009","Direction":"EAST","Destination":"BOUNDARY","Pattern":"EB1BDY","Latitude":49.263583,"Longitude":-123.137800,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2130","TripId":9261357,"RouteNo":"014","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.281333,"Longitude":-123.098333,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2133","TripId":9455457,"RouteNo":"005","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.290183,"Longitude":-123.133433,"RecordedTime":"01:25:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/005.kmz"}},{"VehicleNo":"2135","TripId":9256492,"RouteNo":"004","Direction":"EAST","Destination":"POWELL","Pattern":"EB1","Latitude":49.282117,"Longitude":-123.118683,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2137","TripId":9256500,"RouteNo":"004","Direction":"EAST","Destination":"POWELL","Pattern":"EB1","Latitude":49.268950,"Longitude":-123.206200,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2140","TripId":9455676,"RouteNo":"006","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.274333,"Longitude":-123.121817,"RecordedTime":"01:24:56
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/006.kmz"}},{"VehicleNo":"2141","TripId":9261321,"RouteNo":"014","Direction":"EAST","Destination":"HASTINGS","Pattern":"EB1","Latitude":49.263600,"Longitude":-123.140183,"RecordedTime":"01:25:06
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2142","TripId":9262360,"RouteNo":"016","Direction":"EAST","Destination":"29TH
+        AVE STN","Pattern":"EB1","Latitude":49.281200,"Longitude":-123.064750,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2143","TripId":9260026,"RouteNo":"009","Direction":"WEST","Destination":"ALMA","Pattern":"WB28A","Latitude":49.262933,"Longitude":-123.067767,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2144","TripId":9258511,"RouteNo":"007","Direction":"WEST","Destination":"DUNBAR","Pattern":"WB1","Latitude":49.283283,"Longitude":-123.110717,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2145","TripId":9455715,"RouteNo":"006","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.278700,"Longitude":-123.128583,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/006.kmz"}},{"VehicleNo":"2147","TripId":9256493,"RouteNo":"004","Direction":"EAST","Destination":"POWELL","Pattern":"EB1","Latitude":49.268000,"Longitude":-123.145600,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2148","TripId":9455458,"RouteNo":"005","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.287050,"Longitude":-123.141467,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/005.kmz"}},{"VehicleNo":"2151","TripId":9261358,"RouteNo":"014","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.281217,"Longitude":-123.066400,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2152","TripId":9258526,"RouteNo":"007","Direction":"WEST","Destination":"DUNBAR","Pattern":"WB1","Latitude":49.288717,"Longitude":-123.047767,"RecordedTime":"01:25:09
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2154","TripId":9262305,"RouteNo":"016","Direction":"EAST","Destination":"29TH
+        AVE STN","Pattern":"EB1","Latitude":49.283467,"Longitude":-123.116633,"RecordedTime":"01:26:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2156","TripId":9262427,"RouteNo":"016","Direction":"WEST","Destination":"ARBUTUS","Pattern":"WB1","Latitude":49.281183,"Longitude":-123.057600,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2160","TripId":9455834,"RouteNo":"006","Direction":"WEST","Destination":"DAVIE","Pattern":"WB1","Latitude":49.276217,"Longitude":-123.124750,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/006.kmz"}},{"VehicleNo":"2162","TripId":9258491,"RouteNo":"007","Direction":"WEST","Destination":"DUNBAR","Pattern":"WB1","Latitude":49.281350,"Longitude":-123.099683,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2163","TripId":9262473,"RouteNo":"016","Direction":"WEST","Destination":"ARBUTUS","Pattern":"WB1","Latitude":49.259567,"Longitude":-123.044367,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2166","TripId":9261322,"RouteNo":"014","Direction":"EAST","Destination":"HASTINGS","Pattern":"EB1","Latitude":49.263833,"Longitude":-123.208550,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2171","TripId":9256554,"RouteNo":"004","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.268867,"Longitude":-123.197600,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2172","TripId":9258510,"RouteNo":"007","Direction":"WEST","Destination":"DUNBAR","Pattern":"WB1","Latitude":49.268200,"Longitude":-123.158350,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2173","TripId":9455762,"RouteNo":"006","Direction":"WEST","Destination":"DAVIE","Pattern":"WB1","Latitude":49.280583,"Longitude":-123.111400,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/006.kmz"}},{"VehicleNo":"2175","TripId":9455719,"RouteNo":"006","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.281500,"Longitude":-123.132900,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/006.kmz"}},{"VehicleNo":"2176","TripId":9262921,"RouteNo":"017","Direction":"EAST","Destination":"OAK","Pattern":"EB1","Latitude":49.241183,"Longitude":-123.127817,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/017.kmz"}},{"VehicleNo":"2179","TripId":9262954,"RouteNo":"017","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.209117,"Longitude":-123.116083,"RecordedTime":"01:23:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/017.kmz"}},{"VehicleNo":"2181","TripId":9258461,"RouteNo":"007","Direction":"EAST","Destination":"NANAIMO
+        STN","Pattern":"EB1","Latitude":49.273033,"Longitude":-123.132317,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2184","TripId":9258482,"RouteNo":"007","Direction":"EAST","Destination":"NANAIMO
+        STN","Pattern":"EB1","Latitude":49.282350,"Longitude":-123.103433,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2186","TripId":9256514,"RouteNo":"004","Direction":"EAST","Destination":"POWELL","Pattern":"EB1","Latitude":49.265833,"Longitude":-123.248917,"RecordedTime":"01:26:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2188","TripId":9261407,"RouteNo":"014","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.263950,"Longitude":-123.216833,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2189","TripId":9261320,"RouteNo":"014","Direction":"EAST","Destination":"HASTINGS","Pattern":"EB1","Latitude":49.282233,"Longitude":-123.118500,"RecordedTime":"01:25:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2190","TripId":9261273,"RouteNo":"014","Direction":"EAST","Destination":"HASTINGS","Pattern":"EB1","Latitude":49.263967,"Longitude":-123.161633,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2199","TripId":9256547,"RouteNo":"004","Direction":"EAST","Destination":"POWELL","Pattern":"EB1","Latitude":49.284800,"Longitude":-123.060850,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2201","TripId":9258451,"RouteNo":"007","Direction":"EAST","Destination":"NANAIMO
+        STN","Pattern":"EB1","Latitude":49.251583,"Longitude":-123.057333,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2214","TripId":9262472,"RouteNo":"016","Direction":"WEST","Destination":"ARBUTUS","Pattern":"WB1","Latitude":49.281800,"Longitude":-123.119150,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2216","TripId":9261319,"RouteNo":"014","Direction":"EAST","Destination":"HASTINGS","Pattern":"EB1","Latitude":49.281367,"Longitude":-123.100383,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2217","TripId":9262295,"RouteNo":"016","Direction":"EAST","Destination":"29TH
+        AVE STN","Pattern":"EB1","Latitude":49.272600,"Longitude":-123.132983,"RecordedTime":"01:26:12
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2219","TripId":9261318,"RouteNo":"014","Direction":"EAST","Destination":"HASTINGS","Pattern":"EB1","Latitude":49.281133,"Longitude":-123.064633,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2220","TripId":9455589,"RouteNo":"005","Direction":"WEST","Destination":"ROBSON","Pattern":"WB1","Latitude":49.291367,"Longitude":-123.135283,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/005.kmz"}},{"VehicleNo":"2222","TripId":9455456,"RouteNo":"005","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.283767,"Longitude":-123.122033,"RecordedTime":"01:25:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/005.kmz"}},{"VehicleNo":"2226","TripId":9258445,"RouteNo":"007","Direction":"EAST","Destination":"NANAIMO
+        STN","Pattern":"EB1","Latitude":49.268517,"Longitude":-123.178917,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2229","TripId":9262952,"RouteNo":"017","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.239433,"Longitude":-123.127883,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/017.kmz"}},{"VehicleNo":"2234","TripId":9262923,"RouteNo":"017","Direction":"EAST","Destination":"OAK","Pattern":"EB1","Latitude":49.280683,"Longitude":-123.118733,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/017.kmz"}},{"VehicleNo":"2235","TripId":9262922,"RouteNo":"017","Direction":"EAST","Destination":"OAK","Pattern":"EB1","Latitude":49.253950,"Longitude":-123.127333,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/017.kmz"}},{"VehicleNo":"2236","TripId":9256559,"RouteNo":"004","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.267933,"Longitude":-123.141800,"RecordedTime":"01:25:09
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2238","TripId":9262347,"RouteNo":"016","Direction":"EAST","Destination":"29TH
+        AVE STN","Pattern":"EB1","Latitude":49.281367,"Longitude":-123.100567,"RecordedTime":"01:26:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2242","TripId":9262953,"RouteNo":"017","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.208967,"Longitude":-123.117017,"RecordedTime":"01:25:57
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/017.kmz"}},{"VehicleNo":"2243","TripId":9258509,"RouteNo":"007","Direction":"WEST","Destination":"DUNBAR","Pattern":"WB1","Latitude":49.256933,"Longitude":-123.185117,"RecordedTime":"01:26:45
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2244","TripId":9262287,"RouteNo":"016","Direction":"EAST","Destination":"29TH
+        AVE STN","Pattern":"EB1","Latitude":49.254800,"Longitude":-123.152983,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2248","TripId":9262474,"RouteNo":"016","Direction":"WEST","Destination":"ARBUTUS","Pattern":"WB1","Latitude":49.281417,"Longitude":-123.103333,"RecordedTime":"01:25:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2251","TripId":9259998,"RouteNo":"009","Direction":"EAST","Destination":"BOUNDARY","Pattern":"EB1BDY","Latitude":49.264150,"Longitude":-123.172983,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2252","TripId":9455590,"RouteNo":"005","Direction":"WEST","Destination":"ROBSON","Pattern":"WB1","Latitude":49.285033,"Longitude":-123.120183,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/005.kmz"}},{"VehicleNo":"2254","TripId":9260010,"RouteNo":"009","Direction":"WEST","Destination":"ALMA","Pattern":"WB28A","Latitude":49.262450,"Longitude":-123.084200,"RecordedTime":"01:26:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2255","TripId":9256552,"RouteNo":"004","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.287700,"Longitude":-123.044550,"RecordedTime":"01:24:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/004.kmz"}},{"VehicleNo":"2257","TripId":9455591,"RouteNo":"005","Direction":"WEST","Destination":"ROBSON","Pattern":"WB1","Latitude":49.280617,"Longitude":-123.111350,"RecordedTime":"01:25:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/005.kmz"}},{"VehicleNo":"2261","TripId":9260110,"RouteNo":"009","Direction":"WEST","Destination":"ALMA","Pattern":"WB28A","Latitude":49.263183,"Longitude":-123.113450,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2264","TripId":9258450,"RouteNo":"007","Direction":"EAST","Destination":"NANAIMO
+        STN","Pattern":"EB1","Latitude":49.284267,"Longitude":-123.056500,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/007.kmz"}},{"VehicleNo":"2265","TripId":9260027,"RouteNo":"009","Direction":"WEST","Destination":"ALMA","Pattern":"WB1A","Latitude":49.262450,"Longitude":-123.084117,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2266","TripId":9262318,"RouteNo":"016","Direction":"EAST","Destination":"29TH
+        AVE STN","Pattern":"EB1","Latitude":49.276050,"Longitude":-123.044117,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2267","TripId":9455809,"RouteNo":"006","Direction":"WEST","Destination":"DAVIE","Pattern":"WB1","Latitude":49.280983,"Longitude":-123.110833,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/006.kmz"}},{"VehicleNo":"2268","TripId":9262949,"RouteNo":"017","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.263917,"Longitude":-123.114750,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/017.kmz"}},{"VehicleNo":"2272","TripId":9262426,"RouteNo":"016","Direction":"WEST","Destination":"ARBUTUS","Pattern":"WB1","Latitude":49.213867,"Longitude":-123.143483,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2273","TripId":9455592,"RouteNo":"005","Direction":"WEST","Destination":"ROBSON","Pattern":"WB1","Latitude":49.280250,"Longitude":-123.111900,"RecordedTime":"01:24:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/005.kmz"}},{"VehicleNo":"2277","TripId":9260049,"RouteNo":"009","Direction":"WEST","Destination":"ALMA","Pattern":"WB1A","Latitude":49.263667,"Longitude":-123.144150,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2280","TripId":9259915,"RouteNo":"009","Direction":"EAST","Destination":"COMM''L-BDWAY
+        STN","Pattern":"EB31","Latitude":49.263883,"Longitude":-123.156900,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2282","TripId":9260098,"RouteNo":"009","Direction":"WEST","Destination":"ALMA","Pattern":"WB1A","Latitude":49.262017,"Longitude":-123.055583,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/009.kmz"}},{"VehicleNo":"2283","TripId":9261355,"RouteNo":"014","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.263683,"Longitude":-123.144200,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/014.kmz"}},{"VehicleNo":"2289","TripId":9262433,"RouteNo":"016","Direction":"WEST","Destination":"ARBUTUS","Pattern":"WB1","Latitude":49.263800,"Longitude":-123.151267,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/016.kmz"}},{"VehicleNo":"2505","TripId":9260703,"RouteNo":"010","Direction":"SOUTH","Destination":"GRANVILLE","Pattern":"SB1DT","Latitude":49.230200,"Longitude":-123.139667,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"}},{"VehicleNo":"2513","TripId":9264389,"RouteNo":"020","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.261783,"Longitude":-123.069800,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2517","TripId":9260645,"RouteNo":"010","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1DT","Latitude":49.247750,"Longitude":-123.139050,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"}},{"VehicleNo":"2519","TripId":9264344,"RouteNo":"020","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.261800,"Longitude":-123.069800,"RecordedTime":"01:25:33
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2531","TripId":9264398,"RouteNo":"020","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.244900,"Longitude":-123.065183,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2532","TripId":9264320,"RouteNo":"020","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.281350,"Longitude":-123.099683,"RecordedTime":"01:25:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2536","TripId":9264444,"RouteNo":"020","Direction":"SOUTH","Destination":"VICTORIA","Pattern":"SB1","Latitude":49.239617,"Longitude":-123.065367,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2546","TripId":9260647,"RouteNo":"010","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1DT","Latitude":49.209167,"Longitude":-123.115967,"RecordedTime":"01:22:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"}},{"VehicleNo":"2551","TripId":9260646,"RouteNo":"010","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1DT","Latitude":49.205000,"Longitude":-123.139883,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"}},{"VehicleNo":"2552","TripId":9260704,"RouteNo":"010","Direction":"SOUTH","Destination":"GRANVILLE","Pattern":"SB1DT","Latitude":49.262750,"Longitude":-123.138533,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"}},{"VehicleNo":"2558","TripId":9260648,"RouteNo":"010","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1DT","Latitude":49.209050,"Longitude":-123.116250,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"}},{"VehicleNo":"2562","TripId":9260705,"RouteNo":"010","Direction":"SOUTH","Destination":"GRANVILLE","Pattern":"SB1DT","Latitude":49.281700,"Longitude":-123.119300,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"}},{"VehicleNo":"2566","TripId":9264447,"RouteNo":"020","Direction":"SOUTH","Destination":"VICTORIA","Pattern":"SB1","Latitude":49.281283,"Longitude":-123.119683,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2567","TripId":9264445,"RouteNo":"020","Direction":"SOUTH","Destination":"VICTORIA","Pattern":"SB1","Latitude":49.281283,"Longitude":-123.096350,"RecordedTime":"01:25:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2570","TripId":9264386,"RouteNo":"020","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.281333,"Longitude":-123.078200,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2572","TripId":9264373,"RouteNo":"020","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.227500,"Longitude":-123.065650,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"2573","TripId":9260644,"RouteNo":"010","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1DT","Latitude":49.277750,"Longitude":-123.125283,"RecordedTime":"01:25:40
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/010.kmz"}},{"VehicleNo":"3287","TripId":9272829,"RouteNo":"100","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.202867,"Longitude":-123.133550,"RecordedTime":"01:26:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/100.kmz"}},{"VehicleNo":"3290","TripId":9272869,"RouteNo":"100","Direction":"WEST","Destination":"MARPOLE","Pattern":"WB1","Latitude":49.206283,"Longitude":-122.983583,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/100.kmz"}},{"VehicleNo":"3295","TripId":9275336,"RouteNo":"128","Direction":"WEST","Destination":"22ND
+        ST STN","Pattern":"WB1","Latitude":49.210517,"Longitude":-122.934100,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/128.kmz"}},{"VehicleNo":"3296","TripId":9278591,"RouteNo":"155","Direction":"WEST","Destination":"22ND
+        ST STN","Pattern":"WB1","Latitude":49.202150,"Longitude":-122.940717,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/155.kmz"}},{"VehicleNo":"3303","TripId":9473110,"RouteNo":"119","Direction":"WEST","Destination":"METROTOWN
+        STN","Pattern":"WB119","Latitude":49.227533,"Longitude":-123.004883,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/119.kmz"}},{"VehicleNo":"3312","TripId":9278148,"RouteNo":"152","Direction":"WEST","Destination":"LOUGHEED
+        STN","Pattern":"WB1MAR","Latitude":49.275467,"Longitude":-122.798833,"RecordedTime":"01:22:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/152.kmz"}},{"VehicleNo":"3313","TripId":9278147,"RouteNo":"152","Direction":"WEST","Destination":"LOUGHEED
+        STN","Pattern":"WB1MAR","Latitude":49.245367,"Longitude":-122.873683,"RecordedTime":"01:26:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/152.kmz"}},{"VehicleNo":"3315","TripId":9277913,"RouteNo":"151","Direction":"EAST","Destination":"COQ
+        CTRL STN","Pattern":"EB1","Latitude":49.263550,"Longitude":-122.867517,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/151.kmz"}},{"VehicleNo":"3316","TripId":9279489,"RouteNo":"160","Direction":"EAST","Destination":"PT
+        COQ STN","Pattern":"EB1PC","Latitude":49.285133,"Longitude":-122.800717,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"3317","TripId":9279541,"RouteNo":"160","Direction":"WEST","Destination":"KOOTENAY
+        LOOP","Pattern":"WB1KT","Latitude":49.265933,"Longitude":-122.777767,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"3319","TripId":9299932,"RouteNo":"701","Direction":"EAST","Destination":"MAPLE
+        RIDGE EAST","Pattern":"EB1D1","Latitude":49.220250,"Longitude":-122.539150,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/701.kmz"}},{"VehicleNo":"3320","TripId":9300005,"RouteNo":"701","Direction":"WEST","Destination":"COQ
+        CTRL STN","Pattern":"WB1","Latitude":49.220567,"Longitude":-122.628883,"RecordedTime":"01:26:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/701.kmz"}},{"VehicleNo":"3322","TripId":9299934,"RouteNo":"701","Direction":"EAST","Destination":"MAPLE
+        RIDGE EAST","Pattern":"EB1D1","Latitude":49.217183,"Longitude":-122.682200,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/701.kmz"}},{"VehicleNo":"3326","TripId":9278753,"RouteNo":"156","Direction":"EAST","Destination":"BRAID
+        STN","Pattern":"EB1","Latitude":49.247600,"Longitude":-122.895617,"RecordedTime":"01:26:33
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/156.kmz"}},{"VehicleNo":"3327","TripId":9279540,"RouteNo":"160","Direction":"WEST","Destination":"KOOTENAY
+        LOOP","Pattern":"WB1KT","Latitude":49.275250,"Longitude":-122.798967,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"3332","TripId":9283227,"RouteNo":"191","Direction":"NORTH","Destination":"PRINCETON","Pattern":"NB1","Latitude":49.275333,"Longitude":-122.798550,"RecordedTime":"01:18:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/191.kmz"}},{"VehicleNo":"3335","TripId":9277916,"RouteNo":"151","Direction":"WEST","Destination":"BURQUITLAM
+        STN","Pattern":"WB1","Latitude":49.275283,"Longitude":-122.798950,"RecordedTime":"01:15:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/151.kmz"}},{"VehicleNo":"3338","TripId":9281617,"RouteNo":"183","Direction":"EAST","Destination":"COQ
+        CTRL STN","Pattern":"EB1","Latitude":49.290567,"Longitude":-122.789883,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/183.kmz"}},{"VehicleNo":"3342","TripId":9282843,"RouteNo":"188","Direction":"EAST","Destination":"PT
+        COQ STN","Pattern":"EB2","Latitude":49.271917,"Longitude":-122.756133,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/188.kmz"}},{"VehicleNo":"3349","TripId":9281658,"RouteNo":"183","Direction":"WEST","Destination":"MOODY
+        CTR STN","Pattern":"WB1","Latitude":49.280383,"Longitude":-122.793467,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/183.kmz"}},{"VehicleNo":"3350","TripId":9279492,"RouteNo":"160","Direction":"EAST","Destination":"PT
+        COQ STN","Pattern":"EB1PC","Latitude":49.281500,"Longitude":-123.026533,"RecordedTime":"01:16:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"3354","TripId":9279143,"RouteNo":"159","Direction":"EAST","Destination":"COQ
+        CTRL STN","Pattern":"EB1A","Latitude":49.233317,"Longitude":-122.820083,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/159.kmz"}},{"VehicleNo":"3355","TripId":9279488,"RouteNo":"160","Direction":"EAST","Destination":"PT
+        COQ STN","Pattern":"EB1PC","Latitude":49.269317,"Longitude":-122.780683,"RecordedTime":"01:26:00
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"3356","TripId":9279161,"RouteNo":"159","Direction":"WEST","Destination":"BRAID
+        STN","Pattern":"WB1","Latitude":49.230167,"Longitude":-122.857483,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/159.kmz"}},{"VehicleNo":"3357","TripId":9279538,"RouteNo":"160","Direction":"WEST","Destination":"KOOTENAY
+        LOOP","Pattern":"WB1KT","Latitude":49.289150,"Longitude":-122.942383,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/160.kmz"}},{"VehicleNo":"7155","TripId":9473111,"RouteNo":"119","Direction":"WEST","Destination":"METROTOWN
+        STN","Pattern":"WB119","Latitude":49.217767,"Longitude":-122.952317,"RecordedTime":"01:26:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/119.kmz"}},{"VehicleNo":"7171","TripId":9289755,"RouteNo":"319","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB6","Latitude":49.193150,"Longitude":-122.889567,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/319.kmz"}},{"VehicleNo":"7176","TripId":9473250,"RouteNo":"430","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.164717,"Longitude":-123.134917,"RecordedTime":"01:22:14
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/430.kmz"}},{"VehicleNo":"7188","TripId":9290821,"RouteNo":"323","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB1L","Latitude":49.140867,"Longitude":-122.844500,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/323.kmz"}},{"VehicleNo":"7189","TripId":9289640,"RouteNo":"319","Direction":"NORTH","Destination":"SCOTT
+        RD STN","Pattern":"NB1","Latitude":49.133883,"Longitude":-122.863017,"RecordedTime":"01:26:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/319.kmz"}},{"VehicleNo":"7195","TripId":9272796,"RouteNo":"100","Direction":"EAST","Destination":"22ND
+        ST STN VIA TRAPP","Pattern":"EB1TR","Latitude":49.207967,"Longitude":-122.999767,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/100.kmz"}},{"VehicleNo":"7196","TripId":9259156,"RouteNo":"008","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.262850,"Longitude":-123.099050,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"7197","TripId":9268296,"RouteNo":"041","Direction":"EAST","Destination":"JOYCE
+        STN","Pattern":"EB1REG","Latitude":49.253983,"Longitude":-123.234833,"RecordedTime":"01:25:55
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"7201","TripId":9291729,"RouteNo":"335","Direction":"EAST","Destination":"NEWTON  EXCH","Pattern":"EB1N","Latitude":49.198733,"Longitude":-122.811550,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/335.kmz"}},{"VehicleNo":"7204","TripId":9292507,"RouteNo":"341","Direction":"NORTH","Destination":"GUILDFORD","Pattern":"NB1E","Latitude":49.155550,"Longitude":-122.822367,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/341.kmz"}},{"VehicleNo":"7210","TripId":9288871,"RouteNo":"312","Direction":"NORTH","Destination":"SCOTT
+        RD STN","Pattern":"NB1","Latitude":49.137683,"Longitude":-122.888133,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/312.kmz"}},{"VehicleNo":"7229","TripId":9275590,"RouteNo":"129","Direction":"WEST","Destination":"PATTERSON
+        STN","Pattern":"WB1","Latitude":49.218383,"Longitude":-122.954383,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/129.kmz"}},{"VehicleNo":"7234","TripId":9268298,"RouteNo":"041","Direction":"EAST","Destination":"JOYCE
+        STN","Pattern":"EB1REG","Latitude":49.232917,"Longitude":-123.093550,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"7247","TripId":9290575,"RouteNo":"321","Direction":"SOUTH","Destination":"WHITE
+        ROCK CTR","Pattern":"SB9","Latitude":49.142650,"Longitude":-122.845750,"RecordedTime":"01:25:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/321.kmz"}},{"VehicleNo":"7248","TripId":9297697,"RouteNo":"502","Direction":"EAST","Destination":"LANGLEY
+        CTR","Pattern":"EB1","Latitude":49.188833,"Longitude":-122.849483,"RecordedTime":"01:25:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/502.kmz"}},{"VehicleNo":"7253","TripId":9298684,"RouteNo":"595","Direction":"SOUTH","Destination":"LANGLEY
+        CTR","Pattern":"SB1","Latitude":49.216750,"Longitude":-122.666233,"RecordedTime":"01:25:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/595.kmz"}},{"VehicleNo":"7266","TripId":9291413,"RouteNo":"326","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB1L","Latitude":49.162867,"Longitude":-122.813117,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/326.kmz"}},{"VehicleNo":"7267","TripId":9291281,"RouteNo":"325","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB1L","Latitude":49.133533,"Longitude":-122.837867,"RecordedTime":"01:26:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/325.kmz"}},{"VehicleNo":"7278","TripId":9289639,"RouteNo":"319","Direction":"NORTH","Destination":"SCOTT
+        RD STN","Pattern":"NB1","Latitude":49.159983,"Longitude":-122.890233,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/319.kmz"}},{"VehicleNo":"7283","TripId":9472954,"RouteNo":"110","Direction":"EAST","Destination":"LOUGHEED
+        STN","Pattern":"EB1","Latitude":49.235383,"Longitude":-123.002333,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/110.kmz"}},{"VehicleNo":"7287","TripId":9273110,"RouteNo":"101","Direction":"EAST","Destination":"LOUGHEED
+        STN","Pattern":"EB1","Latitude":49.231783,"Longitude":-122.911300,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/101.kmz"}},{"VehicleNo":"7291","TripId":9290574,"RouteNo":"321","Direction":"SOUTH","Destination":"WHITE
+        ROCK CTR","Pattern":"SB9","Latitude":49.189033,"Longitude":-122.847967,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/321.kmz"}},{"VehicleNo":"7292","TripId":9296581,"RouteNo":"410","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.184583,"Longitude":-123.095850,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"7294","TripId":9472854,"RouteNo":"106","Direction":"EAST","Destination":"NEW
+        WEST STN","Pattern":"EB106","Latitude":49.206650,"Longitude":-122.912100,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/106.kmz"}},{"VehicleNo":"7296","TripId":9296669,"RouteNo":"410","Direction":"WEST","Destination":"RAILWAY","Pattern":"W1","Latitude":49.163150,"Longitude":-123.136633,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"7306","TripId":9271357,"RouteNo":"096","Direction":"SOUTH","Destination":"NEWTON
+        EXCH B-LINE","Pattern":"SB1","Latitude":49.191600,"Longitude":-122.842817,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/096.kmz"}},{"VehicleNo":"7310","TripId":9292702,"RouteNo":"342","Direction":"EAST","Destination":"LANGELY
+        CTR","Pattern":"EB1","Latitude":49.104117,"Longitude":-122.700850,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/342.kmz"}},{"VehicleNo":"7315","TripId":9292732,"RouteNo":"342","Direction":"WEST","Destination":"NEWTON
+        EXCH","Pattern":"WB1","Latitude":49.111800,"Longitude":-122.818533,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/342.kmz"}},{"VehicleNo":"7317","TripId":9290577,"RouteNo":"321","Direction":"SOUTH","Destination":"WHITE
+        ROCK CTR","Pattern":"SB9","Latitude":49.034283,"Longitude":-122.801283,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/321.kmz"}},{"VehicleNo":"7318","TripId":9289168,"RouteNo":"316","Direction":"SOUTH","Destination":"SCOTTSDALE","Pattern":"SB1A","Latitude":49.134033,"Longitude":-122.892100,"RecordedTime":"01:25:09
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/316.kmz"}},{"VehicleNo":"7323","TripId":9290172,"RouteNo":"320","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB1L","Latitude":49.156033,"Longitude":-122.775350,"RecordedTime":"01:25:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/320.kmz"}},{"VehicleNo":"7324","TripId":9289764,"RouteNo":"319","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB6","Latitude":49.133850,"Longitude":-122.872433,"RecordedTime":"01:25:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/319.kmz"}},{"VehicleNo":"7329","TripId":9297812,"RouteNo":"502","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB1","Latitude":49.162817,"Longitude":-122.791183,"RecordedTime":"01:16:14
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/502.kmz"}},{"VehicleNo":"7336","TripId":9289754,"RouteNo":"319","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB6","Latitude":49.155667,"Longitude":-122.890450,"RecordedTime":"01:26:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/319.kmz"}},{"VehicleNo":"7337","TripId":9291046,"RouteNo":"324","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB1L","Latitude":49.133500,"Longitude":-122.841550,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/324.kmz"}},{"VehicleNo":"7338","TripId":9290160,"RouteNo":"320","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB3L","Latitude":49.189183,"Longitude":-122.800817,"RecordedTime":"01:24:56
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/320.kmz"}},{"VehicleNo":"7340","TripId":9291730,"RouteNo":"335","Direction":"EAST","Destination":"NEWTON  EXCH","Pattern":"EB1N","Latitude":49.133667,"Longitude":-122.802033,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/335.kmz"}},{"VehicleNo":"7345","TripId":9294354,"RouteNo":"375","Direction":"SOUTH","Destination":"WHITE
+        ROCK S.","Pattern":"SB1","Latitude":49.045117,"Longitude":-122.801200,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/375.kmz"}},{"VehicleNo":"7354","TripId":9272797,"RouteNo":"100","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.207317,"Longitude":-123.123733,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/100.kmz"}},{"VehicleNo":"7359","TripId":9291295,"RouteNo":"325","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB1","Latitude":49.189033,"Longitude":-122.848783,"RecordedTime":"01:25:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/325.kmz"}},{"VehicleNo":"7360","TripId":9292309,"RouteNo":"340","Direction":"EAST","Destination":"SCOTTSDALE","Pattern":"EB1","Latitude":49.199683,"Longitude":-122.949517,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/340.kmz"}},{"VehicleNo":"7361","TripId":9290576,"RouteNo":"321","Direction":"SOUTH","Destination":"WHITE
+        ROCK CTR","Pattern":"SB9","Latitude":49.095467,"Longitude":-122.818067,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/321.kmz"}},{"VehicleNo":"7364","TripId":9290092,"RouteNo":"320","Direction":"EAST","Destination":"LANGLEY
+        CTR","Pattern":"EB1","Latitude":49.129317,"Longitude":-122.756467,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/320.kmz"}},{"VehicleNo":"7367","TripId":9294319,"RouteNo":"375","Direction":"NORTH","Destination":"GUILDFORD","Pattern":"NB1WDT","Latitude":49.166783,"Longitude":-122.801267,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/375.kmz"}},{"VehicleNo":"7372","TripId":9299556,"RouteNo":"640","Direction":"NORTH","Destination":"SCOTT
+        RD STN","Pattern":"NB4","Latitude":49.201133,"Longitude":-122.880267,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/640.kmz"}},{"VehicleNo":"7373","TripId":9291094,"RouteNo":"324","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB1","Latitude":49.188817,"Longitude":-122.848217,"RecordedTime":"01:26:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/324.kmz"}},{"VehicleNo":"7378","TripId":9288853,"RouteNo":"312","Direction":"NORTH","Destination":"SCOTT
+        RD STN","Pattern":"NB1","Latitude":49.183367,"Longitude":-122.890117,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/312.kmz"}},{"VehicleNo":"7379","TripId":9288683,"RouteNo":"301","Direction":"WEST","Destination":"BRIGHOUSE
+        STN","Pattern":"WB1N","Latitude":49.163483,"Longitude":-123.134600,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/301.kmz"}},{"VehicleNo":"7381","TripId":9299588,"RouteNo":"640","Direction":"SOUTH","Destination":"LADNER
+        EXCH","Pattern":"SB1","Latitude":49.153050,"Longitude":-122.943567,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/640.kmz"}},{"VehicleNo":"7384","TripId":9291751,"RouteNo":"335","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB1N","Latitude":49.184350,"Longitude":-122.779400,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/335.kmz"}},{"VehicleNo":"7385","TripId":9297769,"RouteNo":"502","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB1","Latitude":49.188483,"Longitude":-122.845233,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/502.kmz"}},{"VehicleNo":"7387","TripId":9290474,"RouteNo":"321","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB8L","Latitude":49.112417,"Longitude":-122.840867,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/321.kmz"}},{"VehicleNo":"7389","TripId":9290475,"RouteNo":"321","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB8L","Latitude":49.175367,"Longitude":-122.845683,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/321.kmz"}},{"VehicleNo":"7390","TripId":9294022,"RouteNo":"364","Direction":"WEST","Destination":"SCOTTSDALE","Pattern":"WB1","Latitude":49.106683,"Longitude":-122.654883,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/364.kmz"}},{"VehicleNo":"7392","TripId":9273347,"RouteNo":"104","Direction":"SOUTH","Destination":"ANNACIS
+        ISLAND","Pattern":"SB2","Latitude":49.200017,"Longitude":-122.948450,"RecordedTime":"01:20:36
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/104.kmz"}},{"VehicleNo":"7397","TripId":9473210,"RouteNo":"144","Direction":"SOUTH","Destination":"METROTOWN
+        STN","Pattern":"SB1","Latitude":49.235167,"Longitude":-122.955033,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/144.kmz"}},{"VehicleNo":"7405","TripId":9268409,"RouteNo":"041","Direction":"WEST","Destination":"TO
+        CROWN","Pattern":"WB23","Latitude":49.234700,"Longitude":-123.160567,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"7406","TripId":9266018,"RouteNo":"025","Direction":"EAST","Destination":"BRENTWOOD
+        STN","Pattern":"EB1B5","Latitude":49.249300,"Longitude":-123.138533,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"7407","TripId":9269649,"RouteNo":"050","Direction":"NORTH","Destination":"WATERFRONT
+        STN","Pattern":"NB1","Latitude":49.281400,"Longitude":-123.102400,"RecordedTime":"01:25:52
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/050.kmz"}},{"VehicleNo":"7411","TripId":9296080,"RouteNo":"407","Direction":"SOUTH","Destination":"GILBERT","Pattern":"SB1E","Latitude":49.192000,"Longitude":-123.103667,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/407.kmz"}},{"VehicleNo":"7415","TripId":9269234,"RouteNo":"049","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.224150,"Longitude":-122.999983,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"7416","TripId":9295045,"RouteNo":"402","Direction":"NORTH","Destination":"BRIGHOUSE
+        STN","Pattern":"NB3","Latitude":49.155583,"Longitude":-123.157833,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/402.kmz"}},{"VehicleNo":"7421","TripId":9295443,"RouteNo":"403","Direction":"SOUTH","Destination":"THREE
+        ROAD","Pattern":"SB1","Latitude":49.155200,"Longitude":-123.136650,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/403.kmz"}},{"VehicleNo":"7422","TripId":9290089,"RouteNo":"320","Direction":"EAST","Destination":"LANGLEY
+        CTR","Pattern":"EB1","Latitude":49.106117,"Longitude":-122.660050,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/320.kmz"}},{"VehicleNo":"7423","TripId":9297279,"RouteNo":"501","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB1L","Latitude":49.171900,"Longitude":-122.667900,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/501.kmz"}},{"VehicleNo":"7425","TripId":9271177,"RouteNo":"096","Direction":"NORTH","Destination":"GUILDFORD
+        B-LINE","Pattern":"NB1","Latitude":49.183617,"Longitude":-122.845367,"RecordedTime":"01:25:19
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/096.kmz"}},{"VehicleNo":"7428","TripId":9288670,"RouteNo":"301","Direction":"EAST","Destination":"NEWTON
+        EXCH","Pattern":"EB1N","Latitude":49.133883,"Longitude":-122.878333,"RecordedTime":"01:25:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/301.kmz"}},{"VehicleNo":"7432","TripId":9295380,"RouteNo":"403","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.174717,"Longitude":-123.136800,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/403.kmz"}},{"VehicleNo":"7433","TripId":9294779,"RouteNo":"401","Direction":"EAST","Destination":"GARDEN
+        CITY TO RIVERPORT","Pattern":"EB1HRP","Latitude":49.156033,"Longitude":-123.181083,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/401.kmz"}},{"VehicleNo":"7434","TripId":9295624,"RouteNo":"404","Direction":"EAST","Destination":"FOUR
+        ROAD","Pattern":"EB1RP","Latitude":49.151417,"Longitude":-123.114150,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/404.kmz"}},{"VehicleNo":"7436","TripId":9269232,"RouteNo":"049","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.225600,"Longitude":-123.098250,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"7440","TripId":9295842,"RouteNo":"405","Direction":"SOUTH","Destination":"FIVE
+        ROAD","Pattern":"SB1E","Latitude":49.133667,"Longitude":-123.092117,"RecordedTime":"01:25:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/405.kmz"}},{"VehicleNo":"7441","TripId":9295379,"RouteNo":"403","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.133433,"Longitude":-123.108217,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/403.kmz"}},{"VehicleNo":"7444","TripId":9291085,"RouteNo":"324","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB1","Latitude":49.133617,"Longitude":-122.839900,"RecordedTime":"01:26:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/324.kmz"}},{"VehicleNo":"7449","TripId":9294009,"RouteNo":"364","Direction":"EAST","Destination":"LANGLEY
+        CTR","Pattern":"EB1","Latitude":49.118900,"Longitude":-122.775717,"RecordedTime":"01:25:49
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/364.kmz"}},{"VehicleNo":"7450","TripId":9289638,"RouteNo":"319","Direction":"NORTH","Destination":"SCOTT
+        RD STN","Pattern":"NB1","Latitude":49.201250,"Longitude":-122.880117,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/319.kmz"}},{"VehicleNo":"7453","TripId":9297729,"RouteNo":"502","Direction":"EAST","Destination":"LANGLEY
+        CTR","Pattern":"EB1","Latitude":49.167833,"Longitude":-122.805883,"RecordedTime":"01:25:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/502.kmz"}},{"VehicleNo":"7457","TripId":9297724,"RouteNo":"502","Direction":"EAST","Destination":"LANGLEY
+        CTR","Pattern":"EB1","Latitude":49.129950,"Longitude":-122.716033,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/502.kmz"}},{"VehicleNo":"7458","TripId":9292544,"RouteNo":"341","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB1","Latitude":49.188400,"Longitude":-122.806433,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/341.kmz"}},{"VehicleNo":"7459","TripId":9290052,"RouteNo":"320","Direction":"EAST","Destination":"FLEETWOOD","Pattern":"EB3","Latitude":49.188300,"Longitude":-122.801000,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/320.kmz"}},{"VehicleNo":"7460","TripId":9290813,"RouteNo":"323","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB1L","Latitude":49.182483,"Longitude":-122.867717,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/323.kmz"}},{"VehicleNo":"7464","TripId":9294365,"RouteNo":"375","Direction":"SOUTH","Destination":"WHITE
+        ROCK S.","Pattern":"SB1","Latitude":49.179967,"Longitude":-122.801083,"RecordedTime":"01:25:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/375.kmz"}},{"VehicleNo":"7465","TripId":9290538,"RouteNo":"321","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB8L","Latitude":49.029250,"Longitude":-122.812183,"RecordedTime":"01:26:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/321.kmz"}},{"VehicleNo":"7467","TripId":9290145,"RouteNo":"320","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB1L","Latitude":49.106300,"Longitude":-122.653933,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/320.kmz"}},{"VehicleNo":"7468","TripId":9297274,"RouteNo":"501","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB1L","Latitude":49.106500,"Longitude":-122.658167,"RecordedTime":"01:24:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/501.kmz"}},{"VehicleNo":"7470","TripId":9299565,"RouteNo":"640","Direction":"NORTH","Destination":"SCOTT
+        RD STN","Pattern":"NB4","Latitude":49.087733,"Longitude":-123.062183,"RecordedTime":"01:20:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/640.kmz"}},{"VehicleNo":"7475","TripId":9289013,"RouteNo":"314","Direction":"WEST","Destination":"SCOTT
+        & 96 AVENUE","Pattern":"WB1","Latitude":49.173183,"Longitude":-122.879267,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/314.kmz"}},{"VehicleNo":"7476","TripId":9290875,"RouteNo":"323","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB1","Latitude":49.158733,"Longitude":-122.868050,"RecordedTime":"01:25:19
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/323.kmz"}},{"VehicleNo":"7480","TripId":9271172,"RouteNo":"096","Direction":"NORTH","Destination":"GUILDFORD
+        B-LINE","Pattern":"NB1","Latitude":49.191433,"Longitude":-122.803283,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/096.kmz"}},{"VehicleNo":"7481","TripId":9294331,"RouteNo":"375","Direction":"NORTH","Destination":"GUILDFORD","Pattern":"NB1WDT","Latitude":49.031083,"Longitude":-122.790867,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/375.kmz"}},{"VehicleNo":"7482","TripId":9297305,"RouteNo":"501","Direction":"SOUTH","Destination":"LANGLEY
+        CTR","Pattern":"SB1","Latitude":49.163717,"Longitude":-122.659967,"RecordedTime":"01:25:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/501.kmz"}},{"VehicleNo":"7483","TripId":9271179,"RouteNo":"096","Direction":"NORTH","Destination":"GUILDFORD
+        B-LINE","Pattern":"NB1","Latitude":49.133250,"Longitude":-122.842217,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/096.kmz"}},{"VehicleNo":"7484","TripId":9298657,"RouteNo":"595","Direction":"NORTH","Destination":"MAPLE
+        MEADOWS STN","Pattern":"NB1","Latitude":49.106417,"Longitude":-122.660033,"RecordedTime":"01:26:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/595.kmz"}},{"VehicleNo":"7485","TripId":9271174,"RouteNo":"096","Direction":"NORTH","Destination":"GUILDFORD
+        B-LINE","Pattern":"NB1","Latitude":49.191567,"Longitude":-122.800467,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/096.kmz"}},{"VehicleNo":"7488","TripId":9271354,"RouteNo":"096","Direction":"SOUTH","Destination":"NEWTON
+        EXCH B-LINE","Pattern":"SB1","Latitude":49.161533,"Longitude":-122.845883,"RecordedTime":"01:26:00
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/096.kmz"}},{"VehicleNo":"7491","TripId":9290076,"RouteNo":"320","Direction":"EAST","Destination":"LANGLEY
+        CTR","Pattern":"EB1","Latitude":49.188817,"Longitude":-122.848500,"RecordedTime":"01:20:38
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/320.kmz"}},{"VehicleNo":"7492","TripId":9290473,"RouteNo":"321","Direction":"NORTH","Destination":"SURREY
+        CTRL STN","Pattern":"NB8L","Latitude":49.071883,"Longitude":-122.823450,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/321.kmz"}},{"VehicleNo":"7493","TripId":9271171,"RouteNo":"096","Direction":"NORTH","Destination":"GUILDFORD
+        B-LINE","Pattern":"NB1","Latitude":49.191433,"Longitude":-122.803117,"RecordedTime":"01:25:38
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/096.kmz"}},{"VehicleNo":"7496","TripId":9294021,"RouteNo":"364","Direction":"WEST","Destination":"SCOTTSDALE","Pattern":"WB1","Latitude":49.118917,"Longitude":-122.753083,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/364.kmz"}},{"VehicleNo":"7497","TripId":9290867,"RouteNo":"323","Direction":"SOUTH","Destination":"NEWTON
+        EXCH","Pattern":"SB1","Latitude":49.188817,"Longitude":-122.849133,"RecordedTime":"01:24:56
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/323.kmz"}},{"VehicleNo":"7498","TripId":9271178,"RouteNo":"096","Direction":"NORTH","Destination":"GUILDFORD
+        B-LINE","Pattern":"NB1","Latitude":49.141633,"Longitude":-122.845483,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/096.kmz"}},{"VehicleNo":"7499","TripId":9297813,"RouteNo":"502","Direction":"WEST","Destination":"SURREY
+        CTRL STN","Pattern":"WB1","Latitude":49.166783,"Longitude":-122.803133,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/502.kmz"}},{"VehicleNo":"7501","TripId":9292348,"RouteNo":"340","Direction":"WEST","Destination":"22ND
+        ST STN","Pattern":"WB1","Latitude":49.137867,"Longitude":-122.887683,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/340.kmz"}},{"VehicleNo":"7504","TripId":9297292,"RouteNo":"501","Direction":"SOUTH","Destination":"LANGLEY
+        CTR","Pattern":"SB1","Latitude":49.191550,"Longitude":-122.845083,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/501.kmz"}},{"VehicleNo":"8010","TripId":9269201,"RouteNo":"049","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.225933,"Longitude":-123.112317,"RecordedTime":"01:25:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"8013","TripId":9269202,"RouteNo":"049","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.227200,"Longitude":-123.158100,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"8021","TripId":9269127,"RouteNo":"049","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.267800,"Longitude":-123.246883,"RecordedTime":"01:24:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/049.kmz"}},{"VehicleNo":"8028","TripId":9299366,"RouteNo":"620","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN VIA LADNER EXCH","Pattern":"NB1","Latitude":49.137233,"Longitude":-123.086567,"RecordedTime":"01:25:49
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/620.kmz"}},{"VehicleNo":"8041","TripId":9299353,"RouteNo":"620","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN VIA LADNER EXCH","Pattern":"NB1","Latitude":49.007050,"Longitude":-123.129367,"RecordedTime":"01:22:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/620.kmz"}},{"VehicleNo":"8060","TripId":9299385,"RouteNo":"620","Direction":"SOUTH","Destination":"TSAWW.
+        FERRY VIA LADNER EXCH","Pattern":"SB1","Latitude":49.040817,"Longitude":-123.072900,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/620.kmz"}},{"VehicleNo":"8063","TripId":9299328,"RouteNo":"620","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN VIA LADNER EXCH","Pattern":"NB1","Latitude":49.175850,"Longitude":-123.094433,"RecordedTime":"01:26:26
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/620.kmz"}},{"VehicleNo":"8065","TripId":9299410,"RouteNo":"620","Direction":"SOUTH","Destination":"TSAWW.
+        FERRY VIA LADNER EXCH","Pattern":"SB1","Latitude":49.012933,"Longitude":-123.120917,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/620.kmz"}},{"VehicleNo":"80701","TripId":9557879,"RouteNo":"254","Direction":"SOUTH","Destination":"PARK
+        ROYAL - ONLY","Pattern":"SB2","Latitude":49.326783,"Longitude":-123.141883,"RecordedTime":"01:24:19
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/254.kmz"}},{"VehicleNo":"80704","TripId":9557888,"RouteNo":"255","Direction":"EAST","Destination":"CAPILANO
+        UNIVERSITY - VIA LYNN VALLEY","Pattern":"EB1B","Latitude":0.000000,"Longitude":0.000000,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/255.kmz"}},{"VehicleNo":"80706","TripId":9557889,"RouteNo":"255","Direction":"EAST","Destination":"CAPILANO
+        UNIVERSITY - VIA LYNN VALLEY","Pattern":"EB1B","Latitude":49.334833,"Longitude":-123.182017,"RecordedTime":"01:20:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/255.kmz"}},{"VehicleNo":"8074","TripId":9450004,"RouteNo":"099","Direction":"EAST","Destination":"COMM''L-BDWAY
+        STN","Pattern":"EB1","Latitude":49.262483,"Longitude":-123.089133,"RecordedTime":"01:26:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"8080","TripId":9450097,"RouteNo":"099","Direction":"WEST","Destination":"UBC
+        B-LINE","Pattern":"WB1","Latitude":49.262317,"Longitude":-123.069583,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"80801","TripId":9557720,"RouteNo":"250","Direction":"EAST","Destination":"VANCOUVER","Pattern":"EB1","Latitude":49.332867,"Longitude":-123.174417,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/250.kmz"}},{"VehicleNo":"80802","TripId":9557803,"RouteNo":"250","Direction":"WEST","Destination":"HORSESHOE
+        BAY","Pattern":"WB1","Latitude":49.335850,"Longitude":-123.186183,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/250.kmz"}},{"VehicleNo":"80903","TripId":9557943,"RouteNo":"257","Direction":"EAST","Destination":"EXPRESS
+        - VANCOUVER","Pattern":"EB1","Latitude":49.284117,"Longitude":-123.120633,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/257.kmz"}},{"VehicleNo":"80905","TripId":9557985,"RouteNo":"257","Direction":"WEST","Destination":"EXPRESS
+        - HORSESHOE BAY","Pattern":"WB1","Latitude":49.347250,"Longitude":-123.199867,"RecordedTime":"01:25:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/257.kmz"}},{"VehicleNo":"80971","TripId":9557721,"RouteNo":"250","Direction":"EAST","Destination":"VANCOUVER","Pattern":"EB1","Latitude":49.373467,"Longitude":-123.273017,"RecordedTime":"01:18:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/250.kmz"}},{"VehicleNo":"80997","TripId":9557675,"RouteNo":"250","Direction":"EAST","Destination":"VANCOUVER","Pattern":"EB2","Latitude":49.328233,"Longitude":-123.156267,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/250.kmz"}},{"VehicleNo":"80998","TripId":9557820,"RouteNo":"250","Direction":"WEST","Destination":"DUNDARAVE
+        - TO 25TH & MARINE","Pattern":"WB4","Latitude":49.308917,"Longitude":-123.144183,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/250.kmz"}},{"VehicleNo":"8115","TripId":9450123,"RouteNo":"099","Direction":"WEST","Destination":"UBC
+        B-LINE","Pattern":"WB1","Latitude":49.263850,"Longitude":-123.209883,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"81207","TripId":9557854,"RouteNo":"253","Direction":"WEST","Destination":"CAULFEILD","Pattern":"WB2","Latitude":49.336767,"Longitude":-123.189917,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/253.kmz"}},{"VehicleNo":"81208","TripId":9557741,"RouteNo":"250","Direction":"EAST","Destination":"VANCOUVER","Pattern":"EB2","Latitude":49.325267,"Longitude":-123.129767,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/250.kmz"}},{"VehicleNo":"81209","TripId":9557913,"RouteNo":"255","Direction":"WEST","Destination":"DUNDARAVE
+        - TO 25TH & MARINE","Pattern":"WB1AB","Latitude":49.322117,"Longitude":-123.076167,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/255.kmz"}},{"VehicleNo":"81210","TripId":9557761,"RouteNo":"250","Direction":"WEST","Destination":"DUNDARAVE
+        - TO 25TH & MARINE","Pattern":"WB4","Latitude":49.327017,"Longitude":-123.138550,"RecordedTime":"01:26:00
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/250.kmz"}},{"VehicleNo":"81214","TripId":9557914,"RouteNo":"255","Direction":"WEST","Destination":"DUNDARAVE
+        - TO 25TH & MARINE","Pattern":"WB1AB","Latitude":49.319233,"Longitude":-123.018767,"RecordedTime":"01:23:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/255.kmz"}},{"VehicleNo":"8123","TripId":9450005,"RouteNo":"099","Direction":"EAST","Destination":"COMM''L-BDWAY
+        STN","Pattern":"EB1","Latitude":49.263600,"Longitude":-123.139433,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"8124","TripId":9449974,"RouteNo":"099","Direction":"EAST","Destination":"COMM''L-BDWAY
+        STN","Pattern":"EB1","Latitude":49.263300,"Longitude":-123.120000,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"8126","TripId":9450126,"RouteNo":"099","Direction":"WEST","Destination":"UBC
+        B-LINE","Pattern":"WB1","Latitude":49.263367,"Longitude":-123.068867,"RecordedTime":"01:25:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"8147","TripId":9450125,"RouteNo":"099","Direction":"WEST","Destination":"UBC
+        B-LINE","Pattern":"WB1","Latitude":49.262400,"Longitude":-123.078633,"RecordedTime":"01:25:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"9209","TripId":9298493,"RouteNo":"555","Direction":"WEST","Destination":"PORT
+        MANN EXP\/LOUGHEED STN","Pattern":"WB1","Latitude":49.230150,"Longitude":-122.840667,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/555.kmz"}},{"VehicleNo":"9215","TripId":9298462,"RouteNo":"555","Direction":"EAST","Destination":"PORT
+        MANN EXP\/CARVOLTH EXCH","Pattern":"EB1","Latitude":49.163150,"Longitude":-122.665383,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/555.kmz"}},{"VehicleNo":"9222","TripId":9297989,"RouteNo":"503","Direction":"WEST","Destination":"SURREY
+        CTRL EXP","Pattern":"WB1","Latitude":49.176467,"Longitude":-122.828283,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/503.kmz"}},{"VehicleNo":"9228","TripId":9297988,"RouteNo":"503","Direction":"WEST","Destination":"SURREY
+        CTRL EXP","Pattern":"WB1","Latitude":49.059017,"Longitude":-122.470717,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/503.kmz"}},{"VehicleNo":"9231","TripId":9297974,"RouteNo":"503","Direction":"EAST","Destination":"ALDERGROVE
+        EXP","Pattern":"EB1","Latitude":49.118167,"Longitude":-122.689733,"RecordedTime":"01:25:26
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/503.kmz"}},{"VehicleNo":"9235","TripId":9298003,"RouteNo":"503","Direction":"WEST","Destination":"SURREY
+        CTRL EXP","Pattern":"WB1","Latitude":49.104467,"Longitude":-122.632650,"RecordedTime":"01:26:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/503.kmz"}},{"VehicleNo":"9239","TripId":9298989,"RouteNo":"601","Direction":"SOUTH","Destination":"SOUTH
+        DELTA","Pattern":"SB1","Latitude":49.089067,"Longitude":-123.080833,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/601.kmz"}},{"VehicleNo":"9240","TripId":9293140,"RouteNo":"351","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.153217,"Longitude":-123.086533,"RecordedTime":"01:25:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/351.kmz"}},{"VehicleNo":"9241","TripId":9293114,"RouteNo":"351","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.055483,"Longitude":-122.884433,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/351.kmz"}},{"VehicleNo":"9248","TripId":9293141,"RouteNo":"351","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.042017,"Longitude":-122.801200,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/351.kmz"}},{"VehicleNo":"9253","TripId":9293182,"RouteNo":"351","Direction":"SOUTH","Destination":"CRESCENT
+        BEACH","Pattern":"SB1","Latitude":49.053067,"Longitude":-122.802950,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/351.kmz"}},{"VehicleNo":"9261","TripId":9293212,"RouteNo":"351","Direction":"SOUTH","Destination":"WHITE
+        ROCK CTR","Pattern":"SB1WR","Latitude":49.091117,"Longitude":-123.005217,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/351.kmz"}},{"VehicleNo":"9263","TripId":9298930,"RouteNo":"601","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.087700,"Longitude":-123.061733,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/601.kmz"}},{"VehicleNo":"9266","TripId":9293183,"RouteNo":"351","Direction":"SOUTH","Destination":"CRESCENT
+        BEACH","Pattern":"SB1","Latitude":49.195417,"Longitude":-123.126767,"RecordedTime":"01:25:45
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/351.kmz"}},{"VehicleNo":"9269","TripId":9298996,"RouteNo":"601","Direction":"SOUTH","Destination":"SOUTH
+        DELTA","Pattern":"SB1","Latitude":49.019000,"Longitude":-123.075850,"RecordedTime":"01:26:33
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/601.kmz"}},{"VehicleNo":"9272","TripId":9293173,"RouteNo":"351","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1WR","Latitude":49.090883,"Longitude":-122.870667,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/351.kmz"}},{"VehicleNo":"9276","TripId":9298929,"RouteNo":"601","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.195033,"Longitude":-123.126800,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/601.kmz"}},{"VehicleNo":"9278","TripId":9293211,"RouteNo":"351","Direction":"SOUTH","Destination":"WHITE
+        ROCK CTR","Pattern":"SB1WR","Latitude":49.031183,"Longitude":-122.802767,"RecordedTime":"01:25:12
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/351.kmz"}},{"VehicleNo":"9281","TripId":9298990,"RouteNo":"601","Direction":"SOUTH","Destination":"SOUTH
+        DELTA","Pattern":"SB1","Latitude":49.186333,"Longitude":-123.110450,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/601.kmz"}},{"VehicleNo":"9283","TripId":9298955,"RouteNo":"601","Direction":"NORTH","Destination":"BRIDGEPORT
+        STN","Pattern":"NB1","Latitude":49.035733,"Longitude":-123.068567,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/601.kmz"}},{"VehicleNo":"9407","TripId":9296598,"RouteNo":"410","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.162667,"Longitude":-123.139483,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"9409","TripId":9296746,"RouteNo":"410","Direction":"WEST","Destination":"RAILWAY","Pattern":"W1","Latitude":49.133083,"Longitude":-123.181283,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"9410","TripId":9472813,"RouteNo":"106","Direction":"EAST","Destination":"NEW
+        WEST STN","Pattern":"EB106","Latitude":49.223283,"Longitude":-122.942500,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/106.kmz"}},{"VehicleNo":"9412","TripId":9274428,"RouteNo":"112","Direction":"EAST","Destination":"NEW
+        WEST STN","Pattern":"EB1","Latitude":49.211900,"Longitude":-122.958400,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/112.kmz"}},{"VehicleNo":"9413","TripId":9272790,"RouteNo":"100","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.210833,"Longitude":-123.101300,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/100.kmz"}},{"VehicleNo":"9422","TripId":9296640,"RouteNo":"410","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.180267,"Longitude":-123.136583,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"9424","TripId":9274975,"RouteNo":"123","Direction":"EAST","Destination":"NEW
+        WEST STN","Pattern":"EB1","Latitude":49.266333,"Longitude":-123.001133,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/123.kmz"}},{"VehicleNo":"9427","TripId":9275559,"RouteNo":"129","Direction":"EAST","Destination":"EDMONDS
+        STN","Pattern":"EB1","Latitude":49.229250,"Longitude":-123.012417,"RecordedTime":"01:20:54
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/129.kmz"}},{"VehicleNo":"9432","TripId":9275072,"RouteNo":"123","Direction":"WEST","Destination":"BRENTWOOD
+        STN","Pattern":"WB1","Latitude":49.200750,"Longitude":-122.912383,"RecordedTime":"01:13:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/123.kmz"}},{"VehicleNo":"9433","TripId":9296599,"RouteNo":"410","Direction":"EAST","Destination":"22ND
+        ST STN","Pattern":"EB1","Latitude":49.181750,"Longitude":-122.949300,"RecordedTime":"01:25:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"9435","TripId":9275558,"RouteNo":"129","Direction":"EAST","Destination":"EDMONDS
+        STN","Pattern":"EB1","Latitude":49.280950,"Longitude":-122.996000,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/129.kmz"}},{"VehicleNo":"9438","TripId":9296745,"RouteNo":"410","Direction":"WEST","Destination":"RAILWAY","Pattern":"W1","Latitude":49.189967,"Longitude":-122.948333,"RecordedTime":"01:24:57
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/410.kmz"}},{"VehicleNo":"9439","TripId":9275064,"RouteNo":"123","Direction":"WEST","Destination":"BRENTWOOD
+        STN","Pattern":"WB1","Latitude":49.233400,"Longitude":-122.952117,"RecordedTime":"01:25:40
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/123.kmz"}},{"VehicleNo":"9447","TripId":9278570,"RouteNo":"155","Direction":"EAST","Destination":"BRAID
+        STN","Pattern":"EB1","Latitude":49.220550,"Longitude":-122.899200,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/155.kmz"}},{"VehicleNo":"9450","TripId":9472979,"RouteNo":"110","Direction":"WEST","Destination":"METROTOWN
+        STN","Pattern":"WB1","Latitude":49.250917,"Longitude":-122.945233,"RecordedTime":"01:26:18
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/110.kmz"}},{"VehicleNo":"9451","TripId":9255360,"RouteNo":"002","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB2","Latitude":49.257650,"Longitude":-123.172917,"RecordedTime":"01:25:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/002.kmz"}},{"VehicleNo":"9452","TripId":9266091,"RouteNo":"025","Direction":"EAST","Destination":"BRENTWOOD
+        STN","Pattern":"EB1B5","Latitude":49.250650,"Longitude":-123.024883,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9454","TripId":9259244,"RouteNo":"008","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.223300,"Longitude":-123.090833,"RecordedTime":"01:25:40
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9456","TripId":9263699,"RouteNo":"019","Direction":"WEST","Destination":"STANLEY
+        PARK","Pattern":"WB1","Latitude":49.254150,"Longitude":-123.084350,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9457","TripId":9267576,"RouteNo":"033","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.257917,"Longitude":-123.134550,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/033.kmz"}},{"VehicleNo":"9460","TripId":9256087,"RouteNo":"003","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1STN","Latitude":49.209167,"Longitude":-123.115983,"RecordedTime":"01:14:54
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9462","TripId":9473242,"RouteNo":"430","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.191967,"Longitude":-123.090683,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/430.kmz"}},{"VehicleNo":"9464","TripId":9472908,"RouteNo":"106","Direction":"WEST","Destination":"EDMONDS
+        STN","Pattern":"WB106","Latitude":49.201267,"Longitude":-122.913583,"RecordedTime":"01:26:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/106.kmz"}},{"VehicleNo":"9465","TripId":9472880,"RouteNo":"106","Direction":"WEST","Destination":"EDMONDS
+        STN","Pattern":"WB106","Latitude":49.212067,"Longitude":-122.918933,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/106.kmz"}},{"VehicleNo":"9470","TripId":9275588,"RouteNo":"129","Direction":"WEST","Destination":"PATTERSON
+        STN","Pattern":"WB1","Latitude":49.276100,"Longitude":-123.014250,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/129.kmz"}},{"VehicleNo":"9472","TripId":9263506,"RouteNo":"019","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.254383,"Longitude":-123.084833,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9473","TripId":9268407,"RouteNo":"041","Direction":"WEST","Destination":"TO
+        CROWN","Pattern":"WB23","Latitude":49.232833,"Longitude":-123.049367,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9474","TripId":9256092,"RouteNo":"003","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.271517,"Longitude":-123.100150,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9479","TripId":9265011,"RouteNo":"022","Direction":"EAST","Destination":"KNIGHT","Pattern":"EB2","Latitude":49.278450,"Longitude":-123.111833,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/022.kmz"}},{"VehicleNo":"9480","TripId":9256122,"RouteNo":"003","Direction":"SOUTH","Destination":"MAIN-MARINE
+        DR STN","Pattern":"SB2","Latitude":49.211767,"Longitude":-123.101467,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9481","TripId":9256091,"RouteNo":"003","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1STN","Latitude":49.260550,"Longitude":-123.100983,"RecordedTime":"01:26:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9482","TripId":9268408,"RouteNo":"041","Direction":"WEST","Destination":"TO
+        CROWN","Pattern":"WB23","Latitude":49.233617,"Longitude":-123.116833,"RecordedTime":"01:26:45
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9483","TripId":9266118,"RouteNo":"025","Direction":"WEST","Destination":"UBC","Pattern":"WB1B5","Latitude":49.250683,"Longitude":-123.048100,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9485","TripId":9259236,"RouteNo":"008","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.235217,"Longitude":-123.090500,"RecordedTime":"01:26:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9486","TripId":9259184,"RouteNo":"008","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.262783,"Longitude":-123.096817,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9489","TripId":9259157,"RouteNo":"008","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB1","Latitude":49.262783,"Longitude":-123.096850,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9490","TripId":9267546,"RouteNo":"033","Direction":"EAST","Destination":"29TH
+        AVE STN","Pattern":"EB1","Latitude":49.250733,"Longitude":-123.115333,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/033.kmz"}},{"VehicleNo":"9491","TripId":9266020,"RouteNo":"025","Direction":"EAST","Destination":"BRENTWOOD
+        STN","Pattern":"EB1B5","Latitude":49.263833,"Longitude":-123.243483,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9492","TripId":9263700,"RouteNo":"019","Direction":"WEST","Destination":"STANLEY
+        PARK","Pattern":"WB1","Latitude":49.235200,"Longitude":-123.038233,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9493","TripId":9268260,"RouteNo":"041","Direction":"EAST","Destination":"JOYCE
+        STN","Pattern":"EB21","Latitude":49.234283,"Longitude":-123.138233,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9495","TripId":9264446,"RouteNo":"020","Direction":"SOUTH","Destination":"VICTORIA","Pattern":"SB1","Latitude":49.281900,"Longitude":-123.077033,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"9496","TripId":9270017,"RouteNo":"084","Direction":"EAST","Destination":"VCC-CLARK
+        STN","Pattern":"EB1","Latitude":49.268683,"Longitude":-123.249583,"RecordedTime":"01:24:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/084.kmz"}},{"VehicleNo":"9499","TripId":9270040,"RouteNo":"084","Direction":"WEST","Destination":"UBC","Pattern":"WB1","Latitude":49.265933,"Longitude":-123.118300,"RecordedTime":"01:25:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/084.kmz"}},{"VehicleNo":"9501","TripId":9255324,"RouteNo":"002","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.270500,"Longitude":-123.168200,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/002.kmz"}},{"VehicleNo":"9503","TripId":9261795,"RouteNo":"015","Direction":"SOUTH","Destination":"CAMBIE","Pattern":"SB1","Latitude":49.213750,"Longitude":-123.117117,"RecordedTime":"01:26:16
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/015.kmz"}},{"VehicleNo":"9504","TripId":9256120,"RouteNo":"003","Direction":"SOUTH","Destination":"MAIN-MARINE
+        DR STN","Pattern":"SB2","Latitude":49.272917,"Longitude":-123.100083,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9505","TripId":9256090,"RouteNo":"003","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.243583,"Longitude":-123.101350,"RecordedTime":"01:26:14
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9507","TripId":9268314,"RouteNo":"041","Direction":"WEST","Destination":"UBC","Pattern":"WB1REG","Latitude":49.238733,"Longitude":-123.032300,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9508","TripId":9269586,"RouteNo":"050","Direction":"NORTH","Destination":"WATERFRONT
+        STN","Pattern":"NB1","Latitude":49.269267,"Longitude":-123.140783,"RecordedTime":"01:26:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/050.kmz"}},{"VehicleNo":"9509","TripId":9268350,"RouteNo":"041","Direction":"WEST","Destination":"UBC","Pattern":"WB1REG","Latitude":49.237600,"Longitude":-123.206300,"RecordedTime":"01:24:32
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9519","TripId":9266116,"RouteNo":"025","Direction":"WEST","Destination":"UBC","Pattern":"WB1B5","Latitude":49.251250,"Longitude":-123.151883,"RecordedTime":"01:26:22
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9520","TripId":9259112,"RouteNo":"008","Direction":"EAST","Destination":"FRASER","Pattern":"EB1","Latitude":49.261933,"Longitude":-123.089133,"RecordedTime":"01:26:33
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9521","TripId":9256088,"RouteNo":"003","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1","Latitude":49.211300,"Longitude":-123.100300,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9522","TripId":9263698,"RouteNo":"019","Direction":"WEST","Destination":"STANLEY
+        PARK","Pattern":"WB1","Latitude":49.268550,"Longitude":-123.100633,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9523","TripId":9263697,"RouteNo":"019","Direction":"WEST","Destination":"STANLEY
+        PARK","Pattern":"WB1","Latitude":49.279200,"Longitude":-123.109533,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9524","TripId":9263701,"RouteNo":"019","Direction":"WEST","Destination":"STANLEY
+        PARK","Pattern":"WB1","Latitude":49.230450,"Longitude":-123.005533,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9525","TripId":9259111,"RouteNo":"008","Direction":"EAST","Destination":"FRASER","Pattern":"EB1","Latitude":49.262500,"Longitude":-123.095133,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9526","TripId":9268262,"RouteNo":"041","Direction":"EAST","Destination":"JOYCE
+        STN","Pattern":"EB21","Latitude":49.232750,"Longitude":-123.077717,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9528","TripId":9259110,"RouteNo":"008","Direction":"EAST","Destination":"FRASER","Pattern":"EB1","Latitude":49.283650,"Longitude":-123.109317,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9531","TripId":9265001,"RouteNo":"022","Direction":"EAST","Destination":"KNIGHT","Pattern":"EB2","Latitude":49.221267,"Longitude":-123.077483,"RecordedTime":"01:26:05
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/022.kmz"}},{"VehicleNo":"9534","TripId":9256093,"RouteNo":"003","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1STN","Latitude":49.273467,"Longitude":-123.099900,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9536","TripId":9255490,"RouteNo":"002","Direction":"WEST","Destination":"MACDONALD
+        - 16 AVE","Pattern":"WB2","Latitude":49.280750,"Longitude":-123.126667,"RecordedTime":"01:25:09
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/002.kmz"}},{"VehicleNo":"9539","TripId":9266161,"RouteNo":"025","Direction":"WEST","Destination":"UBC","Pattern":"WB1B5","Latitude":49.249283,"Longitude":-123.125383,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9540","TripId":9264979,"RouteNo":"022","Direction":"EAST","Destination":"KNIGHT","Pattern":"EB2","Latitude":49.262050,"Longitude":-123.077600,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/022.kmz"}},{"VehicleNo":"9543","TripId":9263507,"RouteNo":"019","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.279467,"Longitude":-123.113067,"RecordedTime":"01:25:52
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9545","TripId":9269676,"RouteNo":"050","Direction":"SOUTH","Destination":"S.
+        FALSE CREEK VIA GRANVILLE ISL.","Pattern":"SB1","Latitude":49.266350,"Longitude":-123.127917,"RecordedTime":"01:25:57
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/050.kmz"}},{"VehicleNo":"9546","TripId":9259113,"RouteNo":"008","Direction":"EAST","Destination":"FRASER","Pattern":"EB1","Latitude":49.234450,"Longitude":-123.090517,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9548","TripId":9265092,"RouteNo":"022","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB2","Latitude":49.245817,"Longitude":-123.076250,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/022.kmz"}},{"VehicleNo":"9549","TripId":9266119,"RouteNo":"025","Direction":"WEST","Destination":"UBC","Pattern":"WB1B5","Latitude":49.254383,"Longitude":-123.004333,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9551","TripId":9259114,"RouteNo":"008","Direction":"EAST","Destination":"FRASER","Pattern":"EB1","Latitude":49.214583,"Longitude":-123.091050,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/008.kmz"}},{"VehicleNo":"9553","TripId":9263504,"RouteNo":"019","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.232667,"Longitude":-123.018250,"RecordedTime":"01:26:16
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9556","TripId":9264466,"RouteNo":"020","Direction":"SOUTH","Destination":"VICTORIA","Pattern":"SB1","Latitude":49.281417,"Longitude":-123.103100,"RecordedTime":"01:26:12
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/020.kmz"}},{"VehicleNo":"9561","TripId":9256121,"RouteNo":"003","Direction":"SOUTH","Destination":"MAIN","Pattern":"SB1","Latitude":49.263850,"Longitude":-123.101017,"RecordedTime":"01:25:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9564","TripId":9261796,"RouteNo":"015","Direction":"SOUTH","Destination":"CAMBIE","Pattern":"SB1","Latitude":49.246617,"Longitude":-123.115700,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/015.kmz"}},{"VehicleNo":"9565","TripId":9261761,"RouteNo":"015","Direction":"NORTH","Destination":"OLYMPIC
+        VILLAGE STN","Pattern":"NB1","Latitude":49.233917,"Longitude":-123.115967,"RecordedTime":"01:26:00
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/015.kmz"}},{"VehicleNo":"9566","TripId":9266090,"RouteNo":"025","Direction":"EAST","Destination":"BRENTWOOD
+        STN","Pattern":"EB1B5","Latitude":49.251667,"Longitude":-123.004217,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9569","TripId":9269677,"RouteNo":"050","Direction":"SOUTH","Destination":"S.
+        FALSE CREEK VIA GRANVILLE ISL.","Pattern":"SB1","Latitude":49.283850,"Longitude":-123.116033,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/050.kmz"}},{"VehicleNo":"9572","TripId":9255417,"RouteNo":"002","Direction":"WEST","Destination":"MACDONALD","Pattern":"WB1","Latitude":49.264383,"Longitude":-123.168233,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/002.kmz"}},{"VehicleNo":"9573","TripId":9256089,"RouteNo":"003","Direction":"NORTH","Destination":"DOWNTOWN","Pattern":"NB1STN","Latitude":49.211650,"Longitude":-123.102033,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9575","TripId":9255333,"RouteNo":"002","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.234450,"Longitude":-123.185850,"RecordedTime":"01:21:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/002.kmz"}},{"VehicleNo":"9579","TripId":9269587,"RouteNo":"050","Direction":"NORTH","Destination":"WATERFRONT
+        STN","Pattern":"NB1","Latitude":49.266233,"Longitude":-123.115783,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/050.kmz"}},{"VehicleNo":"9581","TripId":9263508,"RouteNo":"019","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.282717,"Longitude":-123.111833,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9583","TripId":9268349,"RouteNo":"041","Direction":"WEST","Destination":"UBC","Pattern":"WB1REG","Latitude":49.234683,"Longitude":-123.160733,"RecordedTime":"01:26:16
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9585","TripId":9267577,"RouteNo":"033","Direction":"WEST","Destination":"U
+        B C","Pattern":"WB1","Latitude":49.244600,"Longitude":-123.046467,"RecordedTime":"01:24:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/033.kmz"}},{"VehicleNo":"9588","TripId":9268348,"RouteNo":"041","Direction":"WEST","Destination":"UBC","Pattern":"WB1REG","Latitude":49.232900,"Longitude":-123.090083,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9590","TripId":9263702,"RouteNo":"019","Direction":"WEST","Destination":"STANLEY
+        PARK","Pattern":"WB1","Latitude":49.226067,"Longitude":-123.003183,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9606","TripId":9285950,"RouteNo":"239","Direction":"EAST","Destination":"CAPILANO
+        U","Pattern":"EB1A","Latitude":49.327117,"Longitude":-123.134600,"RecordedTime":"01:25:12
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/239.kmz"}},{"VehicleNo":"9607","TripId":9266423,"RouteNo":"026","Direction":"WEST","Destination":"29TH
+        AVE STN","Pattern":"W1","Latitude":49.238750,"Longitude":-123.032383,"RecordedTime":"01:18:16
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/026.kmz"}},{"VehicleNo":"9608","TripId":9266683,"RouteNo":"027","Direction":"NORTH","Destination":"KOOTENAY
+        LOOP","Pattern":"N1","Latitude":49.258700,"Longitude":-123.033700,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/027.kmz"}},{"VehicleNo":"9611","TripId":9448737,"RouteNo":"095","Direction":"WEST","Destination":"BURRARD
+        STN B-LINE","Pattern":"WB1","Latitude":49.278533,"Longitude":-122.912850,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9612","TripId":9276212,"RouteNo":"130","Direction":"SOUTH","Destination":"METROTOWN
+        STN","Pattern":"SB1WX","Latitude":49.245383,"Longitude":-123.003417,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9617","TripId":9285275,"RouteNo":"232","Direction":"WEST","Destination":"GROUSE
+        MTN","Pattern":"WB1","Latitude":49.369033,"Longitude":-123.099767,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/232.kmz"}},{"VehicleNo":"9618","TripId":9286474,"RouteNo":"240","Direction":"WEST","Destination":"VANCOUVER","Pattern":"WB1","Latitude":49.321867,"Longitude":-123.056717,"RecordedTime":"01:23:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/240.kmz"}},{"VehicleNo":"9620","TripId":9448896,"RouteNo":"145","Direction":"SOUTH","Destination":"PRODUCTION
+        STN","Pattern":"SB1","Latitude":49.253267,"Longitude":-122.918450,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/145.kmz"}},{"VehicleNo":"9623","TripId":9448730,"RouteNo":"095","Direction":"EAST","Destination":"SFU
+        B-LINE","Pattern":"EB1","Latitude":49.285383,"Longitude":-123.119683,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9624","TripId":9276193,"RouteNo":"130","Direction":"NORTH","Destination":"TO
+        PENDER","Pattern":"NB1WX","Latitude":49.251650,"Longitude":-123.004217,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9625","TripId":9283776,"RouteNo":"211","Direction":"EAST","Destination":"SEYMOUR","Pattern":"EB1PN","Latitude":49.285733,"Longitude":-123.119683,"RecordedTime":"01:25:26
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/211.kmz"}},{"VehicleNo":"9629","TripId":9448818,"RouteNo":"145","Direction":"NORTH","Destination":"SFU","Pattern":"NB1","Latitude":49.280367,"Longitude":-122.918033,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/145.kmz"}},{"VehicleNo":"9630","TripId":9267055,"RouteNo":"028","Direction":"SOUTH","Destination":"JOYCE
+        STN","Pattern":"S1","Latitude":49.249833,"Longitude":-123.019817,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/028.kmz"}},{"VehicleNo":"9631","TripId":9286899,"RouteNo":"246","Direction":"EAST","Destination":"HIGHLAND","Pattern":"EB1","Latitude":49.339217,"Longitude":-123.109050,"RecordedTime":"01:26:25
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/246.kmz"}},{"VehicleNo":"9633","TripId":9283810,"RouteNo":"211","Direction":"WEST","Destination":"VANCOUVER","Pattern":"WB1P","Latitude":49.309133,"Longitude":-123.032067,"RecordedTime":"01:26:27
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/211.kmz"}},{"VehicleNo":"9634","TripId":9450095,"RouteNo":"099","Direction":"WEST","Destination":"UBC
+        B-LINE","Pattern":"WB1","Latitude":49.264067,"Longitude":-123.167883,"RecordedTime":"01:25:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"9639","TripId":9286410,"RouteNo":"240","Direction":"EAST","Destination":"15TH
+        STREET","Pattern":"EB1","Latitude":49.282683,"Longitude":-123.118467,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/240.kmz"}},{"VehicleNo":"9640","TripId":9284644,"RouteNo":"228","Direction":"SOUTH","Destination":"LONSDALE
+        QUAY","Pattern":"SB1B","Latitude":49.311367,"Longitude":-123.079233,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/228.kmz"}},{"VehicleNo":"9641","TripId":9276213,"RouteNo":"130","Direction":"SOUTH","Destination":"METROTOWN
+        STN","Pattern":"SB1WX","Latitude":49.280100,"Longitude":-123.004317,"RecordedTime":"01:21:02
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9643","TripId":9286411,"RouteNo":"240","Direction":"EAST","Destination":"15TH
+        STREET","Pattern":"EB1","Latitude":49.309083,"Longitude":-123.144100,"RecordedTime":"01:26:46
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/240.kmz"}},{"VehicleNo":"9645","TripId":9286477,"RouteNo":"240","Direction":"WEST","Destination":"VANCOUVER","Pattern":"WB1","Latitude":49.322150,"Longitude":-123.079333,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/240.kmz"}},{"VehicleNo":"9646","TripId":9283546,"RouteNo":"210","Direction":"NORTH","Destination":"UPPER
+        LYNN VALLEY","Pattern":"NB1","Latitude":49.327700,"Longitude":-123.038217,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/210.kmz"}},{"VehicleNo":"9649","TripId":9283551,"RouteNo":"210","Direction":"NORTH","Destination":"UPPER
+        LYNN VALLEY","Pattern":"NB1","Latitude":49.283650,"Longitude":-123.113250,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/210.kmz"}},{"VehicleNo":"9650","TripId":9267005,"RouteNo":"028","Direction":"NORTH","Destination":"PHIBBS
+        EXCH","Pattern":"N1","Latitude":49.238833,"Longitude":-123.032583,"RecordedTime":"01:25:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/028.kmz"}},{"VehicleNo":"9655","TripId":9285266,"RouteNo":"232","Direction":"EAST","Destination":"PHIBBS
+        EXCH","Pattern":"EB1","Latitude":49.333583,"Longitude":-123.072050,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/232.kmz"}},{"VehicleNo":"9656","TripId":9284809,"RouteNo":"229","Direction":"EAST","Destination":"LYNN
+        VALLEY","Pattern":"EB1W","Latitude":49.335467,"Longitude":-123.042583,"RecordedTime":"01:26:07
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/229.kmz"}},{"VehicleNo":"9658","TripId":9285059,"RouteNo":"230","Direction":"NORTH","Destination":"UPPER
+        LONSDALE","Pattern":"NB3","Latitude":49.312400,"Longitude":-123.078050,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/230.kmz"}},{"VehicleNo":"9659","TripId":9284623,"RouteNo":"228","Direction":"NORTH","Destination":"LYNN
+        VALLEY","Pattern":"NB1B","Latitude":49.341583,"Longitude":-123.029733,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/228.kmz"}},{"VehicleNo":"9660","TripId":9448694,"RouteNo":"095","Direction":"EAST","Destination":"SFU
+        B-LINE","Pattern":"EB1","Latitude":49.281517,"Longitude":-123.104567,"RecordedTime":"01:25:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9663","TripId":9285566,"RouteNo":"236","Direction":"SOUTH","Destination":"LONSDALE
+        QUAY","Pattern":"SB1","Latitude":49.335883,"Longitude":-123.115917,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/236.kmz"}},{"VehicleNo":"9664","TripId":9276132,"RouteNo":"130","Direction":"NORTH","Destination":"PHIBBS
+        EXCH","Pattern":"NB1PX","Latitude":49.229417,"Longitude":-123.005600,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9666","TripId":9286972,"RouteNo":"246","Direction":"WEST","Destination":"HIGHLAND","Pattern":"WB1A","Latitude":49.311117,"Longitude":-123.083883,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/246.kmz"}},{"VehicleNo":"9667","TripId":9266722,"RouteNo":"027","Direction":"SOUTH","Destination":"JOYCE
+        STN","Pattern":"S1","Latitude":49.270983,"Longitude":-123.033667,"RecordedTime":"01:26:08
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/027.kmz"}},{"VehicleNo":"9675","TripId":9256119,"RouteNo":"003","Direction":"SOUTH","Destination":"MAIN","Pattern":"SB1","Latitude":49.281733,"Longitude":-123.109967,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/003.kmz"}},{"VehicleNo":"9676","TripId":9266063,"RouteNo":"025","Direction":"EAST","Destination":"BRENTWOOD
+        STN","Pattern":"EB1B5","Latitude":49.248500,"Longitude":-123.075550,"RecordedTime":"01:25:59
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9681","TripId":9264972,"RouteNo":"022","Direction":"EAST","Destination":"KNIGHT","Pattern":"EB2","Latitude":49.282883,"Longitude":-123.112083,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/022.kmz"}},{"VehicleNo":"9682","TripId":9263505,"RouteNo":"019","Direction":"EAST","Destination":"METROTOWN
+        STN","Pattern":"EB1","Latitude":49.243683,"Longitude":-123.062067,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/019.kmz"}},{"VehicleNo":"9684","TripId":9268297,"RouteNo":"041","Direction":"EAST","Destination":"JOYCE
+        STN","Pattern":"EB1REG","Latitude":49.234617,"Longitude":-123.157867,"RecordedTime":"01:26:45
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9685","TripId":9268347,"RouteNo":"041","Direction":"WEST","Destination":"UBC","Pattern":"WB1REG","Latitude":49.238583,"Longitude":-123.031967,"RecordedTime":"01:20:54
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9687","TripId":9265072,"RouteNo":"022","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB2","Latitude":49.274550,"Longitude":-123.077283,"RecordedTime":"01:25:01
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/022.kmz"}},{"VehicleNo":"9688","TripId":9268306,"RouteNo":"041","Direction":"WEST","Destination":"TO
+        CROWN","Pattern":"WB23","Latitude":49.238650,"Longitude":-123.032133,"RecordedTime":"01:25:26
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/041.kmz"}},{"VehicleNo":"9689","TripId":9255359,"RouteNo":"002","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB2","Latitude":49.262000,"Longitude":-123.168217,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/002.kmz"}},{"VehicleNo":"9692","TripId":9264967,"RouteNo":"022","Direction":"EAST","Destination":"KNIGHT","Pattern":"EB2","Latitude":49.212217,"Longitude":-123.077117,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/022.kmz"}},{"VehicleNo":"9693","TripId":9265062,"RouteNo":"022","Direction":"WEST","Destination":"DOWNTOWN","Pattern":"WB2","Latitude":49.285667,"Longitude":-123.119283,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/022.kmz"}},{"VehicleNo":"9695","TripId":9266019,"RouteNo":"025","Direction":"EAST","Destination":"BRENTWOOD
+        STN","Pattern":"EB1B5","Latitude":49.257867,"Longitude":-123.187450,"RecordedTime":"01:25:58
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9698","TripId":9266117,"RouteNo":"025","Direction":"WEST","Destination":"UBC","Pattern":"WB1B5","Latitude":49.248517,"Longitude":-123.076750,"RecordedTime":"01:26:33
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9702","TripId":9266115,"RouteNo":"025","Direction":"WEST","Destination":"UBC","Pattern":"WB1B5","Latitude":49.258900,"Longitude":-123.238967,"RecordedTime":"01:25:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/025.kmz"}},{"VehicleNo":"9705","TripId":9270018,"RouteNo":"084","Direction":"EAST","Destination":"VCC-CLARK
+        STN","Pattern":"EB1","Latitude":49.269183,"Longitude":-123.104017,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/084.kmz"}},{"VehicleNo":"9706","TripId":9255358,"RouteNo":"002","Direction":"EAST","Destination":"DOWNTOWN","Pattern":"EB1","Latitude":49.283767,"Longitude":-123.122033,"RecordedTime":"01:25:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/002.kmz"}},{"VehicleNo":"9709","TripId":9448806,"RouteNo":"095","Direction":"WEST","Destination":"BURRARD
+        STN B-LINE","Pattern":"WB1","Latitude":49.281133,"Longitude":-123.025350,"RecordedTime":"01:26:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9714","TripId":9266388,"RouteNo":"026","Direction":"EAST","Destination":"JOYCE
+        STN","Pattern":"E1","Latitude":49.215817,"Longitude":-123.036017,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/026.kmz"}},{"VehicleNo":"9717","TripId":9285985,"RouteNo":"239","Direction":"WEST","Destination":"PARK
+        ROYAL","Pattern":"WB1","Latitude":49.311433,"Longitude":-123.079167,"RecordedTime":"01:26:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/239.kmz"}},{"VehicleNo":"9718","TripId":9267280,"RouteNo":"029","Direction":"NORTH","Destination":"29TH
+        AVE STN","Pattern":"N1","Latitude":49.218383,"Longitude":-123.054983,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/029.kmz"}},{"VehicleNo":"9719","TripId":9283816,"RouteNo":"211","Direction":"WEST","Destination":"VANCOUVER","Pattern":"WB1P","Latitude":49.326083,"Longitude":-122.950617,"RecordedTime":"01:25:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/211.kmz"}},{"VehicleNo":"9721","TripId":9276110,"RouteNo":"130","Direction":"NORTH","Destination":"KOOTENAY
+        LOOP","Pattern":"NB1KX","Latitude":49.254267,"Longitude":-123.004167,"RecordedTime":"01:25:28
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9722","TripId":9448666,"RouteNo":"095","Direction":"EAST","Destination":"SFU
+        B-LINE","Pattern":"EB1","Latitude":49.281100,"Longitude":-123.055433,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9723","TripId":9285510,"RouteNo":"236","Direction":"NORTH","Destination":"GROUSE
+        MTN","Pattern":"NB1","Latitude":49.324183,"Longitude":-123.101033,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/236.kmz"}},{"VehicleNo":"9724","TripId":9276238,"RouteNo":"130","Direction":"SOUTH","Destination":"METROTOWN
+        STN","Pattern":"SB1KX","Latitude":49.271317,"Longitude":-123.003267,"RecordedTime":"01:25:17
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9725","TripId":9283793,"RouteNo":"211","Direction":"EAST","Destination":"SEYMOUR","Pattern":"EB1PN","Latitude":49.288683,"Longitude":-123.042083,"RecordedTime":"01:25:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/211.kmz"}},{"VehicleNo":"9727","TripId":9276267,"RouteNo":"130","Direction":"SOUTH","Destination":"METROTOWN
+        STN","Pattern":"SB1PX","Latitude":49.236617,"Longitude":-123.003367,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9730","TripId":9285498,"RouteNo":"236","Direction":"NORTH","Destination":"GROUSE
+        MTN","Pattern":"NB1","Latitude":49.345850,"Longitude":-123.111133,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/236.kmz"}},{"VehicleNo":"9733","TripId":9448777,"RouteNo":"095","Direction":"WEST","Destination":"BURRARD
+        STN B-LINE","Pattern":"WB1","Latitude":49.281333,"Longitude":-123.099283,"RecordedTime":"01:26:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9735","TripId":9285285,"RouteNo":"232","Direction":"WEST","Destination":"GROUSE
+        MTN","Pattern":"WB1","Latitude":49.313583,"Longitude":-123.064483,"RecordedTime":"01:26:21
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/232.kmz"}},{"VehicleNo":"9736","TripId":9449976,"RouteNo":"099","Direction":"EAST","Destination":"COMM''L-BDWAY
+        STN","Pattern":"EB1","Latitude":49.267533,"Longitude":-123.247633,"RecordedTime":"01:26:24
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"9737","TripId":9267056,"RouteNo":"028","Direction":"SOUTH","Destination":"JOYCE
+        STN","Pattern":"S1","Latitude":49.281133,"Longitude":-123.029217,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/028.kmz"}},{"VehicleNo":"9738","TripId":9285958,"RouteNo":"239","Direction":"EAST","Destination":"CAPILANO
+        U","Pattern":"EB1A","Latitude":49.312717,"Longitude":-123.082267,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/239.kmz"}},{"VehicleNo":"9740","TripId":9284617,"RouteNo":"228","Direction":"NORTH","Destination":"LYNN
+        VALLEY","Pattern":"NB1B","Latitude":49.311033,"Longitude":-123.083967,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/228.kmz"}},{"VehicleNo":"9741","TripId":9449975,"RouteNo":"099","Direction":"EAST","Destination":"COMM''L-BDWAY
+        STN","Pattern":"EB1","Latitude":49.264350,"Longitude":-123.184283,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/099.kmz"}},{"VehicleNo":"9745","TripId":9285558,"RouteNo":"236","Direction":"SOUTH","Destination":"LONSDALE
+        QUAY","Pattern":"SB1","Latitude":49.312767,"Longitude":-123.083383,"RecordedTime":"01:25:09
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/236.kmz"}},{"VehicleNo":"9747","TripId":9448741,"RouteNo":"095","Direction":"WEST","Destination":"BURRARD
+        STN B-LINE","Pattern":"WB1","Latitude":49.280133,"Longitude":-122.920133,"RecordedTime":"01:25:41
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9748","TripId":9286456,"RouteNo":"240","Direction":"WEST","Destination":"VANCOUVER","Pattern":"WB1","Latitude":49.280883,"Longitude":-123.115683,"RecordedTime":"01:26:48
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/240.kmz"}},{"VehicleNo":"9749","TripId":9286004,"RouteNo":"239","Direction":"WEST","Destination":"PARK
+        ROYAL","Pattern":"WB1","Latitude":49.322267,"Longitude":-123.097650,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/239.kmz"}},{"VehicleNo":"9750","TripId":9286017,"RouteNo":"239","Direction":"WEST","Destination":"PARK
+        ROYAL","Pattern":"WB1","Latitude":49.326933,"Longitude":-123.140417,"RecordedTime":"01:25:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/239.kmz"}},{"VehicleNo":"9752","TripId":9285088,"RouteNo":"230","Direction":"SOUTH","Destination":"LONSDALE
+        QUAY","Pattern":"SB1","Latitude":49.341567,"Longitude":-123.071900,"RecordedTime":"01:26:44
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/230.kmz"}},{"VehicleNo":"9755","TripId":9286369,"RouteNo":"240","Direction":"EAST","Destination":"15TH
+        STREET","Pattern":"EB1","Latitude":49.322017,"Longitude":-123.068167,"RecordedTime":"01:26:23
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/240.kmz"}},{"VehicleNo":"9758","TripId":9285951,"RouteNo":"239","Direction":"EAST","Destination":"CAPILANO
+        U","Pattern":"EB1A","Latitude":49.306983,"Longitude":-123.039800,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/239.kmz"}},{"VehicleNo":"9760","TripId":9267004,"RouteNo":"028","Direction":"NORTH","Destination":"PHIBBS
+        EXCH","Pattern":"N1","Latitude":49.274433,"Longitude":-123.023417,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/028.kmz"}},{"VehicleNo":"9764","TripId":9286003,"RouteNo":"239","Direction":"WEST","Destination":"PARK
+        ROYAL","Pattern":"WB1","Latitude":49.312000,"Longitude":-123.030450,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/239.kmz"}},{"VehicleNo":"9767","TripId":9285924,"RouteNo":"239","Direction":"EAST","Destination":"CAPILANO
+        U","Pattern":"EB1A","Latitude":49.316183,"Longitude":-123.023983,"RecordedTime":"01:26:04
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/239.kmz"}},{"VehicleNo":"9768","TripId":9286445,"RouteNo":"240","Direction":"WEST","Destination":"VANCOUVER","Pattern":"WB1","Latitude":49.310700,"Longitude":-123.142833,"RecordedTime":"01:26:29
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/240.kmz"}},{"VehicleNo":"9772","TripId":9283949,"RouteNo":"212","Direction":"EAST","Destination":"DEEP
+        COVE","Pattern":"EB1B","Latitude":49.308483,"Longitude":-122.989700,"RecordedTime":"01:26:39
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/212.kmz"}},{"VehicleNo":"9773","TripId":9286934,"RouteNo":"246","Direction":"WEST","Destination":"VANCOUVER","Pattern":"WB1","Latitude":49.292267,"Longitude":-123.133150,"RecordedTime":"01:26:43
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/246.kmz"}},{"VehicleNo":"9777","TripId":9276202,"RouteNo":"130","Direction":"NORTH","Destination":"TO
+        PENDER","Pattern":"NB1WX","Latitude":49.225900,"Longitude":-123.002817,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9779","TripId":9448700,"RouteNo":"095","Direction":"EAST","Destination":"SFU
+        B-LINE","Pattern":"EB1","Latitude":49.277167,"Longitude":-122.929750,"RecordedTime":"01:26:33
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9780","TripId":9448726,"RouteNo":"095","Direction":"EAST","Destination":"SFU
+        B-LINE","Pattern":"EB1","Latitude":49.281033,"Longitude":-123.013117,"RecordedTime":"01:26:20
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9782","TripId":9283609,"RouteNo":"210","Direction":"SOUTH","Destination":"VANCOUVER","Pattern":"SB1","Latitude":49.284783,"Longitude":-123.057700,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/210.kmz"}},{"VehicleNo":"9783","TripId":9283598,"RouteNo":"210","Direction":"SOUTH","Destination":"VANCOUVER","Pattern":"SB1","Latitude":49.351483,"Longitude":-123.028367,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/210.kmz"}},{"VehicleNo":"9785","TripId":9276268,"RouteNo":"130","Direction":"SOUTH","Destination":"METROTOWN
+        STN","Pattern":"SB1PX","Latitude":49.305433,"Longitude":-123.028950,"RecordedTime":"01:25:12
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/130.kmz"}},{"VehicleNo":"9786","TripId":9448752,"RouteNo":"095","Direction":"WEST","Destination":"BURRARD
+        STN B-LINE","Pattern":"WB1","Latitude":49.281167,"Longitude":-123.052383,"RecordedTime":"01:25:37
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/095.kmz"}},{"VehicleNo":"9788","TripId":9266430,"RouteNo":"026","Direction":"WEST","Destination":"29TH
+        AVE STN","Pattern":"W1","Latitude":49.233400,"Longitude":-123.043083,"RecordedTime":"01:26:47
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/026.kmz"}},{"VehicleNo":"9791","TripId":9286953,"RouteNo":"246","Direction":"WEST","Destination":"VANCOUVER","Pattern":"WB1","Latitude":49.343017,"Longitude":-123.096067,"RecordedTime":"01:26:42
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/246.kmz"}}]'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['152911']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/buses/1503
+  response:
+    body: {string: '{"VehicleNo":"1503","TripId":9282605,"RouteNo":"187","Direction":"NORTH","Destination":"PARKWAY","Pattern":"NB1","Latitude":49.299250,"Longitude":-122.800633,"RecordedTime":"01:26:03
+        pm","RouteMap":{"Href":"http:\/\/nb.translink.ca\/geodata\/187.kmz"}}'}
+    headers:
+      Cache-Control: [private]
+      Content-Length: ['252']
+      Content-Type: [application/json; charset=utf-8]
+      Server: [Microsoft-IIS/8.5]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 200, message: OK}
+version: 1
