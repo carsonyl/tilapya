@@ -39,7 +39,8 @@ setup(
     install_requires=requirements,
     license='Apache Software License 2.0',
     zip_safe=False,
-    keywords='tilapya',
+    python_requires='>=2.7, ~=3.4',
+    keywords='tilapya vancouver transit translink',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
