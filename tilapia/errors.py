@@ -36,6 +36,13 @@ class TransLinkAPIError(HTTPError):
 
         super(TransLinkAPIError, self).__init__(blurb, response=response)
 
+    @property
+    def description(self):
+        """
+        The documented description of the error code, if any.
+        """
+        return _code_to_desc.get(self.code, '')
+
 
 ErrorCodeInfo = namedtuple('ErrorCodeInfo', ['code', 'desc'])
 
@@ -92,3 +99,6 @@ class ErrorCodes(object):
 
     # 500x, Status
     status_invalid_service = ErrorCodeInfo('5001', 'Invalid service name')
+
+
+_code_to_desc = {v.code: v.desc for v in ErrorCodes.__dict__ if isinstance(v, ErrorCodeInfo)}
