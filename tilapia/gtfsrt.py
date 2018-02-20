@@ -1,3 +1,11 @@
+"""
+GTFS-realtime is a specification for sharing real-time transit information.
+It's primarily ingested by Google in order to power transit information within Google Maps.
+
+.. seealso:: `TransLink's GTFS-realtime API reference <https://developer.translink.ca/ServicesGtfs/ApiReference>`_.
+    Much of it is replicated here for convenience.
+    However, the docs here reflect Tilapia-specific behaviour.
+"""
 from collections import namedtuple
 
 from marshmallow import Schema, fields, post_load
@@ -6,7 +14,16 @@ from ._util import TransLinkAPIBase
 from .errors import TransLinkAPIError
 
 
-Headers = namedtuple('Headers', ['content_disposition', 'content_length', 'content_type', 'date', 'server'])
+class Headers(namedtuple('Headers', ['content_disposition', 'content_length', 'content_type', 'date', 'server'])):
+    """
+    HTTP headers for a GTFS-realtime feed file.
+
+    :ivar content_disposition: Content-Disposition header.
+    :ivar int content_length: Content-Length header.
+    :ivar content_type: Content-Type header.
+    :ivar datetime.datetime date: Parsed Date header.
+    :ivar server: Server header.
+    """
 
 
 class HeadersSchema(Schema):
@@ -23,10 +40,14 @@ class HeadersSchema(Schema):
 
 class GTFSRT(TransLinkAPIBase):
     """
-    TransLink's endpoints for GTFS-realtime datasets.
+    The wrapper around TransLink's endpoints for GTFS-realtime datasets.
     """
 
     def __init__(self, api_key, session=None):
+        """
+        :param api_key: TransLink API key.
+        :param requests.Session session: Session to use, instead of the default.
+        """
         super(GTFSRT, self).__init__(
             'https://gtfs.translink.ca/',
             api_key=api_key, session=session)
@@ -38,13 +59,37 @@ class GTFSRT(TransLinkAPIBase):
             return HeadersSchema().load(resp.headers)
 
     def headers_realtime(self):
+        """
+        Get the headers for the trip updates feed.
+
+        .. note:: This is implemented as a GET, as the server disallows HEAD.
+
+        :rtype: Headers
+        """
         return self._get_headers_and_deserialize('gtfsrealtime')
 
     def download_realtime(self, destination):
+        """
+        Download the trip updates feed.
+
+        :param destination: Download the file to this local file path.
+        """
         return self._streamed_download('gtfsrealtime', destination)
 
     def headers_position(self):
+        """
+        Get the headers for the position feed.
+
+        .. note:: This is implemented as a GET, as the server disallows HEAD.
+
+        :rtype: Headers
+        """
         return self._get_headers_and_deserialize('gtfsposition')
 
     def download_position(self, destination):
+        """
+        Download the position feed.
+
+        :param destination: Download the file to this local file path.
+        """
         return self._streamed_download('gtfsposition', destination)

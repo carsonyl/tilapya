@@ -1,3 +1,14 @@
+"""
+Tilapia wrapper around TransLink's Real-Time Transit Information (RTTI) API.
+
+.. note:: This API is limited to real-time information for buses.
+        In addition, some routes and vehicles may not be available.
+        Buses that are not in service are not exposed by the API.
+
+.. seealso:: `TransLink's RTTI API reference <https://developer.translink.ca/ServicesRtti/ApiReference>`_.
+    Much of it is replicated here for convenience.
+    However, the docs here reflect Tilapia-specific behaviour.
+"""
 from collections import namedtuple
 from datetime import datetime, timedelta
 
@@ -7,29 +18,132 @@ from pytz import timezone
 from ._util import TransLinkAPIBase
 
 
+#: TransLink's local time zone (Vancouver).
 TRANSLINK_TZ = timezone('America/Vancouver')
 
-Stop = namedtuple('Stop', [
-    'StopNo', 'Name', 'BayNo', 'City', 'OnStreet', 'AtStreet',
-    'Latitude', 'Longitude', 'WheelchairAccess', 'Distance', 'Routes',
-])
-StopEstimate = namedtuple('StopEstimate', [
-    'RouteNo', 'RouteName', 'Direction', 'RouteMap', 'Schedules',
-])
-RouteMap = namedtuple('RouteMap', ['Href'])
-Schedule = namedtuple('Schedule', [
-    'Pattern', 'Destination', 'ExpectedLeaveTime', 'ExpectedCountdown',
-    'ScheduleStatus', 'CancelledTrip', 'CancelledStop',
-    'AddedTrip', 'AddedStop', 'LastUpdate',
-])
-Bus = namedtuple('Bus', [
-    'VehicleNo', 'TripId', 'RouteNo',
-    'Direction', 'Destination', 'Pattern',
-    'Latitude', 'Longitude', 'RecordedTime', 'RouteMap',
-])
-Route = namedtuple('Route', ['RouteNo', 'Name', 'OperatingCompany', 'Patterns'])
-Pattern = namedtuple('Pattern', ['PatternNo', 'Destination', 'RouteMap', 'Direction'])
-Status = namedtuple('Status', ['Name', 'Value'])
+
+class Stop(namedtuple('Stop', [
+        'StopNo', 'Name', 'BayNo', 'City', 'OnStreet', 'AtStreet',
+        'Latitude', 'Longitude', 'WheelchairAccess', 'Distance', 'Routes'])):
+    """
+    Stops are locations where buses provide scheduled service.
+
+    :ivar int StopNo: The 5-digit stop number.
+    :ivar Name: The stop name.
+    :ivar BayNo: The bay number, if applicable.
+    :ivar City: The city in which the stop is located.
+    :ivar OnStreet: The street name the stop is located on.
+    :ivar AtStreet: The intersecting street of the stop.
+    :ivar float Latitude: The latitude of the stop.
+    :ivar float Longitude: The longitude of the stop.
+    :ivar bool WheelchairAccess: Specifies wheelchair accessible stop.
+    :ivar Distance: Distance away from the search location.
+    :ivar list[Route] Routes: The list of routes that the stop services.
+    """
+
+
+class StopEstimate(namedtuple('StopEstimate', [
+        'RouteNo', 'RouteName', 'Direction', 'RouteMap', 'Schedules'])):
+    """
+    Bus arrival estimates for a route at a stop.
+
+    :ivar RouteNo: The bus route number.
+    :ivar RouteName: The bus route name.
+    :ivar Direction: The direction of the route at the specific stop.
+    :ivar RouteMap RouteMap: The element containing the route map information.
+    :ivar list[Schedule] Schedules: The element containing the list of schedules.
+    """
+
+
+class RouteMap(namedtuple('RouteMap', ['Href'])):
+    """
+    Bus route map.
+
+    :ivar href: The location of the route map file in KMZ format.
+    """
+
+
+class Schedule(namedtuple('Schedule', [
+        'Pattern', 'Destination', 'ExpectedLeaveTime', 'ExpectedCountdown',
+        'ScheduleStatus', 'CancelledTrip', 'CancelledStop',
+        'AddedTrip', 'AddedStop', 'LastUpdate'])):
+    """
+    A piece of real-time or scheduled arrival time information for a single bus.
+
+    :ivar Pattern: The pattern of the specific trip.
+    :ivar Destination: The destination of the trip.
+    :ivar datetime ExpectedLeaveTime: The expected departure time of the trip at the specific stop.
+        The original value is something like "05:20:30pm 2018-02-18".
+        Tilapia converts this to an absolute datetime with time zone.
+    :ivar int ExpectedCountDown: The expected departure time in minutes.
+    :ivar ScheduleStatus: The status of the trip.
+
+        * ``*`` indicates scheduled time
+        * ``-`` indicates delay
+        * ``+`` indicates bus is running ahead of schedule
+    :ivar bool AddedTrip: Indicates if trip is added.
+    :ivar bool CancelledTrip: Indicates if trip is cancelled.
+    :ivar bool CancelledStop: Indicates if stop is cancelled.
+    :ivar bool AddedTrip: 	Indicates if trip is added.
+    :ivar bool AddedStop: Indicates if stop is added.
+    :ivar datetime LastUpdate: The last updated time of the trip.
+        The original value is something like "05:20:30 pm".
+        Tilapia converts this to an absolute datetime with time zone.
+    """
+
+
+class Bus(namedtuple('Bus', [
+        'VehicleNo', 'TripId', 'RouteNo',
+        'Direction', 'Destination', 'Pattern',
+        'Latitude', 'Longitude', 'RecordedTime', 'RouteMap'])):
+    """
+    Information about a bus.
+
+    :ivar VehicleNo: The vehicle number of the bus.
+    :ivar int TripId: The id of the trip the bus currently running.
+    :ivar RouteNo: The route number of the vehicle.
+    :ivar Direction: The direction of the trip.
+    :ivar Destination: The destination headsign of the trip.
+        *This field is not in the RTTI API documentation.*
+    :ivar Pattern: The pattern of the trip.
+    :ivar float Latitude: The latitude of the vehicle location.
+    :ivar float Longitude: The longitude of the vehicle location.
+    :ivar datetime RecordedTime: The recorded time of the last location of the vehicle.
+        The original value is something like "05:20:30 pm".
+        Tilapia converts this to an absolute datetime with time zone.
+    :ivar RouteMap RouteMap: The element containing the route map information.
+    """
+
+
+class Route(namedtuple('Route', ['RouteNo', 'Name', 'OperatingCompany', 'Patterns'])):
+    """
+    Routes are a sequenced pattern of service.
+
+    :ivar RouteNo: The bus route number.
+    :ivar Name: The name of the route.
+    :ivar OperatingCompany: The operating company of the route.
+    :ivar list[Pattern] patterns: The list of patterns for the route.
+    """
+
+
+class Pattern(namedtuple('Pattern', ['PatternNo', 'Destination', 'RouteMap', 'Direction'])):
+    """
+    A route trip pattern.
+
+    :ivar PatternNo: The pattern number.
+    :ivar Destination: The destination of the pattern.
+    :ivar RouteMap RouteMap: The element containing the route map information.
+    :ivar Direction: The direction of the pattern.
+    """
+
+
+class Status(namedtuple('Status', ['Name', 'Value'])):
+    """
+    Status info for a service within the RTTI API.
+
+    :ivar name: The name of the service ("Location" or "Schedule")
+    :ivar value: The status of the service ("Online" or "Offline")
+    """
 
 
 class StopSchema(Schema):
@@ -165,46 +279,120 @@ class StatusSchema(Schema):
 
 class RTTI(TransLinkAPIBase):
     """
-    TransLink's Real-Time Transit Information API.
+    The wrapper around TransLink's Real-Time Transit Information (RTTI) API.
     """
 
     def __init__(self, api_key, session=None):
+        """
+        :param api_key: TransLink API key.
+        :param requests.Session session: Session to use, instead of the default.
+        """
         super(RTTI, self).__init__(
             'https://api.translink.ca/rttiapi/v1/',
             api_key=api_key, session=session)
 
     def stop(self, stop_number):
+        """
+        Get a bus stop by bus stop number.
+
+        :param stop_number: 5-digit bus stop number.
+        :rtype: Stop
+        """
         return self._get_deserialized('stops/{}'.format(stop_number), StopSchema())
 
     def _stops(self, **kwargs):
         return self._get_deserialized('stops', StopSchema(many=True), params=kwargs)
 
     def stops(self, lat, long, radius_m=None, route_number=None):
+        """
+        Search for stops around a certain point.
+
+        :param float lat: Latitude.
+        :param float long: Longitude.
+        :param int radius_m: Search this radius for stops. Default 500. Maximum 2000.
+        :param route_number: Search for stops served by this route.
+        :rtype: list[Stop]
+        """
         return self._stops(
             lat='{:.6f}'.format(lat), long='{:.6f}'.format(long),
             radius=radius_m, routeno=route_number)
 
     def stop_estimates(self, stop_number, count=None, timeframe=None, route_number=None):
+        """
+        Gets the next bus estimates for a particular stop. Returns schedule data if estimates are not available.
+
+        :param stop_number: A five-digit stop number.
+        :param int count: The number of buses to return. Default 6.
+        :param int timeframe: The search time frame in minutes. Default 120.
+        :param route_number: If present, will search for stops specific to route.
+        :returns: A list of :class:`StopEstimate`. Appears to be grouped by
+            route, destination, and direction (not documented).
+        :rtype: list[StopEstimate]
+        """
         return self._get_deserialized(
             'stops/{}/estimates'.format(stop_number),
             StopEstimateSchema(many=True),
             params={'count': count, 'timeframe': timeframe, 'routeNo': route_number})
 
     def bus(self, bus_number):
+        """
+        Get a bus by its bus vehicle number.
+
+        :param bus_number: A vehicle id.
+            It is not possible to get a bus that is not currently in service.
+
+            .. note:: This endpoint erroneously rejects 5-digit bus numbers.
+        :rtype: Bus
+        """
         return self._get_deserialized('buses/{}'.format(bus_number), BusSchema(many=False))
 
     def buses(self, stop_number=None, route_number=None):
+        """
+        Retrieve vehicle information of all or a filtered set of buses.
+
+        :param stop_number: If present, will search for buses for stop id specified.
+        :param route_number: If present, will search for stops specific to route.
+        :rtype: list[Bus]
+        """
         return self._get_deserialized(
             'buses', BusSchema(many=True),
             params={'stopNo': stop_number, 'routeNo': route_number})
 
     def route(self, route_number):
+        """
+        Get a route by its route number.
+
+        :param route_number: A bus route number.
+        :rtype: Route
+        """
         return self._get_deserialized(
             'routes/{}'.format(route_number), RouteSchema(many=False))
 
     def routes(self, stop_number=None):
+        """
+        Get routes.
+
+        .. note:: This endpoint may intermittently and incorrectly return
+            error code 4014 (no routes for specified stop).
+
+        :param stop_number: If present, will search for routes passing through this stop.
+
+            .. note:: Though it's implied that leaving this unspecified will return all routes,
+                in practice, this parameter is required.
+        :rtype: list[Route]
+        """
         return self._get_deserialized(
             'routes', RouteSchema(many=True), params={'stopNo': stop_number})
 
     def status(self, service='all'):
+        """
+        Gets the bus location and real-time schedule information update status.
+
+        :param service: A service name.
+
+            * ``location`` for bus location information,
+            * ``schedule`` for real-time schedule information
+            * ``all`` for both services
+        :rtype: list[Status]
+        """
         return self._get_deserialized('status/{}'.format(service), StatusSchema(many=True))
