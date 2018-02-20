@@ -8,6 +8,46 @@ Tilapya wrapper around TransLink's Real-Time Transit Information (RTTI) API.
 .. seealso:: `TransLink's RTTI API reference <https://developer.translink.ca/ServicesRtti/ApiReference>`_.
     Much of it is replicated here for convenience.
     However, the docs here reflect Tilapya-specific behaviour.
+
+
+Usage examples
+--------------
+
+.. code-block:: python
+   :caption: Find the name of bus stop 53095, and whether it's wheelchair-accessible.
+
+    >>> from tilapya import RTTI
+    >>> api = RTTI('my key')
+    >>> stop = api.stop('53095')
+    >>> stop.Name
+    'WB DOVER ST FS ROYAL OAK AVE'
+    >>> stop.WheelchairAccess
+    False
+
+.. code-block:: python
+   :caption: Get all the route map KML files for bus route 324.
+
+    >>> route = api.route('324')
+    >>> [pattern.RouteMap.Href for pattern in route.Patterns]
+    ['http://nb.translink.ca/geodata/trip/324-NB1.kmz', 'http://nb.translink.ca/geodata/trip/324-NB1L.kmz', 'http://nb.translink.ca/geodata/trip/324-SB1.kmz']
+
+.. code-block:: python
+   :caption: Find the current route and position of bus 2543.
+
+    >>> bus = api.bus('2543')
+    >>> f'{bus.RouteNo} {bus.Destination} ({bus.Direction})'
+    '020 VICTORIA (SOUTH)'
+    >>> bus.Latitude, bus.Longitude
+    (49.2805, -123.11725)
+
+.. code-block:: python
+   :caption: Get the next two predicted (or scheduled) arrival times for the 502 bus at bus stop 55070.
+
+    >>> est = api.stop_estimates('55070', count=2, route_number='502')[0]
+    >>> [f'{sked.ExpectedLeaveTime.isoformat()} - {est[0].RouteNo} {sked.Destination}' for sked in est.Schedules]
+    ['2018-02-19T22:30:00-08:00 - 502 LANGLEY CTR', '2018-02-19T22:58:00-08:00 - 502 LANGLEY CTR']
+
+
 """
 from collections import namedtuple
 from datetime import datetime, timedelta
