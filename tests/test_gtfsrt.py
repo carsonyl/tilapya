@@ -26,7 +26,7 @@ def test_headers_realtime(authed_gtfs):
 
 def test_download_realtime(authed_gtfs, tmpdir):
     dest = tmpdir.join('gtfsrt.pb')
-    assert authed_gtfs.download_realtime(dest)
+    assert authed_gtfs.download_realtime(str(dest))
 
 
 def test_headers_position(authed_gtfs):
@@ -38,7 +38,7 @@ def test_headers_position(authed_gtfs):
 
 def test_download_position(authed_gtfs, tmpdir):
     dest = tmpdir.join('gtfsposition.pb')
-    assert authed_gtfs.download_position(dest)
+    assert authed_gtfs.download_position(str(dest))
 
 
 def test_gtfsrt_invalid_key():

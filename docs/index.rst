@@ -2,7 +2,7 @@ Tilapya: TransLink API, in Python
 =================================
 
 .. image:: https://img.shields.io/pypi/v/tilapya.svg?maxAge=2592000
-    :target: https://pypi.python.org/pypi/tilapya
+    :target: https://pypi.org/project/tilapya
 .. image:: https://img.shields.io/travis/carsonyl/tilapya.svg?maxAge=2592000
     :target: https://travis-ci.org/carsonyl/tilapya
 .. image:: https://readthedocs.org/projects/tilapya/badge/?version=latest
