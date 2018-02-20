@@ -92,7 +92,9 @@ def test_stops_errors(authed_rtti, lat, long, radius, route, expect_code):
 def test_stop_estimates_with_results(authed_rtti, stop, count, timeframe, route):
     estimates = authed_rtti.stop_estimates(
         stop, count=count, timeframe=timeframe, route_number=route)
-    assert len(estimates) > 0
+    assert estimates
+    if route:
+        assert [route] == list(map(lambda est: est.RouteNo, estimates))
 
 
 @pytest.mark.parametrize('stop,count,timeframe,route,expect_code', [
