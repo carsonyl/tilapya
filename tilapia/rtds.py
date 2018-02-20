@@ -12,6 +12,26 @@ Highway-1 to Chilliwack and Highway-99 to Whistler.
 .. seealso:: `TransLink's RTDS API reference <https://developer.translink.ca/Services/ApiReference>`_.
     Much of it is replicated here for convenience.
     However, the docs here reflect Tilapia-specific behaviour.
+
+
+Usage examples
+--------------
+
+.. code-block:: python
+   :caption: Find out when the live traffic data was last updated.
+
+    >>> from tilapya import RTDS
+    >>> api = RTDS('my key')
+    >>> api.live_data_timestamp().timestampUtc.isoformat()
+    '2018-02-20T04:37:30'
+
+.. code-block:: python
+   :caption: Get the current info for one of the road links at a given coordinate.
+
+    >>> results = api.live_data_at_point(-123.045501, 49.231947, types=6)
+    >>> results.data[0]
+    LinkInfo(linkId=32917581, isFwd=True, angle=270.8, lengthMetres=103.61, speedKmph=36.6, travelTimeMinutes=0.2, quality=0)
+
 """
 from ._util import TransLinkAPIBase
 from marshmallow import Schema, fields, post_load
@@ -194,9 +214,9 @@ class RTDS(TransLinkAPIBase):
         :rtype: LiveDataAtPointResult
         """
         try:
-        return self._get_deserialized(
-            'LiveDataAtPoint', LiveDataAtPointResultSchema(),
-            params={'x': x, 'y': y, 'z': z, 'types': types})
+            return self._get_deserialized(
+                'LiveDataAtPoint', LiveDataAtPointResultSchema(),
+                params={'x': x, 'y': y, 'z': z, 'types': types})
         except ValidationError:
             return None  # Assuming entire POST body was 'null'.
 
