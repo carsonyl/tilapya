@@ -18,8 +18,8 @@ def authed_rtds(valid_api_key):
 
 
 def test_tile(authed_rtds, tmpdir):
-    dest = tmpdir.join('test.png')
-    assert authed_rtds.tile(str(dest), 647, 1402, 12, types=6)
+    dest = str(tmpdir.join('test.png'))
+    assert authed_rtds.tile(dest, 647, 1402, 12, types=6)
     assert imghdr.what(dest) == 'png'
 
 
