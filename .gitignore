@@ -65,3 +65,4 @@ target/
 .vscode/
 *.code-workspace
 .env
+.pytest_cache

@@ -6,13 +6,13 @@ which provides real-time transit information for the Metro Vancouver region.
 
 Tilapya has three interfaces which correspond directly to components of the TransLink Open API:
 
-* **RTTI**: Real-Time Transit Information
-* **RTDS**: Regional Traffic Data System
-* **GTFSRT**: GTFS-realtime feeds
+* :doc:`RTTI <rtti>`: Real-Time Transit Information
+* :doc:`RTDS <rtds>`: Regional Traffic Data System
+* :doc:`GTFSRT <gtfsrt>`: GTFS-realtime feeds
 
 Tilapya is more than a thin wrapper around the underlying REST APIs.
-It smooths over some of the quirky and inconvenient responses,
-and guarantees a consistent schema in returned responses.
+Where possible, it smooths over some inconvenient return values,
+and guarantees a consistent schema in returned errors and responses.
 
 
 Installation
@@ -30,3 +30,27 @@ Getting started
 Use of the TransLink Open API, and thus Tilapya, requires an API key.
 If you don't already have an API key, you can get one by registering for an account at
 https://developer.translink.ca/Account/Register.
+
+Tilapya's API docs contain examples for common operations.
+
+
+Documentation
+-------------
+
+.. toctree::
+   :maxdepth: 1
+
+   rtti
+   rtds
+   gtfsrt
+   errors
+   testing
+   history
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
