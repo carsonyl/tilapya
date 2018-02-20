@@ -5,9 +5,8 @@ python:
   - 3.4
 #  - 2.7
 
-install: pip install -U tox-travis pipenv
+install:
+  - pip install -U tox-travis
 
 script:
   - tox
-  - pipenv install --dev
-  - pipenv run py.test tests --vcr-record-mode=all
