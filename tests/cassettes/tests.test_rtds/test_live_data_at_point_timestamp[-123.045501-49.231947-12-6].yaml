@@ -1,0 +1,24 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://rtdsapi.translink.ca/rtdsapi/v1/LiveDataAtPoint?types=6&x=-123.045501&y=49.231947&z=12
+  response:
+    body: {string: '{"x":-123.04546818137169,"y":49.232985038496849,"timestampUtc":"2018-02-20T05:02:30","data":[{"linkId":32917581,"isFwd":true,"lengthMetres":103.61,"angle":270.8,"speedKmph":36.8,"travelTimeMinutes":0.2,"quality":0},{"linkId":32917581,"isFwd":false,"lengthMetres":103.61,"angle":90.8,"speedKmph":35.6,"travelTimeMinutes":0.2,"quality":0}]}'}
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-cache]
+      Content-Type: [application/json; charset=utf-8]
+      Expires: ['-1']
+      Pragma: [no-cache]
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+      content-length: ['338']
+    status: {code: 200, message: OK}
+version: 1

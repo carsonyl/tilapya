@@ -33,14 +33,27 @@ def test_all_live_data(authed_rtds):
     assert isinstance(result.timestampUtc, datetime)
 
 
-def test_live_data_at_point_timestamp(authed_rtds):
-    result = authed_rtds.live_data_at_point(
-        -123.04550170898438, 49.23194729854554, z=12, types=6)
-    assert isinstance(result.timestampUtc, datetime)
+@pytest.mark.parametrize('x,y,z,types', [
+    [-123.045501, 49.231947, 12, 6],
+    [-123.045501, 49.231947, None, 6],
+    [-123.045501, 49.231947, None, 1],
+])
+def test_live_data_at_point_timestamp(authed_rtds, x, y, z, types):
+    result = authed_rtds.live_data_at_point(x, y, z, types)
+    if types == 1:
+        assert result is None
+    else:
+        assert isinstance(result.timestampUtc, datetime)
 
+
+@pytest.mark.parametrize('x,y,z,types,expect_http_code', [
+    ['abc', -1, 0, -1, codes.bad],
+    [-123.045501, 49.231947, None, None, codes.not_found],
+])
+def test_live_data_at_point_errors(authed_rtds, x, y, z, types, expect_http_code):
     with pytest.raises(TransLinkAPIError) as info:
-        authed_rtds.live_data_at_point('abc', -1, z=0, types=-1)
-    assert info.value.response.status_code == codes.bad
+        authed_rtds.live_data_at_point(x, y, z, types)
+    assert info.value.response.status_code == expect_http_code
     assert info.value.message
 
 

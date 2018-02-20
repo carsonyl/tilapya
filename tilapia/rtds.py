@@ -15,6 +15,7 @@ Highway-1 to Chilliwack and Highway-99 to Whistler.
 """
 from ._util import TransLinkAPIBase
 from marshmallow import Schema, fields, post_load
+from marshmallow.exceptions import ValidationError
 from collections import namedtuple
 
 
@@ -186,11 +187,18 @@ class RTDS(TransLinkAPIBase):
             Defaults to a generous tolerance if not provided.
         :param int types: The types of roadway being displayed, should match displayed tile types.
             See ``types`` argument of :meth:`tile` for more details.
+
+            .. note:: This parameter is implied to be optional,
+                but in practice may return a failure if not specified.
+        :returns: Result, or ``None`` if there was no match.
         :rtype: LiveDataAtPointResult
         """
+        try:
         return self._get_deserialized(
             'LiveDataAtPoint', LiveDataAtPointResultSchema(),
             params={'x': x, 'y': y, 'z': z, 'types': types})
+        except ValidationError:
+            return None  # Assuming entire POST body was 'null'.
 
     def colour_legend(self):
         """

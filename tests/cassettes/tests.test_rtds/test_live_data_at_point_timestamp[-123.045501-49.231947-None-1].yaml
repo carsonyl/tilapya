@@ -1,0 +1,24 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://rtdsapi.translink.ca/rtdsapi/v1/LiveDataAtPoint?types=1&x=-123.045501&y=49.231947
+  response:
+    body: {string: 'null'}
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-cache]
+      Content-Type: [application/json; charset=utf-8]
+      Expires: ['-1']
+      Pragma: [no-cache]
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+      content-length: ['4']
+    status: {code: 200, message: OK}
+version: 1

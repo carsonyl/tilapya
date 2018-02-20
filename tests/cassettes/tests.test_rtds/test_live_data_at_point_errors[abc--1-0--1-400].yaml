@@ -1,0 +1,23 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://rtdsapi.translink.ca/rtdsapi/v1/LiveDataAtPoint?types=-1&x=abc&y=-1&z=0
+  response:
+    body: {string: '{"Message":"Invalid value for X.; The X property is required."}'}
+    headers:
+      Access-Control-Allow-Headers: [Content-Type]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-cache]
+      Content-Length: ['63']
+      Content-Type: [application/json; charset=utf-8]
+      Expires: ['-1']
+      Pragma: [no-cache]
+      Server: [Microsoft-IIS/10.0]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+    status: {code: 400, message: Bad Request}
+version: 1
