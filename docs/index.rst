@@ -1,6 +1,13 @@
 Tilapya: TransLink API, in Python
 =================================
 
+.. image:: https://img.shields.io/pypi/v/tilapya.svg?maxAge=2592000
+    :target: https://pypi.python.org/pypi/tilapya
+.. image:: https://img.shields.io/travis/carsonyl/tilapya.svg?maxAge=2592000
+    :target: https://travis-ci.org/carsonyl/tilapya
+.. image:: https://readthedocs.org/projects/tilapya/badge/?version=latest
+    :target: http://tilapya.readthedocs.io/en/latest/?badge=latest
+
 **Tilapya** is a Python wrapper around the `TransLink Open API <https://developer.translink.ca/>`_,
 which provides real-time transit information for the Metro Vancouver region.
 
@@ -31,6 +38,7 @@ Use of the TransLink Open API, and thus Tilapya, requires an API key.
 If you don't already have an API key, you can get one by registering for an account at
 https://developer.translink.ca/Account/Register.
 
+Tilapya's documentation is at http://tilapya.readthedocs.io.
 Tilapya's API docs contain examples for common operations.
 
 
