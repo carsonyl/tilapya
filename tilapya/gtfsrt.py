@@ -4,7 +4,7 @@ It's primarily ingested by Google in order to power transit information within G
 
 .. seealso:: `TransLink's GTFS-realtime API reference <https://developer.translink.ca/ServicesGtfs/ApiReference>`_.
     Much of it is replicated here for convenience.
-    However, the docs here reflect Tilapia-specific behaviour.
+    However, the docs here reflect Tilapya-specific behaviour.
 
 Usage example
 -------------

@@ -11,7 +11,7 @@ Highway-1 to Chilliwack and Highway-99 to Whistler.
 
 .. seealso:: `TransLink's RTDS API reference <https://developer.translink.ca/Services/ApiReference>`_.
     Much of it is replicated here for convenience.
-    However, the docs here reflect Tilapia-specific behaviour.
+    However, the docs here reflect Tilapya-specific behaviour.
 
 
 Usage examples

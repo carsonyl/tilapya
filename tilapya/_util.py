@@ -1,5 +1,5 @@
 """
-Tilapia's internal utilities. Not part of the public API.
+Tilapya's internal utilities. Not part of the public API.
 """
 from requests import Session
 

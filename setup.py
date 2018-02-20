@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""The setup script for Tilapia."""
+"""The setup script for Tilapya."""
 
 from setuptools import setup, find_packages
 
@@ -18,28 +18,28 @@ requirements = [
 ]
 
 setup_requirements = [
-    'pytest-runner',
 ]
 
 test_requirements = [
-   'pytest>=3.4.0',
-   'pytest-vcr',
+    'pytest-runner',
+    'pytest>=3.4.0',
+    'pytest-vcr>=0.3.0',
 ]
 
 setup(
-    name='tilapia',
+    name='tilapya',
     version='0.1.0',
-    description='Wrapper around the TransLink Open API.',
+    description='TransLink Open API, in Python.',
     long_description=readme + '\n\n' + history,
     author='Carson Lam',
     author_email='carson.lam@alumni.ubc.ca',
-    url='https://github.com/carsonyl/tilapia',
-    packages=find_packages(include=['tilapia']),
+    url='https://github.com/carsonyl/tilapya',
+    packages=find_packages(include=['tilapya']),
     include_package_data=True,
     install_requires=requirements,
     license='Apache Software License 2.0',
     zip_safe=False,
-    keywords='tilapia',
+    keywords='tilapya',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

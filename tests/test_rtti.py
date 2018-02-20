@@ -3,9 +3,9 @@ from datetime import datetime
 import pytest
 from requests import codes
 
-from tilapia.errors import TransLinkAPIError
-from tilapia.errors import ErrorCodes as EC
-from tilapia.rtti import (RTTI, TRANSLINK_TZ, parse_last_update,
+from tilapya.errors import TransLinkAPIError
+from tilapya.errors import ErrorCodes as EC
+from tilapya.rtti import (RTTI, TRANSLINK_TZ, parse_last_update,
                           parse_leave_time)
 
 

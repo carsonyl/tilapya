@@ -1,5 +1,5 @@
 """
-Tilapia wrapper around TransLink's Real-Time Transit Information (RTTI) API.
+Tilapya wrapper around TransLink's Real-Time Transit Information (RTTI) API.
 
 .. note:: This API is limited to real-time information for buses.
         In addition, some routes and vehicles may not be available.
@@ -7,7 +7,7 @@ Tilapia wrapper around TransLink's Real-Time Transit Information (RTTI) API.
 
 .. seealso:: `TransLink's RTTI API reference <https://developer.translink.ca/ServicesRtti/ApiReference>`_.
     Much of it is replicated here for convenience.
-    However, the docs here reflect Tilapia-specific behaviour.
+    However, the docs here reflect Tilapya-specific behaviour.
 """
 from collections import namedtuple
 from datetime import datetime, timedelta
@@ -74,7 +74,7 @@ class Schedule(namedtuple('Schedule', [
     :ivar Destination: The destination of the trip.
     :ivar datetime ExpectedLeaveTime: The expected departure time of the trip at the specific stop.
         The original value is something like "05:20:30pm 2018-02-18".
-        Tilapia converts this to an absolute datetime with time zone.
+        This is converted to an absolute datetime with time zone.
     :ivar int ExpectedCountDown: The expected departure time in minutes.
     :ivar ScheduleStatus: The status of the trip.
 
@@ -88,7 +88,7 @@ class Schedule(namedtuple('Schedule', [
     :ivar bool AddedStop: Indicates if stop is added.
     :ivar datetime LastUpdate: The last updated time of the trip.
         The original value is something like "05:20:30 pm".
-        Tilapia converts this to an absolute datetime with time zone.
+        This is converted to an absolute datetime with time zone.
     """
 
 
@@ -110,7 +110,7 @@ class Bus(namedtuple('Bus', [
     :ivar float Longitude: The longitude of the vehicle location.
     :ivar datetime RecordedTime: The recorded time of the last location of the vehicle.
         The original value is something like "05:20:30 pm".
-        Tilapia converts this to an absolute datetime with time zone.
+        This is converted to an absolute datetime with time zone.
     :ivar RouteMap RouteMap: The element containing the route map information.
     """
 

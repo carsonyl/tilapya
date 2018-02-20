@@ -1,1 +1,1 @@
-"""Unit test package for tilapia."""
+"""Unit test package for Tilapya."""

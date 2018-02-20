@@ -3,8 +3,8 @@ from datetime import datetime
 
 import pytest
 
-from tilapia.errors import TransLinkAPIError
-from tilapia.rtds import RTDS
+from tilapya.errors import TransLinkAPIError
+from tilapya.rtds import RTDS
 from requests import codes
 
 

@@ -3,8 +3,8 @@ from datetime import datetime
 import pytest
 from requests import codes
 
-from tilapia.errors import TransLinkAPIError
-from tilapia.gtfsrt import GTFSRT
+from tilapya.errors import TransLinkAPIError
+from tilapya.gtfsrt import GTFSRT
 from .conftest import remove_response_headers_func
 
 
