@@ -1,10 +1,11 @@
+import warnings
 from datetime import datetime
 
 import pytest
 from requests import codes
 
-from tilapya.errors import TransLinkAPIError
 from tilapya.errors import ErrorCodes as EC
+from tilapya.errors import TransLinkAPIError
 from tilapya.rtti import (RTTI, TRANSLINK_TZ, parse_last_update,
                           parse_leave_time)
 
@@ -147,8 +148,17 @@ def test_bus_errors(authed_rtti, bus, expect_code):
     [None, '53987'],
 ])
 def test_get_buses_with_filter(authed_rtti, route, stop):
-    buses = authed_rtti.buses(route_number=route, stop_number=stop)
-    assert len(buses) > 0
+    try:
+        buses = authed_rtti.buses(route_number=route, stop_number=stop)
+        assert len(buses) > 0
+    except TransLinkAPIError as e:
+        # Be lenient about 'no bus' errors.
+        # The test may be running when there's no active bus for a route,
+        # or outside service times.
+        if e.code == EC.bus_no_buses_found:
+            warnings.warn('Stop {} returned no buses for route {}'.format(stop, route))
+        else:
+            raise
 
 
 @pytest.mark.parametrize('route,stop,expect_code', [
