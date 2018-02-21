@@ -21,6 +21,8 @@ Tilapya is more than a thin wrapper around the underlying REST APIs.
 Where possible, it smooths over some inconvenient return values,
 and guarantees a consistent schema in returned errors and responses.
 
+Tilapya is licensed under Apache 2.0.
+
 
 Installation
 ------------
@@ -30,6 +32,7 @@ Install Tilapya using `pip <https://pip.pypa.io>`_::
     $ pip install tilapya
 
 The source is also `available on GitHub <https://github.com/carsonyl/tilapya>`_.
+
 
 Getting started
 ---------------
