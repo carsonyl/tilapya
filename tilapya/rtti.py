@@ -213,7 +213,7 @@ def parse_leave_time(value, relative_to=None):
             relative_to = datetime.now(TRANSLINK_TZ)
         parsed = TRANSLINK_TZ.localize(datetime.strptime(value, '%I:%M%p'))
         parsed = relative_to.replace(
-            hour=parsed.hour, minute=parsed.minute, second=0)
+            hour=parsed.hour, minute=parsed.minute, second=0, microsecond=0)
         # Time has no date? Assume it's for tomorrow.
         parsed += timedelta(days=1)
         return parsed
@@ -225,7 +225,7 @@ def parse_last_update(value, relative_to=None):
         relative_to = datetime.now(TRANSLINK_TZ)
     parsed = datetime.strptime(value, '%I:%M:%S %p')
     parsed = relative_to.replace(
-        hour=parsed.hour, minute=parsed.minute, second=parsed.second)
+        hour=parsed.hour, minute=parsed.minute, second=parsed.second, microsecond=0)
     if parsed > relative_to:
         parsed -= timedelta(days=1)
     return parsed
