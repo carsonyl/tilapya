@@ -25,26 +25,28 @@ Usage examples
     False
 
 .. code-block:: python
-   :caption: Get all the route map KML files for bus route 324.
+   :caption: Get all the route map KML links for bus route 324.
 
     >>> route = api.route('324')
     >>> [pattern.RouteMap.Href for pattern in route.Patterns]
     ['http://nb.translink.ca/geodata/trip/324-NB1.kmz', 'http://nb.translink.ca/geodata/trip/324-NB1L.kmz', 'http://nb.translink.ca/geodata/trip/324-SB1.kmz']
 
 .. code-block:: python
-   :caption: Find the current route and position of bus 2543.
+   :caption: Find the last reported route and position of bus 2543.
 
     >>> bus = api.bus('2543')
     >>> f'{bus.RouteNo} {bus.Destination} ({bus.Direction})'
     '020 VICTORIA (SOUTH)'
     >>> bus.Latitude, bus.Longitude
     (49.2805, -123.11725)
+    >>> bus.RecordedTime.isoformat()
+    '2018-02-19T22:07:57-08:00'
 
 .. code-block:: python
    :caption: Get the next two predicted (or scheduled) arrival times for the 502 bus at bus stop 55070.
 
     >>> est = api.stop_estimates('55070', count=2, route_number='502')[0]
-    >>> [f'{sked.ExpectedLeaveTime.isoformat()} - {est[0].RouteNo} {sked.Destination}' for sked in est.Schedules]
+    >>> [f'{sked.ExpectedLeaveTime.isoformat()} - {est.RouteNo} {sked.Destination}' for sked in est.Schedules]
     ['2018-02-19T22:30:00-08:00 - 502 LANGLEY CTR', '2018-02-19T22:58:00-08:00 - 502 LANGLEY CTR']
 
 
@@ -113,8 +115,9 @@ class Schedule(namedtuple('Schedule', [
     :ivar Pattern: The pattern of the specific trip.
     :ivar Destination: The destination of the trip.
     :ivar datetime ExpectedLeaveTime: The expected departure time of the trip at the specific stop.
-        The original value is something like "05:20:30pm 2018-02-18".
+        The original value is something like "05:20pm 2018-02-18".
         This is converted to an absolute datetime with time zone.
+        Seconds are always 0.
     :ivar int ExpectedCountDown: The expected departure time in minutes.
     :ivar ScheduleStatus: The status of the trip.
 
