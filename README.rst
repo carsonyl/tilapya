@@ -22,8 +22,8 @@ Tilapya has three interfaces which correspond directly to components of the Tran
 * **GTFSRT**: GTFS-realtime feeds
 
 Tilapya is more than a thin wrapper around the underlying REST APIs.
-It smooths over some of the quirky and inconvenient responses,
-and guarantees a consistent schema in returned responses.
+Where possible, it smooths over some inconvenient return values,
+and guarantees a consistent schema in returned errors and responses.
 
 
 Installation
