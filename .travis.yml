@@ -11,3 +11,5 @@ install:
   - pipenv install --dev
 script:
   - pipenv run py.test tests --vcr-record-mode=none
+  # Run tests against live API, but only once per CI build.
+  - if [[ $TRAVIS_PYTHON_VERSION == '3.6' ]]; then pipenv run py.test tests --vcr-record-mode=all; fi
