@@ -155,7 +155,7 @@ def test_get_buses_with_filter(authed_rtti, route, stop):
         # Be lenient about 'no bus' errors.
         # The test may be running when there's no active bus for a route,
         # or outside service times.
-        if e.code == EC.bus_no_buses_found:
+        if e.code == EC.bus_no_buses_found.code:
             warnings.warn('Stop {} returned no buses for route {}'.format(stop, route))
         else:
             raise
