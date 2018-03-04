@@ -17,33 +17,17 @@ def authed_gtfs(valid_api_key):
     return GTFSRT(api_key=valid_api_key)
 
 
-def test_headers_realtime(authed_gtfs):
-    head = authed_gtfs.headers_realtime()
-    assert isinstance(head.date, datetime)
-    assert head.content_length > 0
-    assert head.content_disposition
+def test_download_realtime(authed_gtfs):
+    assert authed_gtfs.trip_updates().content
 
 
-def test_download_realtime(authed_gtfs, tmpdir):
-    dest = tmpdir.join('gtfsrt.pb')
-    assert authed_gtfs.download_realtime(str(dest))
-
-
-def test_headers_position(authed_gtfs):
-    head = authed_gtfs.headers_position()
-    assert isinstance(head.date, datetime)
-    assert head.content_length > 0
-    assert head.content_disposition
-
-
-def test_download_position(authed_gtfs, tmpdir):
-    dest = tmpdir.join('gtfsposition.pb')
-    assert authed_gtfs.download_position(str(dest))
+def test_download_position(authed_gtfs):
+    assert authed_gtfs.position().content
 
 
 def test_gtfsrt_invalid_key():
     with pytest.raises(TransLinkAPIError) as info:
-        GTFSRT(api_key='foobar').headers_realtime()
+        GTFSRT(api_key='foobar').trip_updates()
     assert info.value.response.status_code == codes.forbidden
     assert not info.value.code
     assert not info.value.message

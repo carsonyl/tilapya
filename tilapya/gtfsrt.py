@@ -10,45 +10,17 @@ Usage example
 -------------
 
 .. code-block:: python
-   :caption: Download real-time positions to a file.
+   :caption: Request the real-time positions feed.
 
     >>> from tilapya import GTFSRT
     >>> api = GTFSRT('my key')
-    >>> api.download_position('gtfsposition.pb')
-    28791
+    >>> api.position()
+    <Response [200]>
 
-
+The protobuf data in ``response.content`` can then be deserialized.
 """
-from collections import namedtuple
-
-from marshmallow import Schema, fields, post_load
-
 from ._util import TransLinkAPIBase
 from .errors import TransLinkAPIError
-
-
-class Headers(namedtuple('Headers', ['content_disposition', 'content_length', 'content_type', 'date', 'server'])):
-    """
-    HTTP headers for a GTFS-realtime feed file.
-
-    :ivar content_disposition: Content-Disposition header.
-    :ivar int content_length: Content-Length header.
-    :ivar content_type: Content-Type header.
-    :ivar datetime.datetime date: Parsed Date header.
-    :ivar server: Server header.
-    """
-
-
-class HeadersSchema(Schema):
-    content_disposition = fields.String(load_from='Content-Disposition')
-    content_length = fields.Integer(load_from='Content-Length')
-    content_type = fields.String(load_from='Content-Type')
-    date = fields.DateTime(format='rfc', load_from='Date')
-    server = fields.String(load_from='Server')
-
-    @post_load
-    def make_obj(self, js):
-        return Headers(**js)
 
 
 class GTFSRT(TransLinkAPIBase):
@@ -65,46 +37,26 @@ class GTFSRT(TransLinkAPIBase):
             'https://gtfs.translink.ca/',
             api_key=api_key, session=session)
 
-    def _get_headers_and_deserialize(self, endpoint):
-        with self._request(endpoint) as resp:
-            if not resp.ok:
-                raise TransLinkAPIError(resp)
-            return HeadersSchema().load(resp.headers)
-
-    def headers_realtime(self):
+    def trip_updates(self):
         """
-        Get the headers for the trip updates feed.
+        Request the trip updates feed.
 
-        .. note:: This is implemented as a GET, as the server disallows HEAD.
-
-        :rtype: Headers
+        :returns: The response. The raw protobuf data is in ``content``.
+        :rtype: requests.Response
         """
-        return self._get_headers_and_deserialize('gtfsrealtime')
+        resp = self._request('gtfsrealtime')
+        if not resp.ok:
+            raise TransLinkAPIError(resp)
+        return resp
 
-    def download_realtime(self, destination):
+    def position(self):
         """
-        Download the trip updates feed.
+        Request the position feed.
 
-        :param destination: Download the file to this local file path.
-        :returns: Number of bytes downloaded.
+        :returns: The response. The raw protobuf data is in ``content``.
+        :rtype: requests.Response
         """
-        return self._streamed_download('gtfsrealtime', destination)
-
-    def headers_position(self):
-        """
-        Get the headers for the position feed.
-
-        .. note:: This is implemented as a GET, as the server disallows HEAD.
-
-        :rtype: Headers
-        """
-        return self._get_headers_and_deserialize('gtfsposition')
-
-    def download_position(self, destination):
-        """
-        Download the position feed.
-
-        :param destination: Download the file to this local file path.
-        :returns: Number of bytes downloaded.
-        """
-        return self._streamed_download('gtfsposition', destination)
+        resp = self._request('gtfsposition')
+        if not resp.ok:
+            raise TransLinkAPIError(resp)
+        return resp
