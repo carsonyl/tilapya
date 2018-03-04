@@ -28,5 +28,7 @@ These returned objects are read-only. Do not attempt to modify their fields.
    :members:
 .. autoclass:: tilapya.rtti.Route
    :members:
+.. autoclass:: tilapya.rtti.Pattern
+   :members:
 .. autoclass:: tilapya.rtti.Status
    :members:
