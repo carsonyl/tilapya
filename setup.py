@@ -13,7 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'requests>=2.18.4,<3.0.0',
-    'marshmallow>=3.0.0b7,<4.0.0',
+    'marshmallow>=3.0.0b13,<4.0.0',
     'pytz',
 ]
 
