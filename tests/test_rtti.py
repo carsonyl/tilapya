@@ -181,7 +181,6 @@ def test_get_buses_errors(authed_rtti, route, stop, expect_code):
     ('02', '002'),
     ('144', '144'),
     ('N9', 'N9'),
-    ('C2', 'C2'),
 ])
 def test_route(authed_rtti, route_number, expect_route_number):
     route = authed_rtti.route(route_number)
