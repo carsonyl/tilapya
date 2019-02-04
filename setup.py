@@ -12,8 +12,8 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'requests>=2.18.4,<3.0.0',
-    'marshmallow>=3.0.0b13,<4.0.0',
+    'requests>=2.20.0,<3.0.0',
+    'marshmallow>=3.0.0rc1,<4.0.0',
     'pytz',
 ]
 

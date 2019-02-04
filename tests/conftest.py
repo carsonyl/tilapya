@@ -19,7 +19,7 @@ def remove_response_headers_func(*headers_to_remove):
     return sanitize_response
 
 
-@pytest.fixture
+@pytest.fixture(scope='module')
 def vcr_config():
     return {
         'filter_headers': ['user-agent', 'set-cookie', 'connection'],
@@ -29,6 +29,6 @@ def vcr_config():
     }
 
 
-@pytest.fixture
-def vcr_cassette_path(request, vcr_cassette_name):
-    return os.path.join('tests', 'cassettes', request.module.__name__, vcr_cassette_name)
+@pytest.fixture(scope='module')
+def vcr_cassette_dir(request):
+    return os.path.join('tests', 'cassettes', request.module.__name__)
