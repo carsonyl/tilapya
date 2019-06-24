@@ -5,43 +5,6 @@ JSON response samples
    :local:
 
 
-RTDS
-----
-
-Live data at point
-^^^^^^^^^^^^^^^^^^
-
-``GET https://rtdsapi.translink.ca/rtdsapi/v1/LiveDataAtPoint?x=-123.045501&y=49.231947&types=6``
-
-::
-
-    {
-        "x": -123.04546818137169,
-        "y": 49.23298503849685,
-        "timestampUtc": "2018-02-20T04:50:00",
-        "data": [
-            {
-                "linkId": 32917581,
-                "isFwd": true,
-                "lengthMetres": 103.61,
-                "angle": 270.8,
-                "speedKmph": 31.7,
-                "travelTimeMinutes": 0.2,
-                "quality": 0
-            },
-            {
-                "linkId": 32917581,
-                "isFwd": false,
-                "lengthMetres": 103.61,
-                "angle": 90.8,
-                "speedKmph": 37.8,
-                "travelTimeMinutes": 0.2,
-                "quality": 0
-            }
-        ]
-    }
-
-
 RTTI
 ----
 

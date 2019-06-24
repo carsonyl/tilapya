@@ -18,7 +18,6 @@ which provides real-time transit information for the Metro Vancouver region.
 Tilapya has three interfaces which correspond directly to components of the TransLink Open API:
 
 * **RTTI**: Real-Time Transit Information
-* **RTDS**: Regional Traffic Data System
 * **GTFSRT**: GTFS-realtime feeds
 
 Tilapya is more than a thin wrapper around the underlying REST APIs.

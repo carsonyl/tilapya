@@ -54,7 +54,6 @@ Documentation
    :maxdepth: 1
 
    rtti
-   rtds
    gtfsrt
    errors
    testing
