@@ -23,6 +23,10 @@ def test_download_position(authed_gtfs):
     assert authed_gtfs.position().content
 
 
+def test_download_alerts(authed_gtfs):
+    assert authed_gtfs.service_alerts().content
+
+
 def test_gtfsrt_invalid_key():
     with pytest.raises(TransLinkAPIError) as info:
         GTFSRT(api_key='foobar').trip_updates()

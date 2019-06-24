@@ -60,3 +60,15 @@ class GTFSRT(TransLinkAPIBase):
         if not resp.ok:
             raise TransLinkAPIError(resp)
         return resp
+
+    def service_alerts(self):
+        """
+        Request the service alerts feed.
+
+        :returns: The response. The raw protobuf data is in ``content``.
+        :rtype: requests.Response
+        """
+        resp = self._request('gtfsalerts')
+        if not resp.ok:
+            raise TransLinkAPIError(resp)
+        return resp
