@@ -203,7 +203,7 @@ class StopSchema(Schema):
     Routes = fields.String(required=True)
 
     @post_load
-    def make_obj(self, js):
+    def make_obj(self, js, **kwargs):
         return Stop(**js)
 
 
@@ -248,7 +248,7 @@ class ScheduleSchema(Schema):
     LastUpdate = fields.Function(deserialize=parse_last_update, required=True)
 
     @post_load
-    def make_obj(self, js):
+    def make_obj(self, js, **kwargs):
         return Schedule(**js)
 
 
@@ -256,7 +256,7 @@ class RouteMapSchema(Schema):
     Href = fields.Url(relative=False, required=True)
 
     @post_load
-    def make_obj(self, js):
+    def make_obj(self, js, **kwargs):
         return RouteMap(**js)
 
 
@@ -268,7 +268,7 @@ class StopEstimateSchema(Schema):
     Schedules = fields.Nested(ScheduleSchema, many=True, required=True)
 
     @post_load
-    def make_obj(self, js):
+    def make_obj(self, js, **kwargs):
         return StopEstimate(**js)
 
 
@@ -285,7 +285,7 @@ class BusSchema(Schema):
     RouteMap = fields.Nested(RouteMapSchema, many=False, required=True)
 
     @post_load
-    def make_obj(self, js):
+    def make_obj(self, js, **kwargs):
         return Bus(**js)
 
 
@@ -296,7 +296,7 @@ class PatternSchema(Schema):
     Direction = fields.String(required=True)
 
     @post_load
-    def make_obj(self, js):
+    def make_obj(self, js, **kwargs):
         return Pattern(**js)
 
 
@@ -307,7 +307,7 @@ class RouteSchema(Schema):
     Patterns = fields.Nested(PatternSchema, many=True, required=True)
 
     @post_load
-    def make_obj(self, js):
+    def make_obj(self, js, **kwargs):
         return Route(**js)
 
 
@@ -316,7 +316,7 @@ class StatusSchema(Schema):
     Value = fields.String(required=True)
 
     @post_load
-    def make_obj(self, js):
+    def make_obj(self, js, **kwargs):
         return Status(**js)
 
 
