@@ -28,7 +28,7 @@ test_requirements = [
 
 setup(
     name='tilapya',
-    version='0.2.0',
+    version='1.0.0',
     description='TransLink Open API, in Python.',
     long_description=readme + '\n\n' + history,
     author='Carson Lam',

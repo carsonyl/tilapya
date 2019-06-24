@@ -1,6 +1,15 @@
 History
 =======
 
+1.0.0 (2019-06-23)
+------------------
+
+- Drop support for Python 2.7 and 3.4.
+- Remove RTDS API. It was removed upstream.
+- Switch GTFS-RT to v2 endpoints. v1 was removed upstream.
+- Add service alerts endpoint to GTFS-RT. It was added to v2 upstream.
+
+
 0.2.0 (2019-02-03)
 ------------------
 
