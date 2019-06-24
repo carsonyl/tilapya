@@ -34,7 +34,7 @@ class GTFSRT(TransLinkAPIBase):
         :param requests.Session session: Session to use, instead of the default.
         """
         super(GTFSRT, self).__init__(
-            'https://gtfs.translink.ca/',
+            'https://gtfs.translink.ca/v2',
             api_key=api_key, session=session)
 
     def trip_updates(self):

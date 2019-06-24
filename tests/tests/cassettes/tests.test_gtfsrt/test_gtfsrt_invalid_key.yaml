@@ -5,16 +5,18 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
     method: GET
-    uri: https://gtfs.translink.ca/gtfsrealtime
+    uri: https://gtfs.translink.ca/v2/gtfsrealtime
   response:
     body: {string: ''}
     headers:
+      Access-Control-Expose-Headers: [Request-Context]
       Cache-Control: [no-cache]
       Content-Length: ['0']
-      Date: ['Sun, 18 Feb 2018 21:27:33 GMT']
+      Date: ['Mon, 24 Jun 2019 00:17:00 GMT']
       Expires: ['-1']
       Pragma: [no-cache]
-      Server: [Microsoft-IIS/8.5]
+      Request-Context: ['appId=cid-v1:471d10c4-7574-4835-8126-ac1573780dbb']
+      Server: [Microsoft-IIS/10.0]
       X-AspNet-Version: [4.0.30319]
       X-Powered-By: [ASP.NET]
     status: {code: 403, message: Forbidden}
