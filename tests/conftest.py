@@ -22,7 +22,7 @@ def remove_response_headers_func(*headers_to_remove):
 @pytest.fixture(scope='module')
 def vcr_config():
     return {
-        'filter_headers': ['user-agent', 'set-cookie', 'connection'],
+        'filter_headers': ['user-agent', 'set-cookie', 'connection', 'request-context'],
         'filter_query_parameters': ['apikey'],
         'decode_compressed_response': True,
         'before_record_response': remove_response_headers_func('Set-Cookie', 'Date'),

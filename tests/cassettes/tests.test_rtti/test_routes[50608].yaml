@@ -1,0 +1,22 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+    method: GET
+    uri: https://api.translink.ca/rttiapi/v1/routes?stopNo=50608
+  response:
+    body: {string: '[{"RouteNo":"005","Name":"ROBSON\/DOWNTOWN                ","OperatingCompany":"CMBC","Patterns":[{"PatternNo":"EB2Y","Destination":"DOWNTOWN","RouteMap":{"Href":"https:\/\/nb.translink.ca\/geodata\/trip\/005-EB2Y.kmz"},"Direction":"EAST"},{"PatternNo":"EB3","Destination":"DOWNTOWN","RouteMap":{"Href":"https:\/\/nb.translink.ca\/geodata\/trip\/005-EB3.kmz"},"Direction":"EAST"}]}]'}
+    headers:
+      Access-Control-Expose-Headers: [Request-Context]
+      Cache-Control: [private]
+      Content-Type: [application/json; charset=utf-8]
+      Request-Context: ['appId=cid-v1:1e6c40c5-6820-45e0-bc31-42dfa27fb6fd']
+      Server: [Microsoft-IIS/10.0]
+      Vary: [Accept-Encoding]
+      X-AspNet-Version: [4.0.30319]
+      X-Powered-By: [ASP.NET]
+      content-length: ['382']
+    status: {code: 200, message: OK}
+version: 1

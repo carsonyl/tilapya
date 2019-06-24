@@ -12,10 +12,12 @@ interactions:
         shuttle or night bus routes, please use \"C\" or \"N\" followed by up to 2
         digits, i.e. N9, C22"}'}
     headers:
+      Access-Control-Expose-Headers: [Request-Context]
       Cache-Control: [private]
       Content-Length: ['237']
       Content-Type: [application/json; charset=utf-8]
-      Server: [Microsoft-IIS/8.5]
+      Request-Context: ['appId=cid-v1:1e6c40c5-6820-45e0-bc31-42dfa27fb6fd']
+      Server: [Microsoft-IIS/10.0]
       X-AspNet-Version: [4.0.30319]
       X-Powered-By: [ASP.NET]
     status: {code: 500, message: Internal Server Error}

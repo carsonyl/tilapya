@@ -5,18 +5,18 @@ interactions:
       Accept: [application/json]
       Accept-Encoding: ['gzip, deflate']
     method: GET
-    uri: https://api.translink.ca/rttiapi/v1/stops/53095/estimates?count=0
+    uri: https://api.translink.ca/rttiapi/v1/routes?stopNo=61419
   response:
-    body: {string: '{"Code":"3007","Message":"Invalid count number was specified,
-        please use valid count value from 1 to 10"}'}
+    body: {string: '{"Code":"4014","Message":"Sorry, no routes found for your specified
+        stop."}'}
     headers:
       Access-Control-Expose-Headers: [Request-Context]
       Cache-Control: [private]
-      Content-Length: ['105']
+      Content-Length: ['75']
       Content-Type: [application/json; charset=utf-8]
       Request-Context: ['appId=cid-v1:1e6c40c5-6820-45e0-bc31-42dfa27fb6fd']
       Server: [Microsoft-IIS/10.0]
       X-AspNet-Version: [4.0.30319]
       X-Powered-By: [ASP.NET]
-    status: {code: 500, message: Internal Server Error}
+    status: {code: 404, message: Not Found}
 version: 1

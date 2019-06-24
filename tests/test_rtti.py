@@ -98,11 +98,15 @@ def test_stop_estimates_with_results(authed_rtti, stop, count, timeframe, route)
         assert [route] == list(map(lambda est: est.RouteNo, estimates))
 
 
+def test_stop_estimates_no_results(authed_rtti):
+    estimates = authed_rtti.stop_estimates('53095', route_number='99')
+    assert not estimates
+
+
 @pytest.mark.parametrize('stop,count,timeframe,route,expect_code', [
     ['53095', 0, None, None, EC.est_invalid_count],
     ['53095', None, 0, None, EC.est_invalid_time],
     ['53095', None, None, 'ABC', EC.est_invalid_route],
-    ['53095', None, None, '99', EC.est_no_estimates],
     ['ABC', None, None, None, EC.est_invalid_stop],
     ['00000', None, None, None, EC.est_stop_not_found],
 ])
@@ -206,9 +210,18 @@ def test_route_error_codes(authed_rtti, route, expect_code):
 
 @pytest.mark.parametrize('stop', [
     '53095',  # API sometimes lies and returns an error for this stop.
-    '55385',
+    '50608',
 ])
 def test_routes(authed_rtti, stop):
+    routes = authed_rtti.routes(stop_number=stop)
+    assert len(routes) > 0
+
+
+@pytest.mark.parametrize('stop', [
+    '61419',
+])
+@pytest.mark.xfail(reason='Odd stops that claim to have no route')
+def test_routes_incorrect(authed_rtti, stop):
     routes = authed_rtti.routes(stop_number=stop)
     assert len(routes) > 0
 
