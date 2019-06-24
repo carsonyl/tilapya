@@ -15,7 +15,7 @@ Tilapya: TransLink API, in Python
 **Tilapya** is a Python wrapper around the `TransLink Open API <https://developer.translink.ca/>`_,
 which provides real-time transit information for the Metro Vancouver region.
 
-Tilapya has three interfaces which correspond directly to components of the TransLink Open API:
+Tilapya has interfaces which correspond directly to components of the TransLink Open API:
 
 * **RTTI**: Real-Time Transit Information
 * **GTFSRT**: GTFS-realtime feeds
@@ -50,7 +50,7 @@ Tilapya's API docs contain examples for common operations.
 License
 -------
 
-Copyright 2018 Carson Lam
+Copyright 2019 Carson Lam
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
