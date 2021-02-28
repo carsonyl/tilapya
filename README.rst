@@ -7,8 +7,8 @@ Tilapya: TransLink API, in Python
     :target: https://pypi.python.org/pypi/tilapya
 .. image:: https://img.shields.io/pypi/pyversions/tilapya.svg
     :target: https://pypi.python.org/pypi/tilapya
-.. image:: https://img.shields.io/travis/carsonyl/tilapya.svg?maxAge=2592000
-    :target: https://travis-ci.org/carsonyl/tilapya
+.. image:: https://github.com/carsonyl/tilapya/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/carsonyl/tilapya/actions/workflows/tests.yml
 .. image:: https://readthedocs.org/projects/tilapya/badge/?version=latest
     :target: https://tilapya.readthedocs.io/en/latest/?badge=latest
 

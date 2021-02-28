@@ -3,11 +3,11 @@ Tilapya's internal utilities. Not part of the public API.
 """
 from requests import Session
 
-from .__version__ import __title__, __version__
+from tilapya import __version__
 from .errors import TransLinkAPIError
 
 
-USER_AGENT = '{}/{}'.format(__title__, __version__)
+USER_AGENT = '{}/{}'.format("tilapya", __version__)
 
 
 class TransLinkAPIBase(object):

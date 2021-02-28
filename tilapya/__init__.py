@@ -21,7 +21,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-from .__version__ import __title__, __author__, __email__, __version__
+__version__ = "1.0.0"
 from .rtti import RTTI
 from .gtfsrt import GTFSRT
 from .errors import TransLinkAPIError

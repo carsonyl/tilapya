@@ -61,6 +61,7 @@ target/
 # pyenv python configuration file
 .python-version
 
+venv/
 .venv/
 .vscode/
 *.code-workspace

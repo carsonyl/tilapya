@@ -1,12 +1,16 @@
 import pytest
 import os
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 @pytest.fixture
 def valid_api_key():
     key = os.environ.get('TRANSLINK_API_KEY')
     if not key:
-        raise KeyError('TRANSLINK_API_KEY environment variable must be set for tests.')
+        raise KeyError('Tests need TRANSLINK_API_KEY environment variable. Set a dummy value for offline CIB.')
     return key
 
 
